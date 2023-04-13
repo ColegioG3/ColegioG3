@@ -12,3 +12,6 @@ class HomeView(TemplateView):
 
 class PrimeraUnidadView(TemplateView):
     template_name='PrimeraUnidad/listado1unidad.html'
+
+class PUFraccionesView(TemplateView):
+    template_name='PrimeraUnidad/fracciones.html'

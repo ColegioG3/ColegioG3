@@ -609,3 +609,29 @@ body, html{
 	}
 }
 
+h1 {
+	color:rgb(11, 3, 85);
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Helvetica', Helvetica, monospace;
+	line-height: 130%;
+	text-align: center;
+  }
+
+  
+h2 {
+	color: rgb(126, 6, 6);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Helvetica', Helvetica, monospace;
+	line-height: 130%;
+	text-align: left;
+  }
+
+h3 {
+	color: rgb(8, 10, 9);
+	font-size: 25px;
+	font-family: 'Helvetica', Helvetica, monospace;
+	line-height: 130%;
+	text-align: justify;
+  }
