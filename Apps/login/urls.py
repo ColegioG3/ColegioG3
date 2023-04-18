@@ -17,13 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Apps.login import views
-from .views import LoginView,HomeView,PrimeraUnidadView, PUFraccionesView
+from .views import LoginView,HomeView
 
 app_name='login'
 
 urlpatterns = [
     path('', LoginView.as_view(), name='loginapp'),
-    path('home/', HomeView.as_view(), name='homeapp'),
-    path('primeraUnidad/', PrimeraUnidadView.as_view(), name='primeraunidadapp'),
-    path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
+    path('home/', HomeView.as_view(), name='homeapp')
 ]
