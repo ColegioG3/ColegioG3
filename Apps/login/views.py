@@ -9,9 +9,3 @@ class LoginView(TemplateView):
 
 class HomeView(TemplateView):
     template_name='home.html'
-
-class PrimeraUnidadView(TemplateView):
-    template_name='PrimeraUnidad/listado1unidad.html'
-
-class PUFraccionesView(TemplateView):
-    template_name='PrimeraUnidad/fracciones.html'
