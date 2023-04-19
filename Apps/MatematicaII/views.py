@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 
 # Create your views here.
 class PrimeraUnidadView(TemplateView):
-    template_name='listado1unidad.html'
+    template_name='listadoUnidades.html'
 
-class PUFraccionesView(TemplateView):
-    template_name='PrimeraUnidad/fracciones.html'
+class PUEcuacionesView(TemplateView):
+    template_name='PrimeraUnidad/ecuaciones.html'

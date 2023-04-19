@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block contenido %}
+
+<!-- home -->
+    <!-- Content page -->
+    <div class="container-fluid">
+        <div class="page-header">
+          <h1 class="text-titles">Matemática II<small> Quinto Bachillerato Industrial, Perito En Dibujo De Construcción Y Perito Con Especialidad En Computación </small></h1>
+        </div>
+    </div>
+
+    <div class="full-box text-center" style="padding: 30px 30px;">
+        <div class="list-groupUnidad" >
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD I
+            </a>
+            <a class="list-group-item list-group-item-action disabled">Ecuaciones</a> 
+            <a href="{% url 'MatematicaII:ecuacionesapp'%}" class="list-group-item list-group-item-action">Ecuaciones enteras de primer grado con una incógnita</a>
+            <a href="{% url 'MatematicaII:ecuacionesapp'%}" class="list-group-item list-group-item-action">Ecuaciones enteras de primer grado con producto continuado</a>
+            <a class="list-group-item list-group-item-action disabled">Ecuaciones simultaneas con dos incógnitas</a> 
+            <a href="{% url 'MatematicaII:ecuacionesapp'%}" class="list-group-item list-group-item-action">Ecuaciones equivalentes</a>
+            <a href="{% url 'MatematicaII:ecuacionesapp'%}" class="list-group-item list-group-item-action">Eliminación por igualación</a>
+            <a href="{% url 'MatematicaII:ecuacionesapp'%}" class="list-group-item list-group-item-action">Eliminación por sustitución</a>
+            <a href="{% url 'MatematicaII:ecuacionesapp'%}" class="list-group-item list-group-item-action">Método de reducción</a>
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD II
+            </a>
+            <a class="list-group-item list-group-item-action disabled">Plano cartesiano</a>
+            <a href="#" class="list-group-item list-group-item-action">Distancia</a>
+            <a href="#" class="list-group-item list-group-item-action">Punto medio</a>
+            <a href="#" class="list-group-item list-group-item-action">Pendiente</a>
+            <a href="#" class="list-group-item list-group-item-action">Graficas de funciones</a>
+            <a href="#" class="list-group-item list-group-item-action">Forma de punto y pendiente de una ecuación</a>
+            <a href="#" class="list-group-item list-group-item-action">Funciones lineles y cuadraticas</a>
+
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD III
+            </a>
+            <a class="list-group-item list-group-item-action disabled">Teorema sobre rectas</a>
+
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD IV
+            </a>
+            <a class="list-group-item list-group-item-action disabled">Ecuaciones sobre círculos</a>
+         
+          </div>
+    </div>
+
+
+{% endblock %}

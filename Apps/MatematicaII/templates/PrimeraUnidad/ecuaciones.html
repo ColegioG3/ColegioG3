@@ -1,0 +1,50 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Ecuaciones enteras de primer grado con una incógnita" class="btn btn-danger btn-lg">Ecuaciones enteras de primer grado con una incógnita</a>
+<a href="#Ecuaciones enteras de primer grado con producto continuado" class="btn btn-danger btn-lg">Ecuaciones enteras de primer grado con producto continuado</a>
+
+<div class="col-lg-12" id="Ecuaciones">
+  <h1>Ecuaciones enteras de primer grado con una incógnita</h1>
+  <h2>Definición:</h2>
+  <h3>
+  Las ecuaciones enteras de primer grado con una incógnita son aquellas en las que la incógnita (generalmente representada por la letra x)
+  aparece en el primer grado, es decir, no se encuentra elevada a ninguna potencia o fracción.
+  Estas ecuaciones se pueden resolver mediante operaciones
+  algebraicas básicas como la suma, la resta, la multiplicación y la división.
+  <br>
+  <br>
+  La forma general de una ecuación entera de primer grado con una incógnita es:
+  <br>
+  <br>
+  <p align = "center">ax + b = c</p>
+  <br>
+  Donde a, b y c son constantes y x es la incógnita. Para resolver este tipo de ecuaciones, 
+  se deben aplicar operaciones que permitan aislar la incógnita en un lado de la ecuación y los términos constantes en el otro.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/ecuaciones1.png' %}"
+    />
+  </center>
+  <h2>Pasos:</h2>
+  <h3>
+  •	Podemos aislar la incógnita de la siguiente manera:
+  <br>
+  <p align = "center">2x + 5 = 11</p> 
+  •Restamos 5 a ambos lados de la ecuación:
+    <br>
+    <p align = "center">2x = 6</p>
+  <br>
+  •	Dividimos ambos lados de la ecuación por: 
+  <br>
+  <p align = "center">2 x = 3</p>
+  <br>
+  <p align = "center"><strong>Por lo tanto, la solución de la ecuación es x = 3 </strong></p>
+  </h3>
+{% endblock %}

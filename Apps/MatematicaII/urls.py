@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.MatematicaII import views
-from .views import PrimeraUnidadView, PUFraccionesView
+from .views import PrimeraUnidadView, PUEcuacionesView
 
 
 app_name = 'MatematicaII'
 
 urlpatterns = [
    path('MatematicaII', PrimeraUnidadView.as_view(), name='matematicaiiapp'),
-   path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
+   path('ecuaciones/', PUEcuacionesView.as_view(), name='ecuacionesapp'),
 ]
