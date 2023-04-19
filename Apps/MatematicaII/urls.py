@@ -16,10 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from Apps.MatematicaII import views
+from .views import PrimeraUnidadView, PUFraccionesView
+
+
+app_name = 'MatematicaII'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login/', include('Apps.login.urls', 'login')),
-    path('matecomercial/', include('Apps.matecomercial.urls', 'matecomercial')),
-    path('matematicaii/', include('Apps.MatematicaII.urls', 'MatematicaII'))
+   path('MatematicaII', PrimeraUnidadView.as_view(), name='matematicaiiapp'),
+   path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
 ]
