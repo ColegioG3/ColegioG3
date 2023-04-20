@@ -1,0 +1,141 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Menor" class="btn btn-danger btn-lg">Menor</a>
+<a href="#Cofactor" class="btn btn-danger btn-lg">Cofactor</a>
+<div class="col-lg-12" id="Menor">
+    <h1>Menor</h1>
+    <h2>Definición:</h2>
+    <h3>
+        En álgebra lineal, un menor o menor complementario de una matriz A es el
+        determinante de alguna submatriz, obtenido de A mediante la eliminación de
+        una o más de sus filas o columnas. Los menores obtenidos por la eliminación
+        de únicamente una fila y una columna de matrices cuadradas se llaman
+        primeros menores y se necesitan para encontrar la matriz de cofactores, la
+        cual es útil para calcular el determinante y la inversa de matrices
+        cuadradas.
+        <br />
+        <br />
+        Puesto que hay:
+    </h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/menor1.JPG' %}" />
+    </center>
+    <h3>maneras de escoger k filas de m filas, y hay</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/menor2.JPG' %}" />
+    </center>
+    <h3>maneras de escoger k columnas de n columnas, hay en total</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/menor3.JPG' %}" />
+    </center>
+    <h3>
+        menores de tamaño k*k.
+        <br />
+        <br />
+        El determinante de cualquier submatriz de k*k de A se llama menor de tamaño
+        k.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/menor4.JPG' %}" width="225" />
+    </center>
+    <h3>Las submatrices escalonadas inferiores de A y sus determinantes son:</h3>
+    <br />
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/menor5.JPG' %}" width="350" />
+    </center>
+    <h3>Matriz de menores:</h3>
+    <br />
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/menor6.JPG' %}" width="350" />
+    </center>
+</div>
+<div class="col-lg-12" id="Cofactor">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Cofactor</h1>
+    <h2>Definición:</h2>
+    <h3>
+        Sea A una matriz de dimensión mxm. La matriz de cofactores llamada también
+        matriz adjunta de A, A*, es una matriz de la misma dimensión. El elemento de
+        la posición fila i y columna j de la matriz adjunta de A (llamado cofactor
+        de la posición (i ,j)) es
+    </h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor1.JPG' %}" />
+    </center>
+    <h3>
+        siendo la matriz Aij la submatriz de A obtenida al eliminar la fila i y
+        columna j de A.
+        <br />
+        <br />
+        Por ejemplo, si A es de dimensión 2x2:
+    </h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor2.JPG' %}" />
+    </center>
+    <h3>Y, si es de dimensión 3x3:</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor3.JPG' %}" />
+    </center>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor4.JPG' %}" width="220" />
+    </center>
+    <h3>
+        Como la matriz es de dimensión 3x3, tendremos que calcular determinantes de
+        dimensión 2x2.
+        <br />
+        <br />
+        Calculamos los elementos de la matriz adjunta:
+        <br />
+        <br />
+        El elemento de la posición (1,1) es
+    </h3>
+    <br />
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor5.JPG' %}" width="290" />
+    </center>
+    <h3>El elemento de la posición (1,2) es</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor6.JPG' %}" width="290" />
+    </center>
+    <h3>El elemento de la posición (1,3) es</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor7.JPG' %}" width="290" />
+    </center>
+    <h3>El elemento de la posición (2,1) es</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor8.JPG' %}" width="290" />
+        <h3>El elemento de la posición (2,2) es</h3>
+        <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor9.JPG' %}" width="290" />
+        <h3>El elemento de la posición (2,3) es</h3>
+        <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor10.JPG' %}" width="290" />
+            <h3>El elemento de la posición (3,1) es</h3>
+        <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor11.JPG' %}"
+             width="290" />
+        <h3>El elemento de la posición (3,2) es</h3>
+        <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor12.JPG' %}"
+        width="290" />
+        <h3>El elemento de la posición (3,3) es</h3>
+        <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor13.JPG' %}"
+        width="290" />
+        </center>
+        <h3>La matriz de cofactores es:</h3>
+        <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU3AL/cofactor14.JPG' %}"
+        width="325" />
+        </center>
+</div>
+{% endblock %}

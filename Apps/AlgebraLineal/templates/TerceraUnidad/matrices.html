@@ -1,0 +1,309 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Matrices" class="btn btn-danger btn-lg">Matrices</a>
+<a href="#TiposMatrices" class="btn btn-danger btn-lg">Tipos de Matrices</a>
+<a href="#PartesMatriz" class="btn btn-danger btn-lg">Partes de una Matriz</a>
+<a href="#OperacionesMatrices" class="btn btn-danger btn-lg"
+  >Operaciones con Matrices</a
+>
+<a href="#Ejemplos" class="btn btn-danger btn-lg">Ejemplos</a>
+<div class="col-lg-12" id="Matrices">
+  <h1>Matrices</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Una matriz es un conjunto de números o expresiones ordenados en forma de
+    filas y columnas formando una matriz rectangular.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices1.JPG' %}"
+      width="255"
+    />
+  </center>
+  <h3>Dada la matriz</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices2.JPG' %}"
+      width="150"
+    />
+  </center>
+  <h2 id="TiposMatrices">Tipos de matrices:</h2>
+  <h3>
+    Las matrices se pueden clasificar en varios tipos en función del número de
+    elementos y por la forma como se disponen estos elementos.
+  </h3>
+  <h3>
+    • Matriz fila: es aquella que está formada por una sola fila. Por ejemplo:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices3.JPG' %}"
+      width="355"
+    />
+  </center>
+  <h3>
+    • Matriz columna: es una matriz que tiene una sola columna. Se tiene el
+    ejemplo de:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices4.JPG' %}"
+      width="260"
+    />
+  </center>
+  <h3>
+    • Matriz cuadrada: cuando una matriz tiene el mismo número de filas y
+    columnas se conoce como matriz cuadrada. Para este caso m = n, En este caso,
+    la dimensión se denomina orden, cuyo valor coincide con el número de filas y
+    de columnas. Como se muestra en el ejemplo la matriz es de orden 2, por
+    tener 2 filas y dos columnas.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices5.JPG' %}"
+      width="355"
+    />
+  </center>
+  <h3>
+    • Matriz rectangular: tiene distinto número de filas que de columnas (m ≠
+    n), siendo su dimensión mxn. Un ejemplo de este tipo de matriz es:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices6.JPG' %}"
+      width="355"
+    />
+  </center>
+  <h3>
+    • Matriz diagonal: es una matriz cuadrada en la que todos los elementos que
+    no estén situados en la diagonal principal son ceros. En el ejemplo
+    mostrado, los números 2, 4, 2; están ubicados en la diagonal principal de la
+    matriz y los 0 se ubican por encima y debajo de ellos.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices7.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>
+    • Matriz identidad: es un tipo de matriz diagonal donde los elementos de la
+    diagonal principal son 1.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices8.JPG' %}"
+      width="180"
+    />
+  </center>
+  <h3>
+    • Matriz escalar: es una matriz diagonal en la que los elementos de la
+    diagonal principal son iguales.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices9.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>
+    • Matriz triangular superior: en este tipo de matriz los ceros forman un
+    triángulo ubicándose por debajo de la diagonal principal.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices10.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>
+    • Matriz triangular inferior: para este caso los ceros forman un triángulo
+    ubicándose por encima de la diagonal principal.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices11.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>
+    • Matriz traspuesta: se llama matriz traspuesta de a la matriz que se
+    obtiene cambiando ordenadamente las filas por las columnas (o viceversa) de
+    una matriz dada.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices12.JPG' %}"
+      width="370"
+    />
+  </center>
+  <h3>• Matriz nula: es una matriz donde todos sus elementos son 0.</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices13.JPG' %}"
+      width="180"
+    />
+  </center>
+  <h2 id="PartesMatriz">Partes de una Matriz:</h2>
+  <h3>
+    Una matriz se representa con letra mayúscula y sus elementos se pueden
+    encerrar entre paréntesis, llaves o corchetes.
+    <br />
+    <br />
+    • Columnas y filas: la matriz está ordenada en columnas que son los
+    renglones verticales, mientras que las filas son las hileras horizontales.
+    <br />
+    • Elementos: los números que conforman una matriz se denominan elementos o
+    entradas de la matriz, estos pueden ser sólo números, variables o funciones.
+    <br />
+    <br />
+    Se denotan con letra minúscula con subíndice de dos cifras, la primera es el
+    elemento de la i - ésima fila y la j -ésima columna de la matriz.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices14.JPG' %}"
+      width="300"
+    />
+  </center>
+  <h2 id="OperacionesMatrices">Operaciones con matrices:</h2>
+  <h3>
+    • Suma de matrices: La suma de matrices solo puede ser posible si el número
+    de filas y columnas de ambas matrices es el mismo y se suman los elementos
+    correspondientes, es decir; si se tiene la matriz A y B, la suma de A + B =
+    aij + bij.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices15.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>
+    • Resta de matrices: Para esta operación matemática de igual manera el
+    número de filas y columnas de las matrices debe ser iguales y para el caso
+    en particular se restan los elementos correspondientes. Si se tiene la
+    matriz A y B, la resta de A - B = aij - bij.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices16.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>
+    • Multiplicación de un número por una matriz: Para el caso del producto de
+    un número cualquiera por una matriz, se debe multiplicar el número por cada
+    una de las entradas o elementos de la matriz.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices17.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>
+    • Multiplicación de matrices: Se pueden multiplicar matrices sólo si el
+    número de columnas en la primera matriz y el número de filas en la segunda
+    matriz son iguales. La matriz resultante tendrá el mismo número de filas de
+    la primera y con el mismo número de columnas de la segunda.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices18.JPG' %}"
+      width="750"
+    />
+  </center>
+  <h2 id="Ejemplos">Ejemplos:</h2>
+  <h3>
+    • Ejemplo 1: Se tienen las matrices A y B, realizar la operación matemática
+    de A + B.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices19.JPG' %}"
+      width="500"
+    />
+  </center>
+  <h3>Operando:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices20.JPG' %}"
+      width="450"
+    />
+  </center>
+  <h3>El resultado de A + B =</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices21.JPG' %}"
+      width="150"
+    />
+  </center>
+  <h3>• Ejemplo 2: Hallar el producto de las matrices A y B.</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices22.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>Operando:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices23.JPG' %}"
+      width="325"
+    />
+  </center>
+  <h3>
+    Las operaciones matemáticas para calcular los elementos de la matriz
+    resultante se muestran a continuación: 
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices24.JPG' %}"
+      width="650"
+    />
+  </center>
+  <h3>
+    Ordenando cada elemento en la matriz resultante se obtiene:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/matrices25.JPG' %}"
+      width="300"
+    />
+  </center>
+  {% endblock %}
+</div>

@@ -1,0 +1,263 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#EcuacionesPGD" class="btn btn-danger btn-lg"
+  >Sistema de ecuaciones de primer grado con dos incógnitas</a
+>
+<a href="#EliminacionIgualacion" class="btn btn-danger btn-lg"
+  >Método de eliminación por igualación</a
+>
+<a href="#EliminacionSustitucion" class="btn btn-danger btn-lg"
+  >Método de eliminación por sustitución</a
+>
+<a href="#EliminacionReduccion" class="btn btn-danger btn-lg"
+  >Método de eliminación por reducción</a
+>
+<div class="col-lg-12" id="EcuacionesPGD">
+  <h1>Sistema de ecuaciones de primer grado con dos incógnitas</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Una ecuación de primer grado con dos incógnitas es una ecuación compuesta
+    por dos variables, que normalmente son x e y.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epgd1.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>
+    Despejamos una de las incógnitas en una de las dos ecuaciones. Elegimos la
+    incógnita que tenga el coeficiente más bajo.
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epgd2.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>Sustituimos en la otra ecuación la variable x, por el valor anterior:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epgd3.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>Resolvemos la ecuación obtenida lo cual da como resultado en y:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epgd4.JPG' %}"
+      width="85"
+    />
+  </center>
+  <h3>Sustituimos el valor obtenido en la variable despejada:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epgd5.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>Solución:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epgd6.JPG' %}"
+      width="190"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="EliminacionIgualacion">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Método de eliminación por igualación</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Consiste en aislar en ambas ecuaciones la misma incógnita para poder igualar
+    las expresiones, obteniendo así una ecuación con una sola incógnita.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacioni1.JPG' %}"
+      width="180"
+    />
+  </center>
+  <h3>Despejamos en ambas ecuaciones la y:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacioni2.JPG' %}"
+      width="300"
+    />
+  </center>
+  <h3>Como y=y, igualamos las expresiones y resolvemos la ecuación:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacioni3.JPG' %}"
+      width="180"
+    />
+  </center>
+  <h3>
+    Ahora, sustituimos el valor de la incógnita x=1 en la primera de las
+    ecuaciones anteriores para calcular y:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacioni4.JPG' %}"
+      width="285"
+    />
+  </center>
+  <h3>Por tanto, la solución del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacioni5.JPG' %}"
+      width="200"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="EliminacionSustitucion">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Método de eliminación por sustitución</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Consiste en despejar o aislar una de las incógnitas (por ejemplo, x y
+    sustituir su expresión en la otra ecuación. De este modo, obtendremos una
+    ecuación de primer grado con la otra incógnita y. Una vez resuelta,
+    calculamos el valor de x sustituyendo el valor de y que ya conocemos.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacions1.JPG' %}"
+      width="160"
+    />
+  </center>
+  <h3>Despejamos en la primera ecuación la x:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacions2.JPG' %}"
+      width="300"
+    />
+  </center>
+  <h3>Y la sustituimos en la segunda:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacions3.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>Calculamos x sabiendo y=2:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacions4.JPG' %}"
+      width="285"
+    />
+  </center>
+  <h3>Por tanto, la solución del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacions5.JPG' %}"
+      width="180"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="EliminacionReduccion">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Método de eliminación por reducción</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Consiste en operar entre las ecuaciones como, por ejemplo, sumar o restar
+    ambas ecuaciones, de modo que una de las incógnitas desaparezca. Así,
+    obtenemos una ecuación con una sola incógnita.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacionr1.JPG' %}"
+      width="190"
+    />
+  </center>
+  <h3>
+    Para sumar las ecuaciones y que desaparezca una de las dos incógnitas, los
+    coeficientes de dicha incógnita deben ser iguales, pero de signo distinto.
+    Para ello, multiplicamos por -2 la primera ecuación. Después, sumamos las
+    ecuaciones y resolvemos la ecuación obtenida:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacionr2.JPG' %}"
+      width="200"
+    />
+  </center>
+  <h3>Operando:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacionr3.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>Finalmente, sustituimos el valor de y=2 en la primera ecuación y la resolvemos:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacionr4.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>Por tanto, la solución del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eliminacionr5.JPG' %}"
+      width="180"
+    />
+  </center>
+</div>
+{% endblock %}

@@ -17,11 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.AlgebraLineal import views
-from .views import PrimeraUnidadView, PUFraccionesView
+from .views import PrimeraUnidadView, PUEcuacionesLinealesView, PUEcuacionesSegundoGradoView, SUSistemasDIView, SUDeterminacionDTView, SUReglaCramerView, SUProblemasdtiView, TUMatricesView, TUMenorCofactorView, TUGaussianaView, TUGaussJordanView
 
 app_name = 'AlgebraComercial'
 
 urlpatterns = [
-    path('AlgebraLineal', PrimeraUnidadView.as_view(), name='algebralinealapp'),
-    path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
+    path('algebralineal', PrimeraUnidadView.as_view(), name='algebralinealapp'),
+    path('ecuacioneslineales/', PUEcuacionesLinealesView.as_view(), name='ecuacioneslapp'),
+    path('ecuacionesprimergradodosincognitas/', PUEcuacionesSegundoGradoView.as_view(), name='ecuacionespgdapp'),
+    path('sistemasdosi/', SUSistemasDIView.as_view(), name='sistemasdosiapp'),
+    path('determinaciondt/', SUDeterminacionDTView.as_view(), name='determinaciondtapp'),
+    path('regladecramer/', SUReglaCramerView.as_view(), name='reglacramerapp'),
+    path('problemasdosytresincgonitas/', SUProblemasdtiView.as_view(), name='problemasdtiapp'),
+    path('matrices/', TUMatricesView.as_view(), name='matricesapp'),
+    path('menorycofactor/', TUMenorCofactorView.as_view(), name='menorcofactorapp'),
+    path('eliminaciongaussiana/', TUGaussianaView.as_view(), name='gaussianaapp'),
+    path('eliminaciongaussjordan/', TUGaussJordanView.as_view(), name='gaussjordanapp'),
 ]

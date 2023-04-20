@@ -1,0 +1,105 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Gauss-Jordan" class="btn btn-danger btn-lg"
+  >Eliminación Gauss-Jordan</a
+>
+<a href="#EjemployPasos" class="btn btn-danger btn-lg">Ejemplo y Pasos</a>
+<div class="col-lg-12" id="ProblemasDTI">
+  <h1 id="Gauss-Jordan">Eliminación Gauss-Jordan</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El método de Gauss-Jordan es una variante del método de Gauss. En este
+    método, la matriz no se lleva a una forma triangular superior, sino a una
+    matriz diagonal. En el método de Gauss-Jordan la matriz contiene solo ceros
+    y unos. En las entradas donde existe un uno este se ubica en la diagonal
+    principal.
+    <br />
+    <br />
+    El método de Gauss-Jordan es una variante del método de Gauss; en este
+    método la matriz no se lleva a una forma triangular superior, sino a una
+    matriz diagonal.
+    <br />
+    <br />
+    En el método de Gauss-Jordan la matriz contiene solo ceros y unos. Las
+    entradas que contienen un uno es en la diagonal principal.
+  </h3>
+  <h2 id="EjemployPasos">Ejemplo y pasos:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan1.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>Este sistema se convierte en la matriz:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan2.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>• Paso 1: multiplicamos la primera fila por 1/3:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan3.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    • Paso 2: multiplicamos la primera fila por 2 y la sumamos a la segunda:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan4.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>• Paso 3: ahora, multiplicamos la segunda fila por -3/65:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan5.JPG' %}"
+      width="275"
+    />
+  </center>
+  <h3>
+    Este último paso dejaría la matriz en una forma que nos permite resolverla
+    de inmediato, lo que sería el método de Gauss. Pero, ahora procedemos a
+    reducir los coeficientes en la parte superior de la diagonal principal.
+  </h3>
+  <h3>
+    • Paso 4: multiplicamos la segunda fila por 40/3 y la sumamos a la primera
+    fila:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan6.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    Esta matriz ya tiene los valores de x e y despejados; entonces, la solución
+    del sistema sería:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussjordan7.JPG' %}"
+      width="350"
+    />
+  </center>
+</div>
+{% endblock %}

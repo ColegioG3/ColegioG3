@@ -1,0 +1,222 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Sistema2*2" class="btn btn-danger btn-lg">Sistema de dimensión 2*2</a>
+<a href="#Sistema3*3" class="btn btn-danger btn-lg">Sistema de dimensión 3*3</a>
+<div class="col-lg-12" id="ProblemasDTI">
+  <h1>Problemas de ecuaciones de dos y tres incógnitas</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La regla de Cramer proporciona la solución de sistemas de ecuaciones
+    lineales compatibles determinados (con una única solución) mediante el
+    cálculo de determinantes. Se trata de un método muy rápido para resolver
+    sistemas, sobre todo, para sistemas de dimensión 2x2 y 3x3. Para dimensiones
+    mayores, los determinantes son bastante más engorrosos.
+  </h3>
+  <h2>Ejemplos:</h2>
+  <h2 id="Sistema2*2">Sistema de dimensión 2*2:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt1.JPG' %}"
+      width="185"
+    />
+  </center>
+  <h3>La matriz de coeficientes del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt2.JPG' %}"
+      width="200"
+    />
+  </center>
+  <h3>La matriz de incógnitas es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt3.JPG' %}"
+      width="150"
+    />
+  </center>
+  <h3>La matriz de términos independientes es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt4.JPG' %}"
+      width="150"
+    />
+  </center>
+  <h3>Calculamos el determinante de A:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt5.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>
+    La primera incógnita es x, cuyos coeficientes son los de la primera columna
+    de A. La matriz A1 es como A pero cambiando dicha columna por la columna B:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt6.JPG' %}"
+      width="200"
+    />
+  </center>
+  <h3>Calculamos x:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt7.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>
+    La segunda incógnita es y, sus coeficientes son los de la segunda columna de
+    A. Tenemos que calcular el determinante de la matriz:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt8.JPG' %}"
+      width="220"
+    />
+  </center>
+  <h3>Calculamos y:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt9.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>Por tanto, la solución del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt10.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h2 id="Sistema3*3">Sistema de dimensión 3*3:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt11.JPG' %}"
+      width="280"
+    />
+  </center>
+  <h3>La matriz de coeficientes del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt12.JPG' %}"
+      width="230"
+    />
+  </center>
+  <h3>La matriz de incógnitas es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt13.JPG' %}"
+      width="125"
+    />
+  </center>
+  <h3>La matriz de términos independientes es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt14.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>Calculamos el determinante de A:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt15.JPG' %}"
+      width="650"
+    />
+  </center>
+  <h3>La matriz A1 es como A pero cambiando la columna 1 por la columna B:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt16.JPG' %}"
+      width="330"
+    />
+  </center>
+  <h3>Calculamos x:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt17.JPG' %}"
+      width="420"
+    />
+  </center>
+  <h3>La matriz A2 es como A pero cambiando la columna 2 por la columna B:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt18.JPG' %}"
+      width="330"
+    />
+  </center>
+  <h3>Calculamos y:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt19.JPG' %}"
+      width="420"
+    />
+  </center>
+  <h3>La matriz A3 es como A pero cambiando la columna 3 por la columna B:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt20.JPG' %}"
+      width="330"
+    />
+  </center>
+  <h3>Calculamos z:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt21.JPG' %}"
+      width="420"
+    />
+  </center>
+  <h3>Por tanto, la solución del sistema es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/problemasecudt22.JPG' %}"
+      width="290"
+    />
+  </center>
+</div>
+
+{% endblock %}
