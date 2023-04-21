@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.AlgebraLineal import views
-from .views import PrimeraUnidadView, PUEcuacionesLinealesView, PUEcuacionesSegundoGradoView, SUSistemasDIView, SUDeterminacionDTView, SUReglaCramerView, SUProblemasdtiView, TUMatricesView, TUMenorCofactorView, TUGaussianaView, TUGaussJordanView
+from .views import PrimeraUnidadView, PUEcuacionesLinealesView, PUEcuacionesSegundoGradoView, SUSistemasDIView, SUDeterminacionDTView, SUReglaCramerView, SUProblemasdtiView, TUMatricesView, TUMenorCofactorView, TUGaussianaView, TUGaussJordanView, CUVectoresView, CUPlanoView, CUDeterminantesView
 
 app_name = 'AlgebraComercial'
 
@@ -33,4 +33,7 @@ urlpatterns = [
     path('menorycofactor/', TUMenorCofactorView.as_view(), name='menorcofactorapp'),
     path('eliminaciongaussiana/', TUGaussianaView.as_view(), name='gaussianaapp'),
     path('eliminaciongaussjordan/', TUGaussJordanView.as_view(), name='gaussjordanapp'),
+    path('vectores/', CUVectoresView.as_view(), name='vectoresapp'),
+    path('planocartesiano/', CUPlanoView.as_view(), name='planoapp'),
+    path('determinantes/', CUDeterminantesView.as_view(), name='determinantesapp'),
 ]

@@ -35,3 +35,13 @@ class TUGaussianaView(TemplateView):
 
 class TUGaussJordanView(TemplateView):
     template_name='TerceraUnidad/gaussjordan.html'
+
+class CUVectoresView(TemplateView):
+    template_name='CuartaUnidad/vectores.html'
+
+class CUPlanoView(TemplateView):
+    template_name='CuartaUnidad/planocartesiano.html'
+
+class CUDeterminantesView(TemplateView):
+    template_name='CuartaUnidad/determinantes.html'
+
