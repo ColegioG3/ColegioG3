@@ -6,4 +6,4 @@ class PrimeraUnidadView(TemplateView):
     template_name='listadoUnidades.html'
 
 class PUEcuacionesView(TemplateView):
-    template_name='PrimeraUnidad/ecuaciones.html'
+    template_name='PrimeraUnidad/ecuacionesSimultaneas.html'
