@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Pendiente" class="btn btn-danger btn-lg">Pendiente</a>
+<div style="margin: 50px 45px 25px 20px;">
+    <h1 id="Pendiente">Pendiente</h1>
+    <h2>Definición:</h2>
+    <h3>
+        <p>
+            La pendiente es la medida de la inclinación de una recta en el plano cartesiano. Se representa con la letra
+            m y se calcula como la relación entre el cambio en la coordenada y (Δy) y el cambio en la coordenada x (Δx)
+            entre dos puntos de la recta.
+            La fórmula para calcular la pendiente es:
+            <center>
+                <img class="img-fluid rounded-circle" width="250" src="{% static 'images/imgU1/pendiente1.png' %}" />
+            </center>
+
+        </p>
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3>Si tenemos dos puntos A (2,4) y B (5,7), podemos calcular la pendiente de la recta que pasa por ellos: </h3>
+    <h2>Solución: </h2>
+    <h3>Usando la fórmula para calcular la pendiente, tenemos:</h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="300" src="{% static 'images/imgU1/pendiente2.png' %}" />
+    </center>
+
+</div>
+{% endblock %}

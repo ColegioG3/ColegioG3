@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Distancia" class="btn btn-danger btn-lg">Distancia</a>
+<div style="margin: 50px 45px 25px 20px;">
+    <h1 id="Distancia">Distancia</h1>
+    <h2>Definición:</h2>
+    <h3>
+        <p>
+            En geometría, la distancia se refiere a la medida del espacio entre dos puntos, objetos o figuras
+            geométricas.
+            En el plano cartesiano, la distancia entre dos puntos se puede encontrar utilizando la fórmula de la
+            distancia entre dos puntos:
+            <center>
+                <img class="img-fluid rounded-circle" width="410" src="{% static 'images/imgU1/distancia1.png' %}" />
+            </center>
+
+        <h2>Donde: </h2>
+        <h3>d es la distancia entre los dos puntos</h3>
+        <h3>(x1, y1, z1) son las coordenadas del primer punto</h3>
+        <h3>(x2, y2, z2) son las coordenadas del segundo punto</h3>
+
+        <h3>La distancia también se puede medir en términos de unidades de medida, como metros, centímetros, pies,
+            pulgadas, etc.</h3>
+        </p>
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3>Encuentra la distancia entre los puntos A (2,3) y B (5,7) en el plano cartesiano</h3>
+    <h2>Solución: </h2>
+    <h3>Usando la fórmula de la distancia entre dos puntos, tenemos:</h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="485" src="{% static 'images/imgU1/distancia2.png' %}" />
+</div>
+{% endblock %}

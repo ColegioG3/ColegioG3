@@ -9,7 +9,7 @@
 <a href="#Eliminación por igualación" class="btn btn-danger btn-lg">Eliminación por igualación</a>
 <a href="#Eliminación por sustitución" class="btn btn-danger btn-lg">Eliminación por sustitución</a>
 <a href="#Método de reducción" class="btn btn-danger btn-lg">Método de reducción</a>
-<div class="col-lg-12" id="Ecuaciones equivalentes">
+<div class="col-lg-12" id="Ecuaciones equivalentes" style="margin: 25px 25px 100px 0px;">
     <h1 id="Ecuaciones equivalentes">Ecuaciones equivalentes</h1>
     <h2>Definición:</h2>
     <h3>
@@ -27,19 +27,12 @@
     <br>
     <h2>Ejemplo:</h2>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="275" 
-        src="{% static 'images/imgU1/ecuacionesSim1.png' %}" />
+        <img class="img-fluid rounded-circle" width="275" src="{% static 'images/imgU1/ecuacionesSim1.png' %}" />
     </center>
     <h3>Estas dos ecuaciones son equivalentes porque si se resta 3 a ambos
         lados de la primera ecuación, se obtiene x = 5, que es la misma solución que la segunda ecuación.</h3>
-    <br>
-    <br>
-    <br>
-    <br>
 </div>
-<div>
+<div style="margin: 100px 20px 25px 20px;">
     <h1 id="Eliminación por igualación">Eliminación por igualación</h1>
     <h2>Definición:</h2>
     <h3>
@@ -51,53 +44,112 @@
     </h3>
     <h2>Ejemplo:</h2>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="275" 
-        src="{% static 'images/imgU1/ecuacionesSim2.png' %}" />
+        <img class="img-fluid rounded-circle" width="275" src="{% static 'images/imgU1/ecuacionesSim2.png' %}" />
     </center>
     <h2>Solución: </h2>
     <h3>Para aplicar la eliminación por igualación, se puede igualar la segunda incógnita (y) en ambas ecuaciones:</h3>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="465" 
-        src="{% static 'images/imgU1/ecuacionesSim3.png' %}" />
+        <img class="img-fluid rounded-circle" width="465" src="{% static 'images/imgU1/ecuacionesSim3.png' %}" />
     </center>
     <h3>Luego, se igualan las expresiones obtenidas para y:</h3>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="175" 
-        src="{% static 'images/imgU1/ecuacionesSim4.png' %}" />
+        <img class="img-fluid rounded-circle" width="175" src="{% static 'images/imgU1/ecuacionesSim4.png' %}" />
     </center>
     <h3>Se resuelve para x:</h3>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="425" 
-        src="{% static 'images/imgU1/ecuacionesSim5.png' %}" />
+        <img class="img-fluid rounded-circle" width="425" src="{% static 'images/imgU1/ecuacionesSim5.png' %}" />
     </center>
     <h3>Se sustituye este valor en una de las ecuaciones originales. Por ejemplo, en la segunda:</h3>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="175" 
-        src="{% static 'images/imgU1/ecuacionesSim6.png' %}" />
+        <img class="img-fluid rounded-circle" width="175" src="{% static 'images/imgU1/ecuacionesSim6.png' %}" />
     </center>
     <h3>Se resuelve para y:</h3>
     <center>
-        <img 
-        class="img-fluid rounded-circle" 
-        width="275" 
-        src="{% static 'images/imgU1/ecuacionesSim7.png' %}" />
+        <img class="img-fluid rounded-circle" width="275" src="{% static 'images/imgU1/ecuacionesSim7.png' %}" />
     </center>
     <h3>
         <p>
-            Es importante destacar que la eliminación por igualación solo funciona cuando 
-            las ecuaciones del sistema tienen una misma variable con coeficiente numérico igual o distinto. 
+            Es importante destacar que la eliminación por igualación solo funciona cuando
+            las ecuaciones del sistema tienen una misma variable con coeficiente numérico igual o distinto.
             Si no se cumple esta condición, se debe utilizar otro método para resolver el sistema.
         </p>
     </h3>
 </div>
+<div style="margin: 100px 20px 25px 20px;">
+    <h1 id="Eliminación por sustitución">Eliminación por sustitución</h1>
+    <h2>Definición:</h2>
+    <h3>
+        <p>
+            La eliminación por sustitución es un método para resolver sistemas de ecuaciones lineales con dos o más
+            incógnitas.
+            El objetivo de este método es encontrar una expresión para una de las incógnitas en términos de las otras,
+            y luego sustituirla en la otra ecuación del sistema para obtener una ecuación con una sola incógnita.
+        </p>
+    </h3>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" width="275" src="{% static 'images/imgU1/eliminacionS1.png' %}" />
+    </center>
+    <h2>Solución: </h2>
+    <h3>Despejamos la incógnita y de la segunda ecuación: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="150" src="{% static 'images/imgU1/eliminacionS2.png' %}" />
+    </center>
+    <h3>Sustituimos esta expresión en la primera ecuación: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="325" src="{% static 'images/imgU1/eliminacionS3.png' %}" />
+    </center>
+    <h3>Resolvemos esta ecuación para x: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="450" src="{% static 'images/imgU1/eliminacionS4.png' %}" />
+    </center>
+    <h3>Sustituimos este valor de x en la expresión que obtuvimos para y en el primer paso: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="275" src="{% static 'images/imgU1/eliminacionS5.png' %}" />
+    </center>
+    <h3>Simplificamos la fracción: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="275" src="{% static 'images/imgU1/eliminacionS6.png' %}" />
+    </center>
+</div>
+
+<div style="margin: 100px 20px 25px 20px;">
+    <h1 id="Método de reducción">Método de reducción</h1>
+    <h2>Definición:</h2>
+<h3>
+    <p>
+        El método de reducción es un método de resolución de sistemas de ecuaciones lineales que consiste
+        en multiplicar ambas ecuaciones por un número para obtener una misma variable con el mismo coeficiente en ambas ecuaciones. 
+        Luego, se restan ambas ecuaciones y se resuelve la ecuación resultante para encontrar el valor de una variable.
+        Una vez que se tiene el valor de una variable, se sustituye en una de las ecuaciones originales para encontrar el valor de la otra variable.
+    </p>
+</h3>
+<h2>Ejemplo:</h2>
+<center>
+    <img class="img-fluid rounded-circle" width="225" src="{% static 'images/imgU1/reduccion1.png' %}" />
+</center>
+<h2>Solución: </h2>
+<h3>Multiplicamos la segunda ecuación por 3 para obtener el mismo coeficiente de y en ambas ecuaciones: </h3>
+<center>
+    <img class="img-fluid rounded-circle" width="375" src="{% static 'images/imgU1/reduccion2.png' %}" />
+</center>
+<h3>Luego, sumamos ambas ecuaciones para eliminar la variable y: </h3>
+<center>
+    <img class="img-fluid rounded-circle" width="165" src="{% static 'images/imgU1/reduccion3.png' %}" />
+</center>
+<h3>Resolvemos para x: </h3>
+<center>
+    <img class="img-fluid rounded-circle" width="150" src="{% static 'images/imgU1/reduccion4.png' %}" />
+</center>
+<h3>Sustituimos este valor en una de las ecuaciones originales. Por ejemplo, en la primera ecuación: </h3>
+<center>
+    <img class="img-fluid rounded-circle" width="150" src="{% static 'images/imgU1/reduccion5.png' %}" />
+</center>
+<h3>Resolvemos para y: </h3>
+<center>
+    <img class="img-fluid rounded-circle" width="200" src="{% static 'images/imgU1/reduccion6.png' %}" />
+</center>
+
+</div>
+
 {% endblock %}

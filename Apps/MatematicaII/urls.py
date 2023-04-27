@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.MatematicaII import views
-from .views import PrimeraUnidadView, PUEcuacionesView
+from .views import PrimeraUnidadView, PUEcuacionesView, PUEcuacionesSimultaneasView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView
 
 
 app_name = 'MatematicaII'
@@ -25,4 +25,15 @@ app_name = 'MatematicaII'
 urlpatterns = [
    path('MatematicaII', PrimeraUnidadView.as_view(), name='matematicaiiapp'),
    path('ecuaciones/', PUEcuacionesView.as_view(), name='ecuacionesapp'),
+   path('ecuacionesSimultaneas/', PUEcuacionesSimultaneasView.as_view(), name='ecuacionesSimultaneasapp'),
+   path('planoCartesiano/', SUPlanoCartesianoView.as_view(), name='planoCartesianoapp'),
+   path('distancia/', SUDistanciaView.as_view(), name='distanciaapp'),
+   path('puntoMedio/', SUPuntoMedioView.as_view(), name='puntoMedioapp'),
+   path('pendiente/', SUPendienteView.as_view(), name='pendienteapp'),
+   path('graficas/', SUGraficasFuncionesView.as_view(), name='graficaFuncionesapp'),
+   path('puntoPendiente/', SUPuntoYPendienteView.as_view(), name='puntoPendienteapp'),
+   path('funcionesLinealesyC/', SUFuncionesLinealesYCuadraticasView.as_view(), name='funcionesLinealesyCapp'),
+   path('teoremaRectas/', TUTeoremaDeRectasView.as_view(), name='teoremaRectasapp'),
+   path('ecuacionesCirculos/', CUEcuacionesCirculosView.as_view(), name='ecuacionesCirculosapp'),
+
 ]

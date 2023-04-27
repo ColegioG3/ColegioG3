@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Punto medio" class="btn btn-danger btn-lg">Punto medio</a>
+<div style="margin: 50px 45px 25px 20px;">
+    <h1 id="Punto medio">Punto medio</h1>
+    <h2>Definición:</h2>
+    <h3>
+        <p>
+            El punto medio es el punto que se encuentra en la mitad de dos puntos dados. Es el punto que divide la línea
+            que une a los dos puntos en dos segmentos de igual longitud.
+            La fórmula para encontrar el punto medio entre dos puntos en el plano cartesiano es la siguiente:
+            <center>
+                <img class="img-fluid rounded-circle" width="600" src="{% static 'images/imgU1/puntoMedio1.png' %}" />
+            </center>
+        <h2>Donde: </h2>
+        <h3>(x1, y1, z1) y (x2, y2, z2) son las coordenadas de los dos puntos</h3>
+        </p>
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3>Encontrar el punto medio del segmento que une los puntos A (3,4) y B (7,8) en el plano cartesiano</h3>
+    <h2>Solución: </h2>
+    <h3>Usando la fórmula del punto medio, tenemos:</h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="300" src="{% static 'images/imgU1/puntoMedio2.png' %}" />
+    </center>
+
+</div>
+{% endblock %}

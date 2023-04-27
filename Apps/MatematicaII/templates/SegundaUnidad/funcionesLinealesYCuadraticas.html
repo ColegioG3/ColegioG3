@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Funciones lineales y cuadráticas" class="btn btn-danger btn-lg">Funciones lineales y cuadráticas</a>
+<div style="margin: 50px 45px 25px 20px;">
+    <h1 id="Funciones lineales y cuadráticas">Funciones lineales y cuadráticas</h1>
+    <h2>Definición:</h2>
+    <h3>
+        <p>
+            Una función lineal es una función matemática que se representa en la forma f(x) = mx + b, donde m es la pendiente y b es el punto de intersección en el eje y.
+            Por otro lado, una función cuadrática es una función matemática que se representa en la forma:
+            <center>
+                <img class="img-fluid rounded-circle" width="650" src="{% static 'images/imgU1/funciones1.png' %}" />
+            </center>
+        </p>
+    </h3>
+    <h3><b>Ejemplo función lineal: </b></h3>
+    <h3>f(x) = 2x + 1, donde la pendiente es 2 y el punto de intersección en el eje y es 1</h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="550" src="{% static 'images/imgU1/funcion2.png' %}" />
+    </center>
+    <h3><b>Ejemplo función cuadrática: </b></h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="525" src="{% static 'images/imgU1/funcion3.png' %}" />
+    </center>
+    
+</div>
+{% endblock %}

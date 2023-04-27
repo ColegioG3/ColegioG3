@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Teorema de rectas paralelas" class="btn btn-danger btn-lg">Teorema de rectas paralelas</a>
+<a href="#Teorema de rectas perpendiculares" class="btn btn-danger btn-lg">Teorema de rectas perpendiculares</a>
+<a href="#Combinación de rectas paralelas con distancia y punto medio" class="btn btn-danger btn-lg">Combinación de rectas paralelas con distancia y punto medio</a>
+<a href="#Combinación de rectas perpendiculares con distancia y punto medio" class="btn btn-danger btn-lg">Combinación de rectas perpendiculares con distancia y punto medio</a>
+<div class="col-lg-12" id="Teorema de rectas paralelas" style="margin: 50px 5px 5px 0px;">
+  <h1>Teorema de rectas paralelas</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El teorema de rectas paralelas establece que, si dos rectas son cortadas por una transversal, y los ángulos
+    correspondientes o alternos internos son congruentes, entonces las rectas son paralelas.
+    En otras palabras, si las dos rectas tienen ángulos correspondientes o alternos internos iguales, entonces las
+    rectas son paralelas.
+    Este teorema se utiliza frecuentemente en geometría y en problemas de aplicación en los que se requiere determinar
+    si dos rectas son paralelas o no.
+  </h3>
+  <center>
+    <img class="img-fluid rounded-circle" width="550" src="{% static 'images/imgU1/rectasParalelas1.png' %}" />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>
+    si tenemos dos rectas l y m y una transversal t que corta a l y m, y los ángulos correspondientes
+    o alternos internos son iguales,entonces podemos concluir que l y m son paralelas.
+    <br>
+    Determinar si las rectas y = 2x + 3 y y = 2x + 1 son paralelas
+    <h2>Solución:</h2>
+    <h3>Dos rectas tienen la misma pendiente, que es 2. Por lo tanto, son paralelas</h3> 
+  </h3>
+</div>
+<div class="col-lg-12" id="Teorema de rectas perpendiculares" style="margin: 50px 5px 70px 0px;">
+  <h1>Teorema de rectas perpendiculares</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El teorema de rectas perpendiculares establece que dos rectas son perpendiculares
+    si y solo si el producto de sus pendientes es igual a -1.
+    En otras palabras, si dos rectas tienen pendientes m1 y m2, respectivamente, y si se cumple que:
+    <br>
+    m1 x m2 = -1
+    <br>
+    Entonces, esas dos rectas son perpendiculares. Para entender esto mejor, recordemos que la pendiente de una recta se define como el cociente
+    entre la variación en el eje y (Δy) y la variación en el eje x (Δx) entre dos puntos cualesquiera sobre la recta.
+    Es decir, que la pendiente se puede calcular como:
+    <br>
+    m = Δy / Δx
+    Cuando dos rectas son perpendiculares, sus pendientes son negativas recíprocas una de la otra, es decir:
+    <br>
+    m1 x m2 = -1
+    <br>
+    Esto significa que si la pendiente de una recta es, por ejemplo, 2, la pendiente de la otra recta debe ser -1/2.
+    De esta manera, la pendiente de una recta siempre será el negativo recíproco de la otra, lo que indica que forman un
+    ángulo recto entre sí.
+    <center>
+      <img class="img-fluid rounded-circle" width="550" src="{% static 'images/imgU1/rectasPerpendiculares.png' %}" />
+    </center>
+  </h3>
+  <h2>Ejemplo:</h2>
+  <h3>Determina si las rectas y = 3x + 2 y y = -1/3x + 6 son perpendiculares
+    <h2>Solución: </h2>
+    <h3>Encontramos las pendientes de ambas rectas</h3>
+    <h3>La primera tiene una pendiente de 3 </h3>
+    <h3>La segunda tiene una pendiente de -1/3</h3>
+    <h3>El producto de estas dos pendientes es: <b>3 * (-1/3) = -1</b></h3>
+    <h3 style="text-align: center;"><b>Como el producto es igual a -1, las rectas son perpendiculares</b></h3>
+  </h3>
+</div>
+<div style="margin: 50px 45px 70px 20px;">
+  <h1 id="Combinación de rectas paralelas con distancia y punto medio">Combinación de rectas paralelas con distancia y punto medio</h1>
+  <h2>Definición:</h2>
+  <h3>
+      <p>
+        En geometría euclidiana, una recta es una línea que se extiende infinitamente en ambas direcciones. 
+        Dos rectas se consideran paralelas si nunca se cruzan, lo que significa que siempre mantienen la misma distancia entre sí en cualquier punto. 
+        La distancia entre dos rectas paralelas es la distancia perpendicular entre ellas, es decir, la distancia entre cualquier punto de una recta a la otra recta en línea recta.
+
+        Ahora bien, si conoces la distancia entre dos rectas paralelas y el punto medio entre ellas, es posible encontrar las ecuaciones de ambas rectas.
+        <br>
+        Para hacerlo, se deben seguir los siguientes pasos:
+        <h3>1. Primero, debes encontrar el vector dirección de una de las rectas paralelas. 
+          Este vector se puede obtener restando los vectores posición de los dos puntos conocidos de la recta.</h3>
+          <h3>2. Luego, normalizas el vector dirección de la recta, dividiendo cada componente del vector por su magnitud. 
+            Esto te da un vector de longitud igual a 1 que apunta en la dirección de la recta.</h3>
+            <h3>3. A continuación, puedes encontrar la ecuación de la recta a partir del punto medio y el vector dirección. 
+              <br>
+              La ecuación de la recta se puede escribir en la forma de vector-paramétrica como:</h3>
+             <h3 style="text-align: center;"><b>r = p + t * v</b></h3> 
+             <h3>Donde: </h3>
+             <h3>• r es un punto en la recta</h3>
+             <h3>• p es el punto medio entre las dos rectas</h3>
+             <h3>• t es un parámetro que indica la distancia del punto r a p a lo largo de la dirección de la recta</h3>
+             <h3>• v es el vector dirección de la recta, que ya has encontrado en el paso 1</h3>
+            <h3>4. Finalmente, puedes encontrar la ecuación de la otra recta paralela utilizando la distancia d y el mismo vector dirección.
+               <br>
+               La ecuación de esta recta será:</h3>
+               <h3 style="text-align: center;"><b>r = p + t * v + n * d</b></h3> 
+               <h3>Donde: </h3>
+               <h3>n es un parámetro que indica la distancia de r a la otra recta a lo largo de una dirección perpendicular a la dirección de la recta.</h3>
+      </p>
+  </h3>
+</div>
+<div style="margin: 50px 45px 50px 20px;">
+  <h1 id="Combinación de rectas perpendiculares con distancia y punto medio">Combinación de rectas perpendiculares con distancia y punto medio</h1>
+  <h2>Definición:</h2>
+  <h3>
+      <p>
+        En geometría euclidiana, dos rectas son perpendiculares si se intersectan en un ángulo recto de 90 grados.
+         Si conoces la distancia entre dos rectas perpendiculares y el punto medio de la distancia entre ellas, es posible encontrar las ecuaciones de ambas rectas.
+         <br>
+         Para hacerlo, se deben seguir los siguientes pasos:
+        <h3>1. Primero, debes encontrar el vector dirección de una de las rectas.
+          Este vector se puede obtener restando los vectores posición de los dos puntos conocidos de la recta.</h3>
+          <h3>2. A continuación, debes encontrar un vector perpendicular a la dirección de la recta.
+             Esto se puede lograr intercambiando dos de las coordenadas del vector dirección y cambiando el signo de una de ellas.
+             <br>
+              Por ejemplo, si el vector dirección es (1,2,3), un vector perpendicular podría ser (-2,1,-2).</h3>
+            <h3>3. Luego, normalizas ambos vectores, dividiendo cada componente del vector por su magnitud.
+               Esto te da dos vectores de longitud igual a 1 que son ortogonales entre sí.</h3>
+            <h3>4. El siguiente paso es encontrar el vector unitario que apunta desde el punto medio hasta una de las rectas perpendiculares. 
+              Esto se puede lograr tomando el producto cruz de los dos vectores unitarios encontrados en los pasos anteriores.</h3>
+              <h3>5. Ahora que tienes un vector unitario que apunta desde el punto medio a una de las rectas perpendiculares, puedes encontrar la ecuación de la recta a partir del punto medio y este vector.
+                <br>
+                 La ecuación de la recta se puede escribir en la forma de vector-paramétrica como:</h3>
+                 <h3  style="text-align: center;"><b>r = p + t * u</b></h3>
+             <h3>Donde: </h3>
+             <h3>• r es un punto en la recta</h3>
+             <h3>• p es el punto medio entre las dos rectas.</h3>
+             <h3>• t es un parámetro que indica la distancia del punto r a p a lo largo de la dirección de la recta.</h3>
+             <h3>• u es el vector unitario que apunta desde el punto medio a una de las rectas perpendiculares.</h3>
+            <h3>6. Por último, puedes encontrar la ecuación de la otra recta perpendicular utilizando el vector perpendicular que encontraste en el paso 2. 
+               <br>
+               La ecuación de esta recta será:</h3>
+               <h3 style="text-align: center;"><b>r = p + t * v</b></h3> 
+               <h3>Donde: </h3>
+               <h3>v es el vector perpendicular a la dirección de la primera recta que encontraste en el paso 2.</h3>
+      </p>
+  </h3>
+</div>
+{% endblock %}

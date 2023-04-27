@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Ecuación normal del círculo" class="btn btn-danger btn-lg">Ecuación normal del círculo</a>
+<a href="#Centro y radio del círculo" class="btn btn-danger btn-lg">Centro y radio del círculo</a>
+<a href="#(b/2)2 complementos cuadrados" class="btn btn-danger btn-lg">(b/2)2 complementos cuadrados</a>
+<a href="#Ecuación del círculo con el centro del vértice de la perpendicular" class="btn btn-danger btn-lg">Ecuación del
+    círculo con el centro del vértice de la perpendicular</a>
+<div class="col-lg-12" id="Ecuación normal del círculo" style="margin: 50px 5px 5px 0px;">
+    <h1>Ecuación normal del círculo</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La ecuación normal del círculo es una forma de representar un círculo en el plano cartesiano utilizando una
+        ecuación matemática.
+        Esta ecuación se escribe en la forma general:
+        <center>
+            <img class="img-fluid rounded-circle" width="300" src="{% static 'images/imgU1/circulo1.png' %}" />
+        </center>
+    </h3>
+    <h3>Donde: </h3>
+    <h3>• (a, b) es el centro del círculo.</h3>
+    <h3>• r es el radio del círculo.</h3>
+    <h3>
+        <p>
+            La ecuación normal del círculo se puede escribir en la forma de la ecuación general para un círculo:
+            <center>
+                <img class="img-fluid rounded-circle" width="300" src="{% static 'images/imgU1/circulo2.png' %}" />
+            </center>
+        </p>
+        <h3>Donde: </h3>
+        <h3>• r es un punto en la recta</h3>
+        <h3>• D = -2a es el coeficiente de x.</h3>
+        <h3>• E = -2b es el coeficiente de y.</h3>
+        <h3>• F = a^2 + b^2 - r^2 es el término constante.</h3>
+    </h3>
+    <h3>
+        <p>
+            La ecuación normal del círculo es una forma útil de representar un círculo en una variedad de contextos matemáticos, como en la geometría analítica y la trigonometría.
+            También se puede utilizar para resolver problemas de intersección y tangencia entre círculos y otros objetos en el plano cartesiano.
+        </p>
+    </h3>
+    <h2>Ejemplo: </h2>
+    <h3>Encuentra la ecuación normal del círculo con centro en el punto (2, -3) y radio 4.</h3>
+    <h2>Solución: </h2>
+    <h3>Usamos la fórmula general del círculo para encontrar la ecuación estándar: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="750" src="{% static 'images/imgU1/circulo3.png' %}" />
+    </center>
+    <h3>Luego, para obtener la ecuación normal, despejamos y: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="300" src="{% static 'images/imgU1/circulo4.png' %}" />
+    </center>
+    <h3>La ecuación normal del círculo es x: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="300" src="{% static 'images/imgU1/circulo5.png' %}" />
+    </center>
+</div>
+{% endblock %}
