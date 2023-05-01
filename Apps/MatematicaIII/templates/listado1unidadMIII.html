@@ -1,0 +1,128 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<div class="container-fluid">
+  <div class="page-header">
+    <h1 class="text-titles">
+      Matemática III<small>
+        <br />
+        Bachillerato Industrial y Perito en Dibujo de Construcción <br />
+        Bachillerato Industrial y Perito en Mecánica Automotriz <br />
+        Bachillerato Industrial y Perito con Especialidad en Computación
+      </small>
+    </h1>
+  </div>
+</div>
+
+<div class="full-box text-center" style="padding: 30px 30px">
+  <div class="list-groupUnidad">
+    <a
+      href="#"
+      class="list-group-item list-group-item-action active"
+      aria-current="true"
+    >
+      UNIDAD I
+    </a>
+    <a href="{% url 'MatematicaIII:teoremasderectasapp'%}" class="list-group-item list-group-item-action"
+      >Teoremas sobre rectas</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema de rectas paralelas</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema de rectas perpendiculares</a
+    >
+    <a href="{% url 'MatematicaIII:circuloapp'%}" class="list-group-item list-group-item-action"
+    >Ecuación del circulo</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Ecuación del círculo con el centro del vértice de la perpendicular</a
+    >
+    <a href="{% url 'MatematicaIII:complementosapp'%}" class="list-group-item list-group-item-action"
+    >Complemento de cuadrados</a
+    >
+    <a
+      href="#"
+      class="list-group-item list-group-item-action active"
+      aria-current="true"
+    >
+      UNIDAD II
+    </a>
+    <a
+      href="{% url 'MatematicaIII:teoremasLapp'%}"
+      class="list-group-item list-group-item-action"
+      >Teoremas sobre Límites</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema uno (Número Natural)</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema dos (Exponente)</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema tres (Múltiplo escalar)</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema cuatro (El producto)</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema cinco (El Cociente)</a
+    >
+    <a
+      href="{% url 'MatematicaIII:limitesIapp'%}"
+      class="list-group-item list-group-item-action"
+      >Límites al Infinito</a
+    >
+    <a
+      href="#"
+      class="list-group-item list-group-item-action active"
+      aria-current="true"
+    >
+      UNIDAD III
+    </a>
+    <a
+      href="{% url 'MatematicaIII:constantesapp'%}"
+      class="list-group-item list-group-item-action"
+      >Reglas de Constantes</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Derivada de una Constante</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Derivada de una Constante por una Función</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Derivada de una Constante Partida por una Función</a
+    >
+    <a
+      href="{% url 'MatematicaIII:potenciaapp'%}"
+      class="list-group-item list-group-item-action"
+      >Reglas de Potencia</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Derivada de una potencia de base x</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Derivada de una potencia con paréntesis</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Derivada de una potencia negativa</a
+    >
+    <a class="list-group-item list-group-item-action disabled">
+      Derivada de una potencia con raíz</a
+    >
+    <a
+      href="{% url 'MatematicaIII:teoremasderivacionapp'%}"
+      class="list-group-item list-group-item-action"
+      >Teoremas sobre Derivación</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema de la suma o la diferencia</a
+    >
+    <a class="list-group-item list-group-item-action disabled"
+      >Teorema del producto</a
+    >
+    <a class="list-group-item list-group-item-action disabled">
+      Teorema del cociente</a
+    >
+  </div>
+</div>
+{% endblock %}

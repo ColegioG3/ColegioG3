@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Apps.login',
     'Apps.matecomercial',
     'Apps.AlgebraLineal',
+    'Apps.MatematicaIII',
 ]
 
 MIDDLEWARE = [

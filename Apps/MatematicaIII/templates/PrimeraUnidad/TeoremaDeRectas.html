@@ -1,0 +1,118 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#TeoremasRectasParalelas" class="btn btn-danger btn-lg"
+  >Teorema de rectas paralelas</a
+>
+<a href="#TeoremasRectasPerpendiculares" class="btn btn-danger btn-lg"
+  >Teorema de rectas perpendiculares</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12">
+  <h1 id="TeoremasRectasParalelas">Teorema de rectas paralelas</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El teorema de rectas paralelas establece que, si dos rectas son cortadas por
+    una transversal, y los ángulos correspondientes o alternos internos son
+    congruentes, entonces las rectas son paralelas.
+    <br />
+    <br />
+    En otras palabras, si las dos rectas tienen ángulos correspondientes o
+    alternos internos iguales, entonces las rectas son paralelas.
+    <br />
+    <br />
+    Este teorema se utiliza frecuentemente en geometría y en problemas de
+    aplicación en los que se requiere determinar si dos rectas son paralelas o
+    no.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'Ima/rectasParalelas1.png' %}"
+      width="350"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>
+    Si tenemos dos rectas l y m y una transversal t que corta a l y m, y los
+    ángulos correspondientes o alternos internos son iguales,entonces podemos
+    concluir que l y m son paralelas.
+    <br />
+    <br />
+    Determinar si las rectas y = 2x + 3 y y = 2x + 1 son paralelas.
+    <br />
+    <br />
+    Solución:
+    <br />
+    <h3>
+      Las dos rectas tienen la misma pendiente, que es 2. Por lo tanto, son
+      paralelas.
+    </h3>
+  </h3>
+</div>
+<div class="col-lg-12" id="TeoremasRectasPerpendiculares">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Teorema de rectas perpendiculares</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El teorema de rectas perpendiculares establece que dos rectas son
+    perpendiculares si y solo si el producto de sus pendientes es igual a -1. En
+    otras palabras, si dos rectas tienen pendientes m1 y m2, respectivamente, y
+    si se cumple que:
+    <br />
+    <br />
+    m1 x m2 = -1
+    <br />
+    <br />
+    Entonces, esas dos rectas son perpendiculares.
+    <br />
+    <br />
+    Para entender esto mejor, recordemos que la pendiente de una recta se define
+    como el cociente entre la variación en el eje y (Δy) y la variación en el
+    eje x (Δx) entre dos puntos cualesquiera sobre la recta. Es decir, que la
+    pendiente se puede calcular como:
+    <br />
+    <br />
+    m = Δy / Δx
+    <br />
+    <br />
+    Cuando dos rectas son perpendiculares, sus pendientes son negativas
+    recíprocas una de la otra, es decir:
+    <br />
+    <br />
+    m1 x m2 = -1
+    <br />
+    <br />
+    Esto significa que si la pendiente de una recta es, por ejemplo, 2, la
+    pendiente de la otra recta debe ser -1/2.
+    <br />
+    <br />
+    De esta manera, la pendiente de una recta siempre será el negativo recíproco
+    de la otra, lo que indica que forman un ángulo recto entre sí.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'Ima/rectasPerpendiculares.png' %}"
+    />
+  </center>
+  <h2 id="video">Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/qabks_x5BFk"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

@@ -1,0 +1,277 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#SumaDiferencia" class="btn btn-danger btn-lg"
+  >Teorema de la suma o la diferencia</a
+>
+<a href="#Producto" class="btn btn-danger btn-lg">Teorema del producto</a>
+<a href="#Cociente" class="btn btn-danger btn-lg">Teorema del cociente</a>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12">
+  <h1>Teoremas sobre Derivación</h1>
+  <br />
+  <h1 id="SumaDiferencia">Teorema de la suma o la diferencia</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La regla de las derivadas de una suma o resta de funciones nos dice que
+    cuando y está formada de más de una función, podemos encontrar su derivada
+    al diferenciar a cada función una por una. La regla de la suma y de la resta
+    de funciones en derivadas nos permite encontrar la derivada de funciones
+    como la siguiente:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/sumadiferencia1.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>Entonces, su derivada es igual a:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/sumadiferencia2.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h2>Pasos:</h2>
+  <h3>Supongamos que tenemos que derivar:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/sumadiferencia3.JPG' %}"
+      width="230"
+    />
+  </center>
+  <h3>
+    • Paso 1: Empezamos convirtiendo expresiones radicales o racionales a su
+    forma exponencial. (En este caso, no tenemos radicales ni variables escritas
+    en forma racional).
+  </h3>
+  <h3>
+    • Paso 2: Usamos la fórmula de la regla de la potencia, para derivar ambos
+    términos de la función:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/sumadiferencia4.JPG' %}"
+      width="430"
+    />
+  </center>
+  <h3>• Paso 3: Simplificamos si es que es posible. En este caso, no.</h3>
+  <h3>Si fuera el caso de una diferencia, el procedimiento sería el mismo:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/sumadiferencia5.JPG' %}"
+      width="430"
+    />
+  </center>
+  <h2>Ejemplos:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/sumadiferencia6.JPG' %}"
+      width="460"
+    />
+  </center>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="Producto">Teorema del producto</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Es una regla que establece que la derivada de un producto de dos funciones
+    es igual a la primera función f(x) en su forma original multiplicada por la
+    derivada de la segunda función g(x) y luego sumada a la forma original de la
+    segunda función g(x) multiplicada por la derivada de la primera función
+    f(x).
+    <br />
+    <br />
+    Esto nos da la fórmula de la regla del producto como:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto1.JPG' %}"
+      width="520"
+    />
+  </center>
+  <h3>o en una forma más corta, se puede ilustrar como:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto2.JPG' %}"
+      width="300"
+    />
+  </center>
+  <h3>
+    Usamos esta fórmula para derivar funciones que tienen la siguiente forma
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto3.JPG' %}"
+      width="500"
+    />
+  </center>
+  <h3>
+    donde f(x) o u es el primer multiplicando mientras que g(x) o v es el
+    segundo multiplicando del problema dado.
+  </h3>
+  <h2>Pasos y ejemplo:</h2>
+  <h3>Teniendo la función:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto4.JPG' %}"
+      width="230"
+    />
+  </center>
+  <h3>Derivando de ambos lados:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto5.JPG' %}"
+      width="430"
+    />
+  </center>
+  <h3>
+    Derivamos x^3 en el primer término y x+1 en el segundo aplicando las
+    propiedades de derivadas de potencias en el primer caso y la derivada de una
+    suma en el segundo:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto6.JPG' %}"
+      width="430"
+    />
+  </center>
+  <h3>
+    Derivamos «x» y «1» y resolvemos la resta del exponente del primer término:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto7.JPG' %}"
+      width="430"
+    />
+  </center>
+  <h3>
+    Efectuamos las operaciones y aplicamos propiedad distributiva donde
+    corresponda:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto8.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>
+    Simplificamos un poco aplicando propiedades de potencias y agrupando
+    términos semejantes:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/producto9.JPG' %}"
+      width="580"
+    />
+  </center>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="Cociente">Teorema del cociente</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La derivada de un cociente (o una división) de dos funciones es igual al
+    cociente de la derivada de la función del numerador por la función del
+    denominador menos la función del numerador por la derivada de la función del
+    denominador dividido por la función del denominador elevada al cuadrado.
+    Tiene la siguiente fórmula:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/cociente1.JPG' %}"
+      width="700"
+    />
+  </center>
+  <h2>Pasos y ejemplo:</h2>
+  <h3>En este ejemplo derivaremos un cociente de dos polinomios:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/cociente2.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    Para resolver la derivada, debemos aplicar la regla de la derivada de un
+    cociente de dos funciones distintas, que es la siguiente:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/cociente3.JPG' %}"
+      width="700"
+    />
+  </center>
+  <h3>
+    Ahora hallamos la derivada del polinomio del numerador y del polinomio del
+    denominador:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/cociente4.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>Así que la derivada de la división de polinomios es:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/cociente5.JPG' %}"
+      width="700"
+    />
+  </center>
+  <h3>
+    Y, por último, hacemos las operaciones y simplificamos al máximo la
+    fracción:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/cociente6.JPG' %}"
+      width="650"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/bQciOQ3Oikc"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

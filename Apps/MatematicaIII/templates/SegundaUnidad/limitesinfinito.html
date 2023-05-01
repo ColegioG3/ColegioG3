@@ -1,0 +1,121 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Matrices" class="btn btn-danger btn-lg">Límites al Infinito</a>
+<a href="#Pasos" class="btn btn-danger btn-lg">Pasos del método general</a>
+<a href="#Reglas" class="btn btn-danger btn-lg"
+  >Reglas generales de los límites al infinito</a
+>
+<a href="#Ejemplo" class="btn btn-danger btn-lg">Ejemplo</a>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="Matrices">
+  <h1>Límites al Infinito</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El límite de una función f(x) cuando x tiende a infinito es el valor al que
+    se aproxima la función a medida que la coordenada x crece indefinidamente.
+    Los 4 posibles comportamientos de la función cuando el valor de x crece
+    indefinidamente son los ilustrados en la figura:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito1.JPG' %}"
+      width="555"
+      height="455"
+    />
+  </center>
+  <h2 id="Pasos">Pasos del método general:</h2>
+  <h3>
+    1. Sustituimos x, en f(x), por ∞ (en funciones polinómicas, debemos
+    sustituir la x por el infinito solamente en el término de mayor grado de la
+    función).
+    <br />
+    <br />
+    2. Operamos con ∞
+    <br />
+    <br />
+    3. Si obtenemos un valor real concreto, ∞ o -∞, ya hemos terminado. Ese es
+    el valor del límite buscado.
+    <br />
+    <br />
+    4. Si obtenemos una expresión indeterminada, debemos resolverla
+  </h3>
+  <h2 id="Reglas">Reglas generales de los límites al infinito:</h2>
+  <h3>
+    • Un número negativo elevado a un exponente par da positivo. Por tanto,
+    menos infinito elevado a un exponente par da más infinito:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito2.JPG' %}"
+      width="175"
+    />
+  </center>
+  <h3>
+    • Un número negativo elevado a un exponente impar da negativo. Por tanto,
+    menos infinito elevado a un exponente impar es menos infinito:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito3.JPG' %}"
+      width="175"
+    />
+  </center>
+  <h3>
+    • La multiplicación de un número negativo cambia el signo del infinito:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito4.JPG' %}"
+      width="200"
+    />
+  </center>
+  <h3>• Cualquier número dividido entre +-∞ da como resultado 0:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito5.JPG' %}"
+      width="110"
+    />
+  </center>
+  <h2 id="Ejemplo">Ejemplo:</h2>
+  <h3>
+    En el siguiente cálculo de un límite al infinito donde únicamente
+    sustituimos el infinito en el monomio de mayor grado:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito6.JPG' %}"
+      width="500"
+    />
+  </center>
+  <h3>
+    Como puedes ver en el ejemplo, +∞ elevado al cuadrado da +∞, ya que un
+    número muy grande (+∞) elevado a la 2 seguirá dando como resultado un número
+    muy grande (+∞).
+    <br />
+    <br />
+    Y sucede lo mismo con la multiplicación: si multiplicas un número muy grande
+    (+∞) seguirá dando como resultado un número muy grande (+∞). Por ejemplo:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limiteinfinito7.JPG' %}"
+      width="200"
+    />
+  </center>
+</div>
+<div class="col-lg-12"  id="video">
+<h2>Video:</h2>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fHWpGPnequE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+</div>
+{% endblock %}
