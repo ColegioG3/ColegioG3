@@ -1,0 +1,100 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#difcuadrado" class="btn btn-danger btn-lg">Cociente de la diferencia de los cuadrados de dos cantidades</a>
+<a href="#difcubos" class="btn btn-danger btn-lg">Cociente de la suma diferencia de los cubos de dos cantidades</a>
+<a href="#teorema" class="btn btn-danger btn-lg">Teorema del residuo</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+</center>
+<div class="col-lg-12" id="difcuadrado">
+  <h1>Cociente de la diferencia de los cuadrados de dos cantidades</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El cuadrado de la suma de dos cantidades es igual al cuadrado de la primera cantidad, más dos veces la primera cantidad por la segunda, más el cuadrado de la segunda cantidad.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/cuadd.PNG' %}"
+    />
+  </center>
+  <h3>
+    El cuadrado de la resta de dos cantidades es igual al cuadrado de la primera cantidad, menos dos veces el primer término por el segundo término, más el cuadrado de la segunda cantidad.  </h3>
+    <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU1/rest.PNG' %}"
+      />
+    </center>
+  </div>
+  
+ <div class="col-lg-12" id="difcubos">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Cociente de la suma diferencia de los cubos de dos cantidades</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El enunciado nos habla de un cociente, es decir, de una división 
+    entre la suma (+) y la diferencia (-) de dos cantidades cualesquiera. Por tanto, esto se define de la siguiente manera.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/difcu.PNG' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/difcuej.PNG' %}"
+    />
+  </center>
+
+</div>
+<div class="col-lg-12" id="teorema">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Teorema del residuo</h1>
+  <h2>Definición:</h2>
+  <h3>
+    En el teorema del residuo se establece que cuando un polinomio de x, f(x) se divide entre 
+    (x – a), en donde cualquier número a equivaler a cualquier número real o complejo, entones el residuo es f(a).
+  </h3>
+  <h3>
+    Esto quiere decir que para poder encontrar el
+     residuo cuando el polinomio se divide entre un binomio el valor de x es igual al valor de a, o f(x) = f(a).
+  </h3>
+  <h3>
+    Así, se tiene que calcular el valor de x, el cual será igual que el valor de a.
+  </h3>
+
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/teoremaresiduo.png' %}"
+    />
+  </center>
+  
+   
+</div>
+<a href="#video" class="btn btn-danger btn-lg"></a>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G-ym95yl3Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>  
+</center  
+  
+{% endblock %}

@@ -17,10 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.matematicaI import views
-from .views import PrimeraUnidadView,PUFraccionesView
+from .views import PrimeraUnidadView,PUAlgebraView,PUmonyponView,multialgebraView,divisionalgebraView,productonotableView,cocientenotableView,factorcomunView,factor2comunView
 
 app_name = 'matematicaI'
 urlpatterns = [
      path('MatematicaI', PrimeraUnidadView.as_view(), name='matematicaIapp'),
-     path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
+     path('Algebra/', PUAlgebraView.as_view(), name='algebraapp'),
+     path('MonomioYPolinomio/', PUmonyponView.as_view(), name='monomioypolinomioapp'),
+     path('MultiplicacionAlgebraica/', multialgebraView.as_view(), name='multialgebraapp'),
+     path('DivisionAlgebraica/', divisionalgebraView.as_view(), name='divisionapp'),
+     path('ProductosNotables/', productonotableView.as_view(), name='productoapp'),
+     path('CocientesNotables/', cocientenotableView.as_view(), name='cocienteapp'),
+     path('Factorizacion/', factorcomunView.as_view(), name='factorapp'),
+     path('Factorizacion2/', factor2comunView.as_view(), name='factor2app'),
+
 ]

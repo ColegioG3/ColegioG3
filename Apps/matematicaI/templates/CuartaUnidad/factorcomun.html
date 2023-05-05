@@ -1,0 +1,222 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#1" class="btn btn-danger btn-lg">Caso I: Factor común</a>
+<a href="#2" class="btn btn-danger btn-lg">Caso II: Agrupación de términos</a>
+<a href="#3" class="btn btn-danger btn-lg">Caso III: Trinomio cuadrado perfecto</a>
+<a href="#4" class="btn btn-danger btn-lg">Caso IV: Diferencia de cuadrados perfectos</a>
+<a href="#5" class="btn btn-danger btn-lg">Caso V: Trinomio cuadrado perfecto por adición u sustracción</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+</center>
+<div class="col-lg-12" id="1">
+  <h1>Caso I: Factor común</h1>
+  <h2>Características</h2>
+  <h3>
+    - Se aplica en binomios, trinomios y
+    polinomios de cuatro términos o más.
+    No aplica para monomios.
+    - Es el primer caso que se debe
+    inspeccionar cuando se trata de
+    factorizar un polinomio.
+    - El factor común es aquello que se
+    encuentra multiplicando en cada uno de
+    los términos. Puede ser un número, una
+    letra, varias letras, un signo negativo,
+    una expresión algebraica (encerrada en
+    paréntesis) o combinaciones de todo lo
+    anterior
+  </h3>
+  <h2>Como realizar la factorización:</h2>
+  <h3>
+    - De los coeficientes de los términos,
+se extrae el MCD (Máximo Común
+Divisor) de ellos.
+- De las letras o expresiones en
+paréntesis repetidas, se extrae la de
+menor exponente.
+- Se escribe el factor común, seguido
+de un paréntesis donde se anota el
+polinomio que queda después de que
+el factor común ha abandonado cada
+término.
+  </h3>
+  <h2>Ejemplos:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/1.PNG' %}"
+    />
+  </center>
+  
+  </div>
+  
+    <div class="col-lg-12" id="2">
+      <h1>Caso II: Agrupación de términos</h1>
+      <h2>Características</h2>
+      <h3>
+        - Se aplica en polinomios que tienen 4,
+        6, 8 o más términos (siempre que el
+        número sea par) y donde ya se ha
+        verificado que no hay factor común
+        (caso 1).
+      </h3>
+      <h2>Como realizar la factorización:</h2>
+      <h3>
+        - Se forman grupos de igual número
+        de términos, buscando que exista
+        alguna familiaridad entre los términos
+        agrupados (es decir, que tengan
+        rasgos comunes).
+        - La agrupación se hace colocando
+        paréntesis.
+        - ¡CUIDADO! Deben cambiarse los
+        signos de los términos encerrados en
+        el paréntesis si éste queda precedido
+        por signo negativo.
+        - Se extrae factor común de cada
+        grupo formado (es decir, aplicamos el
+        caso 1 en cada expresión encerrada
+        en paréntesis).
+        - Por último, se extrae factor común
+        de toda la expresión (es decir,
+        nuevamente se aplica el caso 1; en
+        esta ocasión, el factor común es una
+        expresión encerrada en paréntesis).
+      </h3>
+      <h2>Ejemplos:</h2>
+      <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/2.PNG' %}"
+        />
+      </center>
+      
+      </div>
+      <div class="col-lg-12" id="3">
+        <h1>Caso III: Trinomio cuadrado perfecto</h1>
+        <h2>Características</h2>
+        <h3>
+          - El trinomio debe estar organizado en
+forma ascendente o descendente
+(cualquiera de las dos).
+- Tanto el primero como el tercer
+término deben ser positivos. Asimismo,
+esos dos términos deben ser cuadrados
+perfectos (es decir, deben tener raíz
+cuadrada exacta). En otras palabras, el
+primero y el tercer término deben
+reunir las características de los términos
+que conforman una Diferencia de
+Cuadrados Perfectos (Caso 3).
+
+        </h3>
+        <h2>Como realizar la factorización:</h2>
+        <h3>
+          - Primero debemos verificar que se
+          trata de un Trinomio Cuadrado
+          Perfecto (TCP). Para ello extraemos la
+          raíz cuadrada tanto del primer como
+          del tercer término.
+          - Realizamos el doble producto de las
+          raíces obtenidas y comparamos con el
+          segundo término (sin fijarnos en el
+          signo de éste). Si efectivamente nos
+          da, entonces tenemos un TCP.
+          - La factorización de un TCP es un
+          binomio al cuadrado, que se
+          construye anotando las raíces
+          cuadradas del primer y tercer
+          término, y entre ellas el signo del
+          segundo término. 
+          
+        </h3>
+        <h2>Ejemplos:</h2>
+        <center>
+          <img
+            class="img-fluid rounded-circle"
+            src="{% static 'images/imgU1/3.PNG' %}"
+          />
+        </center>
+        
+        </div>    
+        
+        <div class="col-lg-12" id="4">
+          <h1>Caso IV: Diferencia de cuadrados perfectos</h1>
+          <h2>Características</h2>
+          <h3>
+            -	Se aplica solamente en binomios, donde el primer término es positivo y el segundo término es negativo.
+            -	Se reconoce porque los coeficientes de los términos son números cuadrados perfectos (es decir números que tienen raíz cuadrada exacta, como 1, 4, 9, 16,
+            25, 36, 49, 64, 81, 100, 121, 144, 169,
+            196, 225, 256, 289, 324, 361, 400, etc.) y
+            los exponentes de las letras son cantidades pares (2, 4, 6, 8n, 10m, 16b, etc.)
+            
+          </h3>
+          <h2>Como realizar la factorización:</h2>
+          <h3>
+            -	Se extrae la raíz cuadrada de cada término: Al coeficiente se le extrae la raíz cuadrada normalmente (por
+ 
+            ejemplo: √81 = 9) y a las letras, su exponente se divide entre 2 (por ejemplo: √𝑥6 = 𝑥3; √𝑚8 = 𝑚4;
+            √𝑝2 = 𝑝). Esto último se fundamenta en la propiedad de la radicación:
+            𝑛√𝑎𝑚 = 𝑎𝑚⁄𝑛.
+            -	Se abren dos grupos de paréntesis (conectados entre sí por multiplicación).
+            -	Las raíces cuadradas que se obtuvieron de cada término se anotan dentro de cada paréntesis: en el primero van sumando y en el segundo van restando (es decir, se obtiene el producto notable llamado SUMA POR
+            DIFERENCIA).
+            
+          </h3>
+          <h2>Ejemplos:</h2>
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1/4.PNG' %}"
+            />
+          </center>
+          
+          </div>
+          <div class="col-lg-12" id="5">
+            <h1>Caso V: Trinomio cuadrado perfecto por adición u sustracción</h1>
+            <h2>Características</h2>
+            <h3>
+              Lo primero es saber la regla general de un cuadrado perfecto a²±2ab+b²=(a±b)².
+
+El primer termino y el tercero deben ser cuadrados perfectos es decir el exponente debe ser par es decir el mismo exponente y el doble producto de la raiz cuadrada del primer y tercer termino debe coincidir coincidir con el segundo termino.
+
+Al momento de factorizar un trinomio cuadrado perfecto se escribe así (a±b)² dentro de el se aloja la raíz del primer termino y el tercero separados por el signo correspondiente al segundo termino
+            </h3>
+            <h2>Como realizar la factorización:</h2>
+            <h3>
+              1. Se ordena el termino
+              2. La forma de un trinomio cuadrado perfecto es a²±2ab±b²
+              3. Si tu resultado no tiene la forma del paso anterior no es un trinomio perfecto
+              4. Sumar y restar la cantidad necesaria para convertirlo en un trinomio cuadrado perfecto.
+              5. Factorizamos aplicando el Caso 3 extraemos raíces al primer y tercer termino expresando en esta forma (a+b)².
+              6. Recuerda que para convertir la expresión en un trinomio cuadrado perfecto sumamos y restamos por lo tanto aplicamos el caso 4 diferencia de cuadrados.
+              7. Se ordena el resultado
+              
+            </h3>
+            <h2>Ejemplos:</h2>
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU1/5.PNG' %}"
+              />
+            </center>
+            
+            </div> 
+     
+          </div>
+          <a href="#video" class="btn btn-danger btn-lg"></a>
+          <div class="col-lg-12" id="video">
+            <h2>Video:</h2>
+            <center>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/izT0cdi9Vrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </center>          
+          </div>  
+          
+              
+          </div>
+  
+{% endblock %}

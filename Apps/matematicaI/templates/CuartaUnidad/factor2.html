@@ -1,0 +1,192 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#6" class="btn btn-danger btn-lg">Caso VI: Trinomio de la forma x2+bx+c</a>
+<a href="#7" class="btn btn-danger btn-lg">Caso VII: Trinomio de la forma ax2+bx+c</a>
+<a href="#8" class="btn btn-danger btn-lg">Caso VIII: Cubo perfecto de binomios</a>
+<a href="#9" class="btn btn-danger btn-lg">Caso IX: Suma o diferencia de cubos perfectos</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+</center>
+<div class="col-lg-12" id="6">
+  <h1>Caso VI: Trinomio de la forma x2+bx+c</h1>
+  <h2>Características</h2>
+  <h3>
+    - El trinomio debe estar
+organizado en forma
+descendente.
+- El coeficiente del
+primer término debe
+ser uno (1).
+- El grado (exponente)
+del primer término
+debe ser el doble del
+grado (exponente) del
+segundo término.
+
+  </h3>
+  <h2>Como realizar la factorización:</h2>
+  <h3>
+    - Se abren dos grupos de paréntesis.
+    - Se le extrae la raíz cuadrada al primer término y se anota
+    al comienzo de cada paréntesis.
+    - Se definen los signos: el signo del primer paréntesis se
+    obtiene al multiplicar los signos del primer y segundo
+    término; el signo del segundo paréntesis se obtiene al
+    multiplicar los signos del segundo y tercer término.
+    - Buscamos dos cantidades que multiplicadas den como
+    resultado el término independiente (es decir c), y que
+    sumadas den como resultado el coeficiente del segundo
+    término (es decir b).
+    - Se anotan las cantidades que satisfacen las condiciones
+    anteriores en los espacios en blanco de cada paréntesis,
+    en sus lugares respectivos.
+    
+  </h3>
+  <h2>Ejemplos:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/6.PNG' %}"
+    />
+  </center>
+  
+  </div>
+  
+    <div class="col-lg-12" id="7">
+      <h1>Caso VII: Trinomio de la forma ax2+bx+c</h1>
+      <h2>Características</h2>
+      <h3>
+        - El trinomio debe estar
+        organizado en forma
+        descendente.
+        - El coeficiente
+        principal (es decir, del
+        primer término) debe
+        ser positivo y diferente
+        de uno (a≠1).
+        - El grado (exponente)
+        del primer término
+        debe ser el doble del
+        grado (exponente) del
+        segundo término.
+        
+      </h3>
+      <h2>Como realizar la factorización:</h2>
+      <h3>
+        - Debemos multiplicar y dividir el trinomio por el
+coeficiente principal, es decir, a.
+- En el numerador efectuamos la propiedad distributiva
+teniendo presente que en el segundo término el producto
+no se realiza sino que se deja expresado: la cantidad que
+entra y la variable quedan agrupadas dentro de un
+paréntesis y el coeficiente original queda por fuera.
+- Se expresa el primer término como el cuadrado de lo
+que quedó en paréntesis en el segundo término.
+- Aplicamos caso 5 (Trinomio de la forma x2n+bxn
++c) en el
+numerador.
+- Aplicamos caso 1 (Factor común) en los paréntesis
+formados.
+- Finalmente, simplificamos la fracción (para eliminar el
+denominador).
+      </h3>
+      <h2>Ejemplos:</h2>
+      <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/7.PNG' %}"
+        />
+      </center>
+      
+      </div>
+      <div class="col-lg-12" id="8">
+        <h1>Caso VIII: Cubo perfecto de binomios</h1>
+        <h2>Características</h2>
+        <h3>
+          1. Tener cuatro términos.
+2. Que el primero y el último término sean cubos perfectos.
+3. Que el segundo término sea más o menos el triple del cuadrado de la raíz cúbica
+del primer término multiplicado por la raíz cúbica del último término
+4. Que el tercer término sea más el triple de la raíz cúbica del primer término
+multiplicado por el cuadrado de la raíz cúbica del último término
+        </h3>
+        <h2>Como realizar la factorización:</h2>
+        <center>
+          <img
+            class="img-fluid rounded-circle"
+            src="{% static 'images/imgU1/8.PNG' %}"
+          />
+        </center>
+        
+        </div>    
+        
+        <div class="col-lg-12" id="9">
+          <h1>Caso IX: Suma o diferencia de cubos perfectos</h1>
+          <h2>Características</h2>
+          <h3>
+            - Se aplica solamente
+            en binomios, donde el
+            primer término es
+            positivo (el segundo
+            término puede ser
+            positivo o negativo).
+            - Se reconoce porque
+            los coeficientes de los
+            términos son números
+            cubos perfectos (es
+            decir números que
+            tienen raíz cúbica
+            exacta, como 1, 8, 27,
+            64, 125, 216, 343, 512,
+            729, 1000, etc.) y los
+            exponentes de las
+            letras son múltiplos de
+            tres (3, 6, 9, 12, 15p,
+            18c, etc.).
+            
+          </h3>
+          <h2>Como realizar la factorización:</h2>
+          <h3>
+            -	Se extrae la raíz cúbica de cada término: Al coeficiente se le extrae la raíz cúbica normalmente (por ejemplo:
+ 
+            3√8 = 2) y a las letras, su exponente se divide entre 3 (por
+            3	3	3
+            ejemplo: √𝑥6 = 𝑥2; √𝑦9 = 𝑦3; √𝑤3 = 𝑤). Esto se
+            justifica por la propiedad de la radicación:  𝑛√𝑎𝑚 = 𝑎𝑚⁄𝑛.
+            -	Se abren dos grupos de paréntesis (conectados entre sí por multiplicación).
+            -	En el primer paréntesis (llamado FACTOR CORTO) se construye un binomio con las raíces cúbicas que ya se obtuvieron. En el segundo paréntesis (llamado FACTOR LARGO) se construye un trinomio con los términos que se anotaron en el factor corto, en el siguiente orden: el primero al cuadrado, luego el primero por el segundo y, por último el segundo al cuadrado.
+            -	Por último definimos los signos, de la siguiente manera: Si se trata de una suma de cubos, en el factor corto va signo positivo y en el factor largo van signos intercalados iniciando con positivo. Si tenemos una diferencia de cubos, en el factor corto va signo negativo y en el factor largo van signos positivos.
+            -	Los siguientes son los modelos que resumen lo anterior: Suma de Cubos:
+            𝑎3 + 𝑏3 = (𝑎 + 𝑏)(𝑎2 − 𝑎𝑏 + 𝑏2)
+            Diferencia de Cubos:
+            𝑎3 − 𝑏3 = (𝑎 − 𝑏)(𝑎2 + 𝑎𝑏 + 𝑏2) IMPORTANTE: En algunas ocasiones el factor corto puede volverse a factorizar (debe revisarse). El factor largo no es necesario inspeccionarlo ya que no permite ser factorizado.
+            
+            
+          </h3>
+          <h2>Ejemplos:</h2>
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1/9.PNG' %}"
+            />
+          </center>
+          
+          </div>
+        </div>
+        <a href="#video" class="btn btn-danger btn-lg"></a>
+        <div class="col-lg-12" id="video">
+          <h2>Video:</h2>
+          <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i0lKQNiLVsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        </div>  
+        
+            
+        </div>
+          
+
+  
+{% endblock %}
