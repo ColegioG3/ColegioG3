@@ -1,0 +1,436 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#RazonNumerica" class="btn btn-danger btn-lg">Razón Numérica</a>
+<a href="#RazonesEquivalentes" class="btn btn-danger btn-lg">Razones Equivalentes</a>
+<a href="#Proporcion" class="btn btn-danger btn-lg">Proporción</a>
+<a href="#ProporcionDirecta" class="btn btn-danger btn-lg">Proporción Directa</a>
+<a href="#ProporcionInversa" class="btn btn-danger btn-lg">Proporción Inversa</a>
+<a href="#Reglade3Directa" class="btn btn-danger btn-lg">Regla de 3 Directa</a>
+<a href="#Reglade3Inversa" class="btn btn-danger btn-lg">Regla de 3 Inversa</a>
+<a href="#Reglade3Compuesta" class="btn btn-danger btn-lg">Regla de 3 Compuesta</a>
+<a href="#ReglaConjunta" class="btn btn-danger btn-lg">Regla Conjunta</a>
+<a href="#RepartoDirecto" class="btn btn-danger btn-lg">Reparto Proporcional Directo</a>
+<a href="#RepartoInverso" class="btn btn-danger btn-lg">Reparto Proporcional Inverso</a>
+<a href="#RepartoCompuesto" class="btn btn-danger btn-lg">Reparto Proporcional Compuesto</a>
+
+<div class="col-lg-12" id="RazonNumerica">
+  <h1>Razón Numérica</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La razón es una comparación entre dos magnitudes que se realiza mediante un cociente. 
+    Suele expresarse como una fracción o colocando dos puntos (:) entre las dos magnitudes.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro1.JPG' %}"
+    />
+  </center>
+  <h3 style="margin: 40px;">La razón de 24 entre 6 es igual a 4. Esto quiere decir que, si dividimos 24 en 6,
+     obtendremos 4 como razón matemática.</h3><br><br>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/pGWF7tbHx9k" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+     
+</div>
+
+
+<div class="col-lg-12" id="RazonesEquivalentes">
+  <br />
+  <br />
+  <br />
+  <h1>Razones Equivalentes</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Las razones equivalentes son, de hecho, razones que parecen diferentes, no se expresan 
+    de la misma manera pero que, simplificándolas o amplificándolas, se llega exactamente 
+    a la misma relación.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro2.JPG' %}"
+    />
+  </center>
+  <h3 style="margin: 40px;">podremos simplificar la fracción mayor y llegar a</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro3.JPG' %}"
+    />
+  </center>
+  <h3 style="margin: 40px;">y aún más, podremos simplificar la fracción más pequeña, entonces 
+    podemos decir que:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro4.JPG' %}"
+    />
+  </center>
+</div>
+
+
+
+<div class="col-lg-12" id="Proporcion">
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Proporción</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La proporción implica una igualdad que existe entre dos razones. Por lo general, las proporciones 
+    se escriben como fracciones: de este modo, al realizar una multiplicación cruzada, se puede establecer 
+    una ecuación y conocer las distintas proporciones.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro5.JPG' %}"
+    />
+  </center>
+  <h2>Propiedades de las Proporciones</h2>
+  <h3>En una proporción del producto de los medios es igual al producto de los extremos.</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro6.JPG' %}"
+    />
+  </center>
+  <h3>En una proporción o en una serie de razones iguales, la suma de los antecedentes dividida 
+    entre la suma de los consecuentes es igual a una cualquiera de las razones.</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro7.JPG' %}"
+        />
+      </center>
+    <h3>Si en una proporción cambian entre sí los medios o extremos la proporción no varía.</h3>
+    <center>
+         <img
+            class="img-fluid rounded-circle"
+            src="{% static 'images/imgU1/pro8.JPG' %}"
+        />
+    </center>
+</div>
+
+
+<div class="col-lg-12" id="ProporcionDirecta">
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Proporción Directa</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Dos cantidades a y b tienen una proporcionalidad directa si es que incrementan o decrecen juntas, 
+    es decir, la razón de sus valores correspondientes permanece constante.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <h3 style="margin: 40px;"> Si compramos naranjas, cuanto mayor sea la cantidad que compremos, mayor es el dinero que pagamos.</h3>
+  <h3>
+    Pero esta relación entre ambas magnitudes también es muy especial, si compramos el doble, pagamos el doble, 
+    si compramos el triple, pagamos el triple. Cuando se cumple esta relación, diremos que las dos magnitudes 
+    son directamente proporcionales.  
+  </h3>
+  <h3 style="margin: 40px;">El otro día compre 2 kilos de naranjas en la frutería de la esquina. Me costaron 
+    Q 5.00 ¿Cuánto me constarán según los kilos que compre? Escribimos los resultados en la tabla siguiente:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/pro9.JPG' %}"
+    />
+  </center>
+  <h3 style="margin: 40px;">Los cocientes entre los kilos y el precio a pagar se mantienen constante y es 2/5. </h3>
+</div>
+
+
+<div class="col-lg-12" id="ProporcionInversa">
+    <br />
+    <br />
+    <br />
+    <h1>Proporción Inversa</h1>
+    <h2>Definición:</h2>
+    <h3>
+        Dos magnitudes son inversamente proporcionales si al aumentar una, disminuye la otra; y 
+        si al disminuir una, aumenta la otra.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3 style="margin: 40px;"> Si viajamos en coche, cuanto mayor sea su velocidad, menor es el tiempo que tardamos en hacer un recorrido determinado.</h3>
+    <h3>
+        Pero esta relación entre ambas magnitudes también es muy especial, si la velocidad del vehículo 
+        aumenta el doble, el tiempo que tarda disminuye a la mitad, si aumenta el triple, el tiempo disminuye 
+        a la tercera parte. Cuando se cumple esta relación, diremos que las dos magnitudes son inversamente 
+        proporcionales.  
+    </h3>   
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro10.JPG' %}"
+        />
+      </center> 
+</div>
+
+
+<div class="col-lg-12" id="Reglade3Directa">
+    <br />
+    <br />
+    <br />
+    <h1>Regla de 3 Directa</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La regla de tres simple directa es una operación que podemos utilizar cuando tenemos magnitudes 
+        directamente proporcionales. Los problemas nos ofrecen 3 datos o magnitudes que llamaremos «a», 
+        «b» y «c» y la cuarta que será nuestra incógnita. Posteriormente, procedemos a utilizar la siguiente 
+        fórmula:
+    </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro11.JPG' %}"
+        />
+    </center> 
+    <h2>Ejemplo:</h2>
+    <h3 style="margin: 40px;"> Si en una fábrica una máquina coloca 1,500 tornillos en 5 horas. ¿Cuántos tornillos colocará la misma máquina en 3 horas?    </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro12.JPG' %}"
+        />
+      </center> 
+</div>
+
+
+<div class="col-lg-12" id="Reglade3Inversa">
+    <br />
+    <br />
+    <br />
+    <h1>Regla de 3 Inversa</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La regla de tres simple inversa es una operación que podemos utilizar cuando tenemos magnitudes 
+        inversamente proporcionales. Al igual que en la regla directa, el problema nos ofrece 4 datos, 
+        uno de ellos será nuestra incógnita. Importante, aquí tendremos que aplicar una fórmula distinta:
+    </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro13.JPG' %}"
+        />
+    </center> 
+    <h2>Ejemplo:</h2>
+    <h3 style="margin: 40px;">Si 3 pintores tardan 10 días en pintar nuestra casa. ¿Cuántos días tardarán 6 pintores en realizar el mismo trabajo?  </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro14.JPG' %}"
+        />
+      </center> 
+</div>
+
+
+<div class="col-lg-12" id="Reglade3Compuesta">
+    <br />
+    <br />
+    <br />
+    <h1>Regla de 3 Compuesta</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La regla de tres compuesta es una operación que podemos utilizar cuando tenemos magnitudes directa 
+        o inversamente proporcionales. En realidad, son varias reglas simples aplicadas sucesivamente. 
+        Existen tres posibles casos que veremos a continuación: 
+    </h3>
+    <h4><br>Regla de tres compuesta directa</h4>
+    <h3 style="margin: 40px;">En este caso las dos proporcionalidades son directas.</h3> 
+    <h2>Ejemplo:</h2>
+    <h3 style="margin: 40px;">Si 5 grifos iguales durante 5 horas consumen agua por un valor de 20 euros. 
+        ¿Cuánto nos costará 10 grifos iguales por 15 horas?</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro15.JPG' %}"
+        />
+      </center> 
+      <h4><br>Regla de tres compuesta inversa</h4>
+      <h3 style="margin: 40px;">En este caso las dos proporcionalidades son inversas.</h3> 
+      <h2>Ejemplo:</h2>
+      <h3 style="margin: 40px;">Si para imprimir unos folletos 3 impresoras trabajan 2 horas al día durante 10 días. 
+        ¿Cuántos días tardarán en hacerlo 2 impresoras 5 horas al día?</h3>
+      <center>
+          <img
+            class="img-fluid rounded-circle"
+            src="{% static 'images/imgU1/pro16.JPG' %}"
+          />
+        </center> 
+
+        <h4><br>Regla de tres compuesta mixta</h4>
+        <h3 style="margin: 40px;">Si 3 obreros colocan 100 metros cuadrados de suelo en 2 días. ¿Cuántos días tardarán 
+            4 obreros en colocar 1.000 metros cuadrados de suelo?</h3> 
+        <h2>Ejemplo:</h2>
+        <h3 style="margin: 40px;">Si para imprimir unos folletos 3 impresoras trabajan 2 horas al día durante 10 días. 
+          ¿Cuántos días tardarán en hacerlo 2 impresoras 5 horas al día?</h3>
+        <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1/pro17.JPG' %}"
+            />
+            <br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0qZuiABZtKY" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </center> 
+
+
+</div>
+
+
+<div class="col-lg-12" id="ReglaConjunta">
+    <br />
+    <br />
+    <br />
+    <h1>Regla Conjunta</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La regla conjunta es un procedimiento matemático aritmético que nos permite hallar un valor pedido 
+        cuando los datos vienen relacionados por una serie de igualdades. Estos tipos de problemas se 
+        caracterizan porque con el elemento que se comienza el problema, también se termina.
+        <br>
+        El procedimiento consiste en escribir los datos como una serie de igualdades o equivalencias; 
+        de tal modo, que con el elemento que termina una igualdad comience el siguiente, es decir que 
+        el segundo miembro de cada igualdad sea de la misma especie que el primero. Luego se multiplican 
+        ordenadamente estas igualdades y se halla el valor pedido.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3 style="margin: 40px;">Sabiendo que 6 camisas cuestan lo mismo que 5 pantalones y que 2 pantalones cuestan Q 120. 
+        ¿Cuánto costarán 4 camisas?</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro18.JPG' %}"
+        />
+      </center> 
+     
+      <h3 style="margin: 40px;">Luego multiplicamos cada columna separadas por un signo igual. </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro19.JPG' %}"
+        />
+      </center> 
+      <h3 style="margin: 40px;">Resolvemos la ecuación</h3>
+      <center>
+          <img
+            class="img-fluid rounded-circle"
+            src="{% static 'images/imgU1/pro20.JPG' %}"
+          />
+        </center>
+</div>
+
+
+<div class="col-lg-12" id="RepartoDirecto">
+    <br />
+    <br />
+    <br />
+    <h1>Reparto Proporcional Directo</h1>
+    <h2>Definición:</h2>
+    <h3>
+      Un reparto directamente proporcional consiste en que, dadas unas magnitudes de un mismo tipo y 
+      una magnitud total, calcular la parte correspondiente a cada una de las magnitudes dadas.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3 style="margin: 40px;">Un abuelo reparte Q 450 entre sus tres nietos de 8, 12 y 16 años de edad; 
+      proporcionalmente a sus edades. ¿Cuánto corresponde a cada uno?<br>
+      Llamamos x, y, z a las cantidades que le corresponde a cada uno: 
+      </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro21.JPG' %}"
+        />
+      </center> 
+     
+      <h3 style="margin: 40px;">Por la propiedad de las razones iguales: </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro22.JPG' %}"
+        />
+      </center> 
+      <h3 style="margin: 40px;">Cada nieto recibirá:</h3>
+      <center>
+          <img
+            class="img-fluid rounded-circle"
+            src="{% static 'images/imgU1/pro23.JPG' %}"
+          />
+        </center> 
+</div>
+
+
+<div class="col-lg-12" id="RepartoInverso">
+  <br />
+  <br />
+  <br />
+  <h1>Reparto Proporcional Inverso</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Un reparto inversamente proporcional consiste en que, dadas unas magnitudes de un mismo tipo y 
+    una magnitud total, debemos hacer un reparto directamente proporcional a las inversas de las magnitudes.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <h3 style="margin: 40px;">Se desean repartir Q 420, entre tres niños en partes inversamente proporcionales 
+    a sus edades, que son 3, 5 y 6. ¿Cuánto dinero le corresponde a cada uno?
+    <br>Obtenemos los inversos de las edades: 
+     
+    </h3>
+  <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU1/pro24.JPG' %}"
+      />
+    </center> 
+   
+    <h3 style="margin: 40px;">Obtenemos el común denominador: </h3>
+  <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU1/pro25.JPG' %}"
+      />
+    </center> 
+    <h3 style="margin: 40px;">Realizamos un reparto directamente proporcional a los numeradores: 10, 6 y 5</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro26.JPG' %}"
+        />
+      </center>
+      <h3 style="margin: 40px;">Cada niño recibirá:</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/pro27.JPG' %}"
+        />
+      </center>
+</div>
+
+
+<div class="col-lg-12" id="RepartoCompuesto">
+  <br />
+  <br />
+  <br />
+  <h1>Reparto Proporcional Compuesto</h1>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/efo4Q3Ddgo4" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+      <br />
+      <br />  
+</div>
+{% endblock %}
