@@ -1,0 +1,146 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#PorcentajeAFraccion" class="btn btn-danger btn-lg">Porcentaje a Fracción</a>
+<a href="#DecimalAEntero" class="btn btn-danger btn-lg">Decimal a un Número entero por ciento</a>
+<a href="#ComunPorcentaje" class="btn btn-danger btn-lg">Fraccion común a un porcentaje</a>
+<a href="#tantoMas" class="btn btn-danger btn-lg">Tanto por ciento más</a>
+<a href="#tantoMenos" class="btn btn-danger btn-lg">Tanto por ciento menos</a>
+
+
+
+<div class="col-lg-12" id="">
+    <br />
+    <br />
+    <br />
+    <h1>Tanto Por Ciento</h1>
+    <h2>Definición:</h2>
+    <h3 style="margin: 40px;">
+    Comúnmente se observa la información expresada en “Tanto por ciento”, para lo que se usa el símbolo %, 
+    el que se escribe inmediatamente después del número al que se refiere, sin dejar espacio de separación. 
+    Ello significa Tantos por cada ciento, es decir los elementos que se toman de cada conjunto de 100. 
+    Es importante saber interpretar la información que se muestra en Tantos por ciento y que significa 
+    Tantos de cada 100, es decir, los elementos que se toman da cada conjunto de 100. <br>
+    <br>
+    Por ejemplo, Se dice: “el 50% de 300 es 150” o “150 es el 50% de 300” <br><br>
+    Esto se interpreta así:<br>
+    300 está formado por 3 grupos de 100 <br>
+    50% significa que por cada ciento se toman 50 <br>
+    Por tanto, para hallar el 50% de 300 se toman 3 veces 50, es decir: 3*50=150 
+    (que es lo mismo que 50+50+50=150) <br> 
+    </h3>
+    
+</div>
+
+<div class="col-lg-12" id="PorcentajeAFraccion">
+    <br />
+    <br />
+    <h1>Conversión del Porcentaje a Fracción Común</h1>
+    <br>
+    <h2>Definición:</h2>
+    <h3>
+        Explicamos cómo pasar de porcentajes a fracciones y viceversa y resolvemos algunos ejercicios. 
+        Básicamente, el n% es la fracción n/100.<br>
+        El porcentaje n% es una forma de expresar una proporción. Concretamente, 
+        el n% significa "n de cada 100".<br>
+        Otra forma de expresar una proporción es hacerlo mediante una fracción: en el denominador se 
+        indica el total y en el numerador si indica la cantidad de la proporción. Por tanto, podemos 
+        expresar el porcentaje n% como la fracción n/100: <br>
+        
+    </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/Porcentaje1.JPG' %}"
+        />
+      </center>
+    <h2>Ejemplo:</h2>
+    <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU1/Porcentaje2.JPG' %}"
+      />
+    </center>
+  </div>
+
+  <div class="col-lg-12" id="DecimalAEntero">
+    <br />
+    <br />
+    <h1>Conversión de un Decimal a un Número Entero por Ciento</h1>
+    <br>
+    <h2>Definición:</h2>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/cuadros.JPG' %}"
+        />
+      </center>
+    <h3>
+    En esta caja, 50 de los 100 cuadrados son verdes, así que 50/100 , o 0.5 de la caja es verde. <br>
+    Ahora, porcentaje quiere decir "por 100", así que 50% de la caja es verde <br>
+    Así que 0.5 (un número decimal) = 50% (el "%" te dice que hay un "/100" oculto)<br>
+    Entonces, para convertir decimales en porcentajes, sólo multiplica el decimal por 100, 
+    pero recuerda poner el signo "%" para que sepamos que es por 100.   
+    </h3>
+
+    <h2>Ejemplo:</h2>
+    
+      <h3><center>Convertir 0.65 en porcentaje <br>
+        Mueve el punto decimal dos posiciones: 0.65 -> 6.5 -> 65. <br>
+        La respuesta es 0.65 = 65%<br></center>
+        </h3>
+    
+    <br>
+  </div>
+
+  <div class="col-lg-12" id="ComunPorcentaje">
+    <br />
+    <br />
+    <h1>Conversión de Fracción Común a un Porcentaje</h1>
+    <br>
+   
+    <h2>Ejemplo:</h2>
+    
+      <h3  style="margin: 40px;">Algunas veces, necesitamos convertir fracciones en porcentajes, por ejemplo si dicen que tan sólo 
+        debemos pagar la cuarta parte (1/4) del precio de un producto, o sólo un quinto (1/5) de la población 
+        se ve afectada. <br><br>
+        Para convertir una fracción en porcentaje, debemos: <br>
+        </h3>
+        <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1/Porcentaje3.JPG' %}"
+            />
+          </center>
+    <br>
+  </div>
+
+<div class="col-lg-12" id="tantoMas">
+    <br />
+    <br />
+    <h1>Tanto Por Ciento Más</h1>
+   <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tZvR3X2gBro" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </center>
+    
+</div>
+
+<div class="col-lg-12" id="tantoMenos">
+    <br />
+    <br />
+    <h1>Tanto Por Ciento Menos</h1>
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gamIIrgcBtk" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center>
+    <br>
+    <br>
+</div>
+
+{% endblock %}

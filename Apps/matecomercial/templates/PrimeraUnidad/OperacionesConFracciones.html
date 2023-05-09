@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#SumaF" class="btn btn-danger btn-lg">Adición</a>
+<a href="#RestaF" class="btn btn-danger btn-lg">Sustracción</a>
+<a href="#MultiplicacionF" class="btn btn-danger btn-lg">Multiplicación</a>
+<a href="#DivisionF" class="btn btn-danger btn-lg">División</a>
+
+<div class="col-lg-12" id="SumaF">
+    <h1>Adición de Fracciones</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La adición o suma de fracciones es una de las operaciones básicas que permite combinar dos o más fracciones
+        en un número equivalente, al cual se le conoce como “Suma” o “Resultado de la Suma”. <br>
+        Para obtener el valor numérico en forma de fracciones, primeramente, se debe identificar si la suma
+        de fracciones tiene el mismo denominador o diferente denominador, por lo tanto, se tienen dos procedimientos:
+
+    </h3><br>
+
+    <h4>a) Suma de fracciones con mismo denominador</h4>
+    <h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        La suma de fracciones con el mismo denominador o también conocida como suma de fracciones homogéneas
+        es el procedimiento más simplificado y sencillo, ya que el proceso de la suma se basa en sumar los
+        numeradores y el denominador se mantiene igual.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/SumaF1.JPG' %}" />
+    </center><br>
+
+    <h4>b) Suma de fracciones con diferente denominador</h4>
+    <h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Consiste en la obtención del mínimo común múltiplo de los denominadores, basta con identificar
+        el mayor múltiplo entre ellos para realizar la suma de fracciones.
+    </h3><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pasos: </h4>
+
+    <h3 style="margin: 40px;"> 1. Identificar el mayor común denominador de las fracciones que se van a sumar, el
+        denominador
+        12 es múltiplo de 3 y 4, siendo el número 12 el mayor común denominador.</h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/SumaF2.JPG' %}" />
+    </center><br>
+
+    <h3 style="margin: 40px;"> 2. El mayor común denominador se divide entre el denominador de la primera fracción:
+        12/3 = 4.</h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/SumaF3.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;"> 3. El resultado de la división se multiplica por el numerador de la misma fracción: 4x2 =
+        8. <br><br>
+        4. Una vez que se divide y se multiplica, el resultado se coloca en el numerador con el signo de la fracción, en
+        este caso
+        la fracción es positiva, pero está de más poner el signo.
+    </h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/SumaF4.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;"> 5. Se realiza el mismo procedimiento con las otras fracciones y se realiza la suma con
+        los
+        numeradores que resultaron.
+    </h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/SumaF5.JPG' %}" />
+    </center>
+
+    <h2>Ejemplo:</h2>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/SumaF6.JPG' %}" />
+    </center>
+
+</div>
+
+
+<div class="col-lg-12" id="RestaF">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Sustracción de Fracciones</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La sustracción o resta de fracciones es una de las operaciones básicas que permite obtener la diferencia entre
+        dos
+        fracciones en una fracción equivalente, al cual se le conoce como "diferencia" o "Resta". Para obtener el valor
+        numérico en forma de fracción, primeramente, se debe identificar si la resta de fracciones tiene el
+        mismo denominador o diferente denominador, por lo tanto, se tienen dos procedimientos:
+    </h3><br>
+
+    <h4>a) Sustracción de fracciones con mismo denominador</h4>
+    <h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        La resta de fracciones con el mismo denominador o también conocida como resta de fracciones homogéneas
+        es el procedimiento más simplificado y sencillo, ya que el procedimiento de la resta se basa en restar
+        los numeradores y el denominador se mantiene igual.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF1.JPG' %}" />
+    </center><br>
+
+    <h4>b) Sustracción de fracciones con diferente denominador</h4>
+    <h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Método de la multiplicación en cruz: Consiste en buscar el común denominador de las fracciones que se van a
+        restar.
+    </h3><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pasos: </h4>
+
+    <h3 style="margin: 40px;"> 1. Se multiplica los denominadores de las fracciones 3 x 5 = 15.</h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF2.JPG' %}" />
+    </center><br>
+
+    <h3 style="margin: 40px;"> 2. Se multiplica el numerador de la primera fracción por el denominador de la segunda
+        fracción: 2 x 5 = 10.
+        El resultado se coloca en el numerador con el signo de la primera fracción.</h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF3.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;"> 3. Se multiplica el denominador de la primera fracción por el numerador de la
+        segunda fracción: 3 x 3 = 9. El resultado se coloca en el numerador con el signo de la segunda fracción.
+    </h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF4.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;"> 5. Se realiza la resta con los numeradores que resultaron.
+    </h3>
+
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF5.JPG' %}" />
+    </center>
+
+</div>
+
+
+<div class="col-lg-12" id="MultiplicacionF">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Multiplicación de Fracciones</h1>
+    <h2>Definición:</h2>
+    <h3>
+        La multiplicación de fracciones es una de las operaciones básicas que permite obtener
+        una tercera fracción que será el producto de las anteriores, al cual se le conoce como
+        “Producto” o “Resultado de la Multiplicación”. Para obtener el valor numérico en forma
+        de fracciones, únicamente se tiene un procedimiento ya sea para multiplicación de fracciones
+        con diferente denominador o mismo denominador.<br>
+        En la multiplicación de fracciones se multiplican los numeradores de las fracciones y
+        aparte los denominadores.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Multip1.JPG' %}" />
+    </center>
+    <h3 style="margin: 40px;">El resultado de 2/18 se puede simplificar porque, tanto numerador como denominador se
+        pueden
+        recudir a la mitad.</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Multip2.JPG' %}" />
+    </center>
+</div>
+
+<div class="col-lg-12" id="DivisionF">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>División de Fracciones</h1>
+    <h2>Definición:</h2>
+    <h3>
+        A diferencia de la operación matemática que conocemos como división,
+        en la división de fracciones no se realiza una repartición sino una multiplicación,
+        la cual, es una multiplicación cruzada entre los numeradores y denominadores de ambas fracciones.
+    </h3>
+    <h2>Ejemplo:</h2>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div1.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;"> 1. Se multiplica el numerador de la primera fracción con el denominador de la
+        segunda fracción.<br>
+        2. El resultado de la multiplicación se coloca en la posición del numerador.</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div2.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;">3. Ahora el denominador de la primera fracción se multiplica con el numerador de la
+        segunda fracción.<br>
+        4. El resultado de la multiplicación se coloca en la posición del denominador.</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div3.JPG' %}" />
+    </center>
+
+    <h3 style="margin: 40px;">5. El resultado de la división se puede simplificar porque, tanto numerador como 
+        denominador tienen el mismo valor.</h3>
+    <center>
+        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div4.JPG' %}" />
+            <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FUbla-rPt3M" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center> <br><br>
+</div>
+
+
+{% endblock %}

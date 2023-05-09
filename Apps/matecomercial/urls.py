@@ -17,11 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Apps.matecomercial import views
-from .views import PrimeraUnidadView, PUFraccionesView
+from .views import PrimeraUnidadView, PUFraccionesView, OpeFraccionesView, ProporcionalidadView, SociedadesView, AligacionesView, AleacionesView, TantoporCientoView
 
 app_name = 'matecomercial'
 
 urlpatterns = [
     path('MateComercial', PrimeraUnidadView.as_view(), name='macomercialapp'),
     path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
+    path('OperacionesConFracciones/', OpeFraccionesView.as_view(), name='operacioesfraccionesapp'),
+    path('Proporcionalidad/', ProporcionalidadView.as_view(), name='proporcionalidadapp'),
+    path('Sociedades/', SociedadesView.as_view(), name='sociedadesapp'),
+    path('Aligaciones/',AligacionesView.as_view(), name='aligacionesapp'),
+    path('Aleaciones/',AleacionesView.as_view(), name='aleacionesapp'),
+    path('TantoPorCiento/',TantoporCientoView.as_view(), name='porcientoapp'),
 ]
