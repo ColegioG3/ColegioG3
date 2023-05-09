@@ -1,0 +1,134 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Ecuaciones enteras de primer grado con una incógnita" class="btn btn-danger btn-lg">Ecuaciones enteras de primer grado con una incógnita</a>
+<a href="#Ecuaciones enteras de primer grado con producto continuado" class="btn btn-danger btn-lg">Ecuaciones enteras de primer grado con producto continuado</a>
+<div class="col-lg-12" id="Ecuaciones enteras de primer grado con una incógnita" style="margin: 25px 20px 25px 20px;">
+  <h1 id="Ecuaciones enteras de primer grado con una incógnita">Ecuaciones enteras de primer grado con una incógnita</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Las ecuaciones enteras de primer grado con una incógnita son aquellas en las que la incógnita (generalmente representada por la letra x) 
+    aparece en el primer grado, es decir, no se encuentra elevada a ninguna potencia o fracción. 
+    Estas ecuaciones se pueden resolver mediante operaciones algebraicas básicas como la suma, la resta, la multiplicación y la división.
+    <br>
+    <br>
+    La forma general de una ecuación entera de primer grado con una incógnita es:   
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="150"
+      src="{% static 'images/imgU1/ecuacionPG1.png' %}"
+    />
+  </center>
+  <br>
+  <h3>Donde a, b y c son constantes y x es la incógnita.
+    Para resolver este tipo de ecuaciones, se deben aplicar operaciones que permitan aislar la incógnita en un lado de la ecuación y los términos constantes en el otro.</h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="135"
+      src="{% static 'images/imgU1/ecuacionPG2.png' %}"
+    />
+  </center>
+    <h2>Solución:</h2>
+    <h3>Podemos aislar la incógnita de la siguiente manera:</h3>
+    <h3 style="text-align: center;">2x + 5 = 11 Restamos 5 a ambos lados de la ecuación 2x = 6</h3>
+    <h3>Dividimos ambos lados de la ecuación por 2:</h3>
+    <h3 style="text-align: center;"><b>x = 3</b></h3>
+    <div class="col-lg-12" id="video">
+      <h2>Video:</h2>
+      <center>
+        <iframe width="560"
+         height="315"
+         src="https://www.youtube.com/embed/TDA8iqCB6hk" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen></iframe>
+      </center>
+    </div>
+</div>
+<div style="margin: 100px 20px 25px 20px;">
+<h1 id="Ecuaciones enteras de primer grado con producto continuado">Ecuaciones enteras de primer grado con producto continuado</h1>
+  <h2>Definición:</h2>
+  <h3>
+    <p>
+    Las ecuaciones enteras de primer grado con producto continuado son aquellas en las que la incógnita (generalmente representada por la letra x) 
+    aparece multiplicada por una serie de términos continuos, es decir que se suceden uno tras otro sin interrupción.
+    Estas ecuaciones se pueden resolver aplicando las propiedades de los exponentes y las operaciones algebraicas básicas como la suma, la resta, la multiplicación y la división.
+    </p>
+  </h3>
+  <h3>La forma general de una ecuación entera de primer grado con producto continuado es:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="350"
+      src="{% static 'images/imgU1/ecuacionPG3.png' %}"
+    />
+  </center>
+  <h3>
+    <p>
+    Donde a, b, c, d, e son constantes y x es la incógnita.
+    Para resolver este tipo de ecuaciones, se deben aplicar 
+    operaciones que permitan descomponer el producto continuado en factores
+    más simples y luego resolver la ecuación resultante.
+    </p>
+  </h3>
+  <h2>Ejemplo:</h2>
+  <h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="200"
+          src="{% static 'images/imgU1/ecuacionPG4.png' %}"
+        />
+      </center>
+  <h2>Solución: </h2>
+  <h3>Multiplicar los factores</h3>
+  <h3 style="text-align: center;">(x + 2) (x + 3) = 20</h3>
+  <h3>Restar 20 a ambos lados de la ecuación</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="150"
+      src="{% static 'images/imgU1/ecuacionPG5.png' %}"
+    />
+  </center>
+  <h3>Factorizar la expresión</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="150"
+      src="{% static 'images/imgU1/ecuacionPG6.png' %}"
+    />
+  </center>
+  <h3>Entonces, se tiene:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="200"
+      src="{% static 'images/imgU1/ecuacionPG7.png' %}"
+    />
+  </center>
+  <h3 style="text-align: center;">Por lo tanto, las soluciones de la ecuación son:
+    <br>
+  <b> x= -7 y x = 2</b></h3>
+  <div class="col-lg-12" id="video">
+    <h2>Video:</h2>
+    <center>
+      <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/rIzDlfSEKHE" 
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+    </center>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Plano cartesiano" class="btn btn-danger btn-lg">Plano cartesiano</a>
+<div style="margin: 50px 45px 25px 20px;">
+  <h1 id="Plano cartesiano">Plano cartesiano</h1>
+  <h2>Definición:</h2>
+  <h3>
+    <p>
+      El plano cartesiano es un sistema de coordenadas que se utiliza para representar gráficamente puntos y figuras
+      geométricas en dos dimensiones.
+      El plano está dividido en dos ejes: el eje horizontal o eje x, y el eje vertical o eje y, que se cruzan en un
+      punto llamado origen.
+    </p>
+    <p>
+      Cada punto en el plano cartesiano se representa por un par ordenado de números, (x, y), donde x es la coordenada
+      horizontal y y es la coordenada vertical.
+      La coordenada x indica la distancia del punto al eje y, y la coordenada y indica la distancia del punto al eje x.
+      Para ubicar un punto en el plano cartesiano, se mide la distancia horizontal desde el origen hacia la derecha si
+      la coordenada es positiva o hacia la izquierda si es negativa,
+      y la distancia vertical desde el origen hacia arriba si la coordenada es positiva o hacia abajo si es negativa.
+      Luego, se marca el punto en el lugar donde se intersectan las dos líneas.
+
+    </p>
+    <p>
+      El plano cartesiano se utiliza en diversos campos como la geometría, la física,
+      la ingeniería y la estadística para representar gráficamente datos y realizar análisis de tendencias y relaciones.
+    </p>
+  </h3>
+  <center>
+    <img class="img-fluid rounded-circle" width="410" src="{% static 'images/imgU1/planoC1.png' %}" />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>Representa en el plano cartesiano el punto A (2,3): </h3>
+  <h2>Solución: </h2>
+  <h3>Medir 2 unidades hacia la derecha desde el origen (eje y) </h3>
+  <h3>Medir 3 unidades hacia arriba (eje x) </h3>
+  <center>
+    <img class="img-fluid rounded-circle" width="200" src="{% static 'images/imgU1/planoC2.jpg' %}" />
+
+    <div class="col-lg-12" id="video">
+      <h2>Video:</h2>
+      <center>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/kzOzYY-T-50" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+      </center>
+    </div>
+
+</div>
+{% endblock %}
