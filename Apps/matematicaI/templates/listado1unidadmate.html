@@ -1,0 +1,76 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block contenido %}
+
+<!-- home -->
+    <!-- Content page -->
+    <div class="container-fluid">
+        <div class="page-header">
+          <h1 class="text-titles">Matemática I <small>   Bachillerato Industrial Y Perito En Dibujo De Construcción, Mecánica Automotriz y Computación.</small> </h1> 
+        </div>
+    </div>
+
+    <div class="full-box text-center" style="padding: 30px 30px;">
+        <div class="list-groupUnidad" >
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD I
+            </a>
+            <a href="{% url 'matematicaI:algebraapp'%}" class="list-group-item list-group-item-action">Algebra</a>
+            <a class="list-group-item list-group-item-action disabled">Expresiones Algebraicas</a>
+            <a class="list-group-item list-group-item-action disabled">Términos Algebraicos</a>
+            <a class="list-group-item list-group-item-action disabled">Clasificación de las expresiones Algebraicas</a>
+            <a class="list-group-item list-group-item-action disabled">Términos Semejantes</a>
+            <a class="list-group-item list-group-item-action disabled">Reducción de términos Semejantes</a>
+            <a href="{% url 'matematicaI:monomioypolinomioapp'%}" class="list-group-item list-group-item-action">Monomios y Polinomios </a>
+            <a class="list-group-item list-group-item-action disabled">Suma de Monomios</a>
+            <a class="list-group-item list-group-item-action disabled">Suma de Polinomios</a>
+            <a class="list-group-item list-group-item-action disabled">Resta de Monomios</a>
+            <a class="list-group-item list-group-item-action disabled">Suma de Polinomios</a>
+            <a class="list-group-item list-group-item-action disabled">Suma y Resta Combinada</a>
+            
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD II
+            </a>
+            <a href="{% url 'matematicaI:multialgebraapp'%}" class="list-group-item list-group-item-action">Multiplicación Algebraica</a>
+            <a class="list-group-item list-group-item-action disabled">Ley de Signos</a>
+            <a class="list-group-item list-group-item-action disabled">Ley de Exponentes</a>
+            <a class="list-group-item list-group-item-action disabled">Ley de Coeficientes</a>
+            <a class="list-group-item list-group-item-action disabled">Multiplicación de Monomios</a>
+            <a class="list-group-item list-group-item-action disabled">Producto Continuado</a>
+            <a class="list-group-item list-group-item-action disabled">Multiplicación de Polinomios</a>
+            <a href="{% url 'matematicaI:divisionapp'%}" class="list-group-item list-group-item-action">División Algebraica</a>
+            <a class="list-group-item list-group-item-action disabled">División De un Polinomio por un Monomio</a>
+            <a class="list-group-item list-group-item-action disabled">División de Polinomios</a>
+           
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD III
+            </a>
+            <a href="{% url 'matematicaI:productoapp'%}" class="list-group-item list-group-item-action">Productos Notables</a>
+            <a class="list-group-item list-group-item-action disabled">Cuadrado de la Suma y Diferencia de dos cantidades</a>
+            <a class="list-group-item list-group-item-action disabled">Producto de la SUma por la Diferencia de dos Cantidades</a>
+            <a class="list-group-item list-group-item-action disabled">Cubo de un Binomio</a>
+            <a class="list-group-item list-group-item-action disabled">Productos de dos binomios de la forma (x+a)(x+b)</a>
+            <a href="{% url 'matematicaI:cocienteapp'%}" class="list-group-item list-group-item-action">Cocientes Notables</a>
+            <a class="list-group-item list-group-item-action disabled">Cociente de la diferencia de los cuadrados de dos cantidades</a>
+            <a class="list-group-item list-group-item-action disabled">Cociente de la suma diferencia de los cubos de dos cantidades</a>
+            <a class="list-group-item list-group-item-action disabled">Teorema del residuo</a>
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD IV
+            </a>
+            <a href="{% url 'matematicaI:factorapp'%}" class="list-group-item list-group-item-action">Casos de Factorización I al V</a>
+            <a class="list-group-item list-group-item-action disabled">Casosl: Factor común</a>
+            <a class="list-group-item list-group-item-action disabled">CASO II: Agrupación de términos</a>
+            <a class="list-group-item list-group-item-action disabled">Caso III: Trinomio cuadrado perfecto</a>
+            <a class="list-group-item list-group-item-action disabled">Caso IV: Diferencia de cuadrados perfectos</a>
+            <a class="list-group-item list-group-item-action disabled">Caso V: Trinomio cuadrado perfecto por adición u sustracción</a>
+            <a href="{% url 'matematicaI:factor2app'%}" class="list-group-item list-group-item-action">Casos de Factorización VI al IX</a>
+            <a class="list-group-item list-group-item-action disabled">Caso VI: Trinomio de la forma x2+bx+c</a>
+            <a class="list-group-item list-group-item-action disabled">Caso VII: Trinomio de la forma ax2+bx+c</a>
+            <a class="list-group-item list-group-item-action disabled">Caso VIII: Cubo perfecto de binomios</a>
+            <a class="list-group-item list-group-item-action disabled">Caso IX: Suma o diferencia de cubos perfectos</a>
+         
+          </div>
+    </div>
+
+
+{% endblock %}
