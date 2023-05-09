@@ -39,12 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Apps.login',
     'Apps.matecomercial',
-<<<<<<< HEAD
     'Apps.AlgebraLineal',
     'Apps.MatematicaIII',
-=======
     'Apps.matematicaI',
->>>>>>> 15617e6e717c7453dca01ce0840b1b26f4293fb6
 ]
 
 MIDDLEWARE = [

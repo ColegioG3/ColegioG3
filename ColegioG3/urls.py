@@ -24,5 +24,5 @@ urlpatterns = [
     path('matematicaI/', include('Apps.matematicaI.urls', 'matematicaI')),
     
     path('algebralineal/', include('Apps.AlgebraLineal.urls', 'AlgebraLineal')),
-    path('matematicaIII/', include('Apps.MatematicaIII.urls', 'MatematicaIII')),
+    path('matematicaIII/', include('Apps.MatematicaIII.urls', 'MatematicaIII'))
 ]
