@@ -1,0 +1,134 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#SumaMon" class="btn btn-danger btn-lg">Suma de Monomios</a>
+<a href="#SumaPol" class="btn btn-danger btn-lg">Suma de Polinomios</a>
+<a href="#RestaMon" class="btn btn-danger btn-lg">Resta de Monomios</a>
+<a href="#RestaPol" class="btn btn-danger btn-lg">Resta de Polinomios</a>
+<a href="#SumyRes" class="btn btn-danger btn-lg">Suma y Resta Combinada</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+</center>
+<div class="col-lg-12" id="Algebra">
+  <h1>Suma de Monomios</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Dos o más monomios solo se pueden sumar si son monomios semejantes, es decir, si ambos monomios tienen una parte literal idéntica (mismas letras y mismos exponentes).
+    Entonces, la suma de dos monomios semejantes es igual a otro monomio compuesto por la misma parte literal y la suma de los coeficientes de esos dos monomios.
+  </h3>
+</h3>
+<h2>Ejemplo:</h2>
+<center>
+  <img
+    class="img-fluid rounded-circle"
+    src="{% static 'images/imgU1/summon.PNG' %}"
+  />
+</center>
+</div>
+<div class="col-lg-12" id="SumaPol">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Suma de Polinomios</h1>
+  <h2>Definición:</h2>
+  <h3>
+  La suma algebraica de dos o más polinomios, consiste agrupar sus términos semejantes para luego sumarlos según sus signos y formar un solo polinomio.
+Para sumar polinomios es necesario reconocer cuáles son los términos semejantes, es decir; los que tienen igual variable y potencia.
+
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/sumapol1.PNG' %}"
+    />
+  </center>
+  
+<div class="col-lg-12" id="RestaMon">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Resta de Monomios</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Dos o más monomios solo se pueden restar si son monomios semejantes, es decir, si ambos monomios tienen una parte literal idéntica (mismas letras y mismos exponentes).
+
+    La resta de dos monomios semejantes es igual a otro monomio compuesto por la misma parte literal y la resta de los coeficientes de esos dos monomios.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/restamon.PNG' %}"
+    />
+  </center>
+  <h3>En definitiva, solo se pueden restar los monomios que son semejantes. Y, en tal caso, únicamente se restan los coeficientes, a diferencia de la parte literal que queda igual.</h3>
+  
+</div>
+<div class="col-lg-12" id="RestaPol">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Resta de Polinomios</h1>
+  <h2>Definición:</h2>
+  <h3>
+    a resta de polinomios es una de las operaciones matemáticas más fáciles que podemos realizar con polinomios. Para realizar una resta de polinomios, tenemos que identificar los términos semejantes y restar los coeficientes de los términos semejantes.
+  </h3>
+
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/restapol1.PNG' %}"
+    />
+  </center>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/restapol2.PNG' %}"
+    />
+  </center>
+</div>
+
+<div class="col-lg-12" id="SumyRes">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Suma y Resta Combinada</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Las operaciones de suma y resta de polinomios es un tema muy sencillo, tan solo es sumar y/o
+     restas aquellos términos semejantes entre polinomios involucrados bajo estas operaciones básicas.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/sumapol.PNG' %}"
+    />
+  </center>
+    
+</div>
+<a href="#video" class="btn btn-danger btn-lg"></a>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N3vD22wJfyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </center>
+  </div>
+
+</div>  
+
+
+  
+{% endblock %}

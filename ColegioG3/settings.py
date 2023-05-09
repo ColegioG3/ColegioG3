@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'Apps.login',
     'Apps.matecomercial',
     'Apps.MatematicaII',
-    
+    'Apps.matematicaI'
 ]
 
 MIDDLEWARE = [
