@@ -20,9 +20,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('Apps.login.urls', 'login')),
+    path('matematicaii/', include('Apps.MatematicaII.urls', 'MatematicaII')),
     path('matecomercial/', include('Apps.matecomercial.urls', 'matecomercial')),
-    path('matematicaI/', include('Apps.matematicaI.urls', 'matematicaI')),
-    
+    path('matematicaI/', include('Apps.matematicaI.urls', 'matematicaI')),  
     path('algebralineal/', include('Apps.AlgebraLineal.urls', 'AlgebraLineal')),
     path('matematicaIII/', include('Apps.MatematicaIII.urls', 'MatematicaIII'))
 ]

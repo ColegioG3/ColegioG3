@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Forma de punto y pendiente de una ecuación" class="btn btn-danger btn-lg">Forma de punto y pendiente de una ecuación</a>
+<div style="margin: 50px 45px 25px 20px;">
+    <h1 id="Forma de punto y pendiente de una ecuación">Forma de punto y pendiente de una ecuación</h1>
+    <h2>Definición:</h2>
+    <h3>
+        <p>
+            La forma de punto y pendiente de una ecuación de la recta es una de las formas estándar de expresar la ecuación de una recta en el plano cartesiano. Esta forma utiliza las coordenadas de un punto conocido en la recta y su pendiente para escribir la ecuación.
+            <br>
+            La ecuación de la recta en forma de punto y pendiente es:
+            <br>
+            y - y1 = m (x - x1)
+        <h2>Donde: </h2>
+        <h3>(x1, y1) es un punto conocido en la recta y m es la pendiente de la recta</h3>
+        </p>
+    </h3>
+    <h2>Ejemplo:</h2>
+    <h3>Encuentra la ecuación de la recta que pasa por el punto (1, -2) y el punto (-3, 4)</h3>
+    <h2>Solución: </h2>
+    <h3>Encontramos la pendiente de la recta utilizando la fórmula de la pendiente: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="550" src="{% static 'images/imgU1/puntoPendiente1.png' %}" />
+    </center>
+    <h3>Podemos utilizar la forma de punto y pendiente para escribir la ecuación de la recta: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="250" src="{% static 'images/imgU1/puntoPendiente2.png' %}" />
+    </center>
+    <h3>Simplificando, obtenemos: </h3>
+    <center>
+        <img class="img-fluid rounded-circle" width="250" src="{% static 'images/imgU1/puntoPendiente3.png' %}" />
+    </center>
+
+    <div class="col-lg-12" id="video">
+        <h2>Video:</h2>
+        <center>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/eVoiM70X35s" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+        </center>
+      </div>
+
+</div>
+{% endblock %}
