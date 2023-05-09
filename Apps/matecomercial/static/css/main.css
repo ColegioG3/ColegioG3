@@ -635,3 +635,21 @@ h3 {
 	line-height: 130%;
 	text-align: justify;
   }
+
+  h4 {
+	color: rgb(46, 2, 2);
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Helvetica', Helvetica, monospace;
+	line-height: 130%;
+	text-align: left;
+  }
+
+.fpasos{
+	color: rgb(8, 10, 9);
+	font-size: 25px;
+	margin: 20px;
+	font-family: 'Helvetica', Helvetica, monospace;
+	line-height: 130%;
+	text-align: justify;
+  }
