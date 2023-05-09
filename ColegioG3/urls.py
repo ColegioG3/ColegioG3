@@ -22,4 +22,7 @@ urlpatterns = [
     path('login/', include('Apps.login.urls', 'login')),
     path('matecomercial/', include('Apps.matecomercial.urls', 'matecomercial')),
     path('matematicaI/', include('Apps.matematicaI.urls', 'matematicaI'))
+
+
+
 ]
