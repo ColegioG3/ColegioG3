@@ -1,0 +1,67 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#divpolpormon" class="btn btn-danger btn-lg">División de un Polinomio por un Monomio</a>
+<a href="#divpol" class="btn btn-danger btn-lg">División de Polinomios</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+
+</center>
+<div class="col-lg-12" id="divpolpormon">
+  <h1>División de un Polinomio por un Monomio</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Para dividir un polinomio entre un monomio, debe seguir los siguientes pasos:
+
+    Aplicar la propiedad distributiva para escribir cada término del numerador entre el monomio.
+    Simplificar las fracciones aplicando propiedades de fracciones y exponentes.  </h3>
+</h3>
+
+<h3>
+  1. Aplicar la propiedad distributiva para escribir cada término del numerador entre el monomio.
+  Simplificar las fracciones aplicando propiedades de fracciones y exponentes.  </h3>
+</h3>
+<h3>
+  2. Simplificar las fracciones aplicando propiedades de fracciones y exponentes.  </h3>
+</h3>
+<h2>Ejemplo:</h2>
+<center>
+  <img
+    class="img-fluid rounded-circle"
+    src="{% static 'images/imgU1/divisionpolmon.PNG' %}"
+  />
+</center>
+</div>
+<div class="col-lg-12" id="divpol">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>División de Polinomios</h1>
+  <h2>Definición:</h2>
+  <h3>
+    es un algoritmo que permite dividir un polinomio entre otro polinomio que no sea nulo
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/divpol.PNG' %}"
+    />
+  </center>
+  
+
+</div>
+
+<a href="#video" class="btn btn-danger btn-lg"></a>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4rpjSbsKTro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>  
+
+{% endblock %}

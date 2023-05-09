@@ -1,0 +1,170 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#Algebra" class="btn btn-danger btn-lg">Algebra</a>
+<a href="#ExpresionesAlgebraicas" class="btn btn-danger btn-lg">Expresiones Algebraicas</a>
+<a href="#TerminosAlgebraicos" class="btn btn-danger btn-lg">Términos Algebraicos</a>
+<a href="#Clasificacion" class="btn btn-danger btn-lg">Clasificación de las expresiones Algebraicas</a>
+<a href="#Terminos" class="btn btn-danger btn-lg">Terminos Semejantes</a>
+<a href="#Reduccion" class="btn btn-danger btn-lg">Reducción de términos Semejantes</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+</center>
+<div class="col-lg-12" id="Algebra">
+  <h1>Algebra</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El álgebra es una de las principales ramas de las matemáticas. Su objeto de estudio son estructuras abstractas operando en patrones fijos, dentro de las cuales suele haber más que números y operaciones aritméticas: también letras, que representan operaciones concretas, variables, incógnitas o coeficientes.
+    El álgebra es una de las ramas de la matemática que mayores aplicaciones poseen. Permite representar los problemas formales de la vida cotidiana. Por ejemplo, las ecuaciones y las variables algebraicas permiten calcular las proporciones desconocidas.
+  </h3>
+  
+</div>
+<div class="col-lg-12" id="ExpresionesAlgebraicas">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Expresiones Algebraicas</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Las expresiones algebraicas son combinaciones de números, variables y operaciones matemáticas, como sumas, restas, multiplicaciones y divisiones, que se utilizan para representar relaciones matemáticas y resolver problemas.
+Usualmente las primeras letras de nuestro alfabeto: a, b, c, d, etc. si no se dice otra cosa, representan valores fijos en la expresión. Estas letras también se pueden llamar parámetros.
+Las últimas letras de nuestro alfabeto: x, y, z, u otros símbolos, representan variables que pueden tomar valores dentro de un subconjunto de números reales.
+
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/exalge.PNG' %}"
+    />
+  </center>
+  
+<div class="col-lg-12" id="TerminosAlgebraicos">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Términos Algebraicos</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Un término algebraico es el producto de un factor numérico por una o más variables literales. 
+    En cada término algebraico se distinguen el coeficiente numérico
+     (que incluye el signo y constantes matemáticas) y la parte literal (que incluye variables)
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/TermA.JPG' %}"
+    />
+  </center>
+  <h3>En todo término algebraico pueden distinguirse cuatro elementos: el signo, el coeficiente, la parte literal y el exponente</h3>
+  
+</div>
+<div class="col-lg-12" id="Clasificacion">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Clasificación de las expresiones Algebraicas</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Existen diferentes tipos de expresiones algebraicas, las cuales se clasifican de acuerdo al número de términos que tiene. 
+    A continuación te explicamos dicha clasificación con más detalle:
+  </h3>
+
+  <br />
+  <h3>
+    Monomios: Se trata de una expresión algebraica que contiene únicamente un término, aunque se
+     puedan tener diferentes variables. Un ejemplo serían expresiones como: -85x, 47y, b3zxy, etc.
+  </h3>
+
+  <br />
+  <h3>
+    Binomios. A diferencia de los monomios, los binomios son expresiones algebraicas que tienen hasta dos términos. Algunos ejemplos serían: 5y + 85x, azb+46x, 85xy – 25a, etc.
+     Como seguramente notarás, un binomio se puede formar por la unión de dos monomios.
+  </h3>
+
+  <br />
+  <h3>
+    Trinomios. Tal y como su nombre lo indica, se trata de una expresión algebraica que contiene hasta tres términos. Algunos ejemplos son: -5y +45xy – 963abc, 8xy + 25azb – 567xya, etc. 
+    Igualmente, estas expresiones se pueden formar por la unión de un binomio y un monomio, o por la unión de tres monomios.
+  </h3>
+
+  <br />
+  <h3>
+    Polinomios. Cuando hablamos de polinomios nos referimos a expresiones algebraicas que están 
+    formadas por más de tres términos. En este sentido, se pueden formar por la unión de binomios, trinomios y monomios.
+  </h3>
+
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/exal.PNG' %}"
+    />
+  </center>
+</div>
+
+<div class="col-lg-12" id="Terminos">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Terminos Semejantes</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Los términos semejantes son aquellos que tienen la misma parte literal, 
+    o dicho de otra forma aquellos que tengan las mismas letras y con igual exponente
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/semejante.PNG' %}"
+    />
+  </center>
+    
+</div>
+
+
+<div class="col-lg-12" id="Reduccion">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Reducción de términos Semejantes</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Reducir términos semejantes significa sumar o restar monomios semejantes, es decir, suma o resta de términos semejantes. 
+    Primero se identifican los términos semejantes, luego se realizan las operaciones correspondientes.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/reduccion.PNG' %}"
+    />
+  </center>
+    
+</div>
+
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UNWFLuUfiX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+  </div>
+
+</div>  
+{% endblock %}

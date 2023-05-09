@@ -1,0 +1,120 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<center>
+<a href="#cuadrado" class="btn btn-danger btn-lg">Cuadrado de la Suma y Diferencia de dos cantidades</a>
+<a href="#prodsuma" class="btn btn-danger btn-lg">Producto de la Suma por la Diferencia de dos Cantidades</a>
+<a href="#cubo" class="btn btn-danger btn-lg">Cubo de un Binomio</a>
+<a href="#prodd" class="btn btn-danger btn-lg">Productos de dos binomios de la forma (x+a)(x+b)</a>
+<a href="#video" class="btn btn-danger btn-lg">video</a>
+</center>
+<div class="col-lg-12" id="cuadrado">
+  <h1>Cuadrado de la Suma y Diferencia de dos cantidades</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El cuadrado de la suma de dos cantidades es igual al cuadrado de la primera cantidad, más dos veces la primera cantidad por la segunda, más el cuadrado de la segunda cantidad.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/cuadd.PNG' %}"
+    />
+  </center>
+  <h3>
+    El cuadrado de la resta de dos cantidades es igual al cuadrado de la primera cantidad, menos dos veces el primer término por el segundo término, más el cuadrado de la segunda cantidad.  </h3>
+    <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU1/rest.PNG' %}"
+      />
+    </center>
+  </div>
+  
+ <div class="col-lg-12" id="prodsuma">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Producto de la Suma por la Diferencia de dos Cantidades</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La suma de dos términos multiplicada por su diferencia es igual al cuadrado del primer término menos el cuadrado del segundo término.
+
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/prodsuma.PNG' %}"
+    />
+  </center>
+  
+<div class="col-lg-12" id="cubo">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Cubo de un Binomio</h1>
+  <h2>Definición:</h2>
+  <h3>
+    es una expresión algebraica, formada por dos términos 
+    que se pueden sumar o restar; y en la cual las operaciones de (suma o resta) estarán elevadas al cubo.
+  </h3>
+
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/binomioalcubo.png' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/cubobinomio.png' %}"
+    />
+  </center>
+   
+</div>
+<div class="col-lg-12" id="prodd">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Productos de dos binomios de la forma (x+a)(x+b)</h1>
+  <h2>Definición:</h2>
+  <h3>
+    1) El primer termino del producto, es el producto de los primeros términos de los binomios;
+  </h3>
+
+  <h3>
+    2) El coeficiente del segundo término del producto, es la suma algebraica de los segundos términos de los binomios, multiplicada por el primer término de los binomios;
+  </h3>
+  <h3>
+    3) El tercer término del producto, es el producto de los segundos términos de los binomios.
+  </h3>
+
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/prod2bin.PNG' %}"
+    />
+  </center>
+</div>
+<a href="#video" class="btn btn-danger btn-lg"></a>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G-ym95yl3Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center  
+
+  
+{% endblock %}
