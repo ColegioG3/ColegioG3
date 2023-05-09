@@ -1,0 +1,194 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Gaussiana" class="btn btn-danger btn-lg">Eliminación Gaussiana</a>
+<a href="#Pasos" class="btn btn-danger btn-lg">Pasos</a>
+<a href="#Ejemplo" class="btn btn-danger btn-lg">Ejemplo</a>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="Gaussiana">
+  <h1>Eliminación Gaussiana</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El método de Gauss también se conoce como eliminación gaussiana. Este método
+    es muy importante, ya que te permite resolver matrices de una manera
+    sistemática y siguiendo un proceso paso por paso.
+  </h3>
+  <h2 id="Pasos">Pasos:</h2>
+  <h3>
+    1. Llevar un sistema de ecuaciones a la forma matricial.
+    <br />
+    2. Convertir una matriz cuadrada en una matriz triangular superior, que es
+    equivalente a la matriz original.
+    <br />
+    3. Resolver el sistema, sustituyendo las variables en cada ecuación
+    resultante.
+    <br />
+    <br />
+    En otras palabras, el sistema transforma un sistema como:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana1.JPG' %}"
+    />
+  </center>
+  <h3>en una matriz como:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana2.JPG' %}"
+    />
+  </center>
+  <h3>
+    Y, usando operaciones de suma, resta y producto, convertir la matriz en una
+    triangular del tipo:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana3.JPG' %}"
+    />
+  </center>
+  <h3>Para obtener:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana4.JPG' %}"
+    />
+  </center>
+  <h3>
+    El objetivo de la eliminación gaussiana es llegar a la matriz triangular
+    superior que es equivalente a la matriz original. Hallar las soluciones, a
+    partir de una matriz triangular, es muy sencillo. Esto se debe a que solo
+    tienes que coger el valor que queda despejado e ir sustituyendo, para
+    despejar las demás incógnitas.
+    <br />
+    <br />
+    Para llegar a la matriz triangular superior con la que obtenemos la solución
+    del sistema de ecuaciones, el proceso que debemos seguir es:
+    <br />
+    1. Intercambiar ecuaciones.
+    <br />
+    2. Multiplicar una o varias ecuaciones por números distintos de 0.
+    <br />
+    3. Sumar o restar ecuaciones entre sí.
+    <br />
+    <br />
+    El método de eliminación Gaussiana consiste en:
+    <br />
+    • Llevar un sistema de ecuaciones a una forma matricial.
+    <br />
+    • Convertir una matriz cuadrada a triangular superior, que es equivalente a
+    la matriz original.
+    <br />
+    • Resolver el sistema, sustituyendo las variables en cada ecuación
+    resultante.
+  </h3>
+  <h2 id="Ejemplo">Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana5.JPG' %}"
+      width="280"
+    />
+  </center>
+  <h3>Transformando este sistema en una matriz, tenemos:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana6.JPG' %}"
+      width="280"
+    />
+  </center>
+  <h3>
+    Ahora, lo llevamos a una forma triangular superior, para lo cual primero
+    hacemos
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana7.JPG' %}"
+      width="500"
+    />
+  </center>
+  <h3>Para conseguir un 0 en la última fila, hacemos</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana8.JPG' %}"
+      width="560"
+    />
+  </center>
+  <h3>Podemos multiplicar la última fila para eliminar los denominadores:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana9.JPG' %}"
+      width="280"
+    />
+  </center>
+  <h3>Ahora hacemos</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana10.JPG' %}"
+      width="560"
+    />
+  </center>
+  <h3>Por tanto, hemos obtenido el valor de la variable z:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana11.JPG' %}"
+      width="140"
+    />
+  </center>
+  <h3>
+    En este caso, en la segunda ecuación hemos obtenido directamente el valor de
+    y:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana12.JPG' %}"
+      width="140"
+    />
+  </center>
+  <h3>
+    Finalmente, podemos usar estos dos valores para calcular el valor de x en la
+    primera ecuación:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana13.JPG' %}"
+      width="500"
+    />
+  </center>
+  <h3>Por lo tanto la solución es:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3AL/gaussiana14.JPG' %}"
+      width="500"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/siJMeYzwQVE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="Complemento de cuadrados">
+  <h1 id="Complemento de cuadrados">Complemento de cuadrados</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El complemento de cuadrados es una técnica de factorización que se utiliza
+    para factorizar expresiones cuadráticas de la forma:
+    <br />
+    ax² + bx + c
+    <br />
+    Consiste en agregar y restar el término b²/ 4a² dentro del paréntesis del
+    binomio cuadrado perfecto, lo que nos permite reescribir la expresión
+    cuadrática como:
+    <br />
+    (ax² + b/2a²) - (b² /4a²)
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="300"
+      src="{% static 'Ima/ecuacion9.png' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>Factoriza la expresión cuadrática 3x ² - 6x + 2</h3>
+  <h3>
+    <h3>Solución:</h3>
+    <h3>Primero, encontramos el valor de a, b y c: a = 3, b = -6, c = 2</h3>
+    <h3>Luego, aplicamos la técnica del complemento de cuadrados:</h3>
+    <center>
+      <img
+        class="img-fluid rounded-circle"
+        width="400"
+        src="{% static 'Ima/ecuacion10.png' %}"
+      />
+    </center>
+  </h3>
+  <h2 id="video">Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Ly-jE7Asxg0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

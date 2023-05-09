@@ -1,0 +1,247 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#DeterminacionSO" class="btn btn-danger btn-lg"
+  >Determinación de segundo orden</a
+>
+<a href="#DeterminacionTO" class="btn btn-danger btn-lg"
+  >Determinación de tercer orden</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="DeterminacionSO">
+  <h1>Determinación de segundo orden</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Un determinante es un número asociado a una matriz cuadrada. El determinante
+    de una matriz cuadrada de orden dos se calcula como producto de los
+    elementos de la diagonal principal menos el producto de los elementos de la
+    diagonal secundaria.
+  </h3>
+  <h3>En general, para una matriz cuadrada de orden 2:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso1.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>
+    Los elementos de la diagonal principal son los elementos situados en la
+    diagonal que va desde la esquina superior izquierda hasta la esquina
+    inferior derecha:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso2.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>
+    Los elementos de la diagonal secundaria son los elementos situados en la
+    diagonal que va desde la esquina superior derecha hasta la esquina inferior
+    izquierda:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso3.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>
+    Por tanto, el determinante de una matriz cuadrada de orden 2 se calcular de
+    la siguiente forma:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso4.JPG' %}"
+      width="600"
+    />
+  </center>
+  <h2>Pasos y Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso5.JPG' %}"
+      width="185"
+    />
+  </center>
+  <h3>El determinante de esa matriz cuadrada es:</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso6.JPG' %}"
+      width="215"
+    />
+  </center>
+  <h3>
+    Para calcularlo, realizamos el producto de los elementos de la diagonal
+    principal menos el producto de los elementos de la diagonal secundaria y
+    operamos:
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionso7.JPG' %}"
+      width="300"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="DeterminacionTO">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Determinación de tercer orden</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Asociado a una matriz cuadrada de orden 3*3, también llamado como un
+    determinante de orden 3.
+  </h3>
+  <h3>Para una matriz de orden 3:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto1.JPG' %}"
+      width="265"
+    />
+  </center>
+  <h3>Su determinante de orden 3 será:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto2.JPG' %}"
+      width="265"
+    />
+  </center>
+  <h3>
+    Para calcular determinantes de tercer orden aplicamos el método de Sarrus.
+    Este método se puede aplicar de dos formas:
+  </h3>
+  <h2>Primera forma:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto3.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>
+    Para utilizar esta forma de aplicar el método de Sarrus tenemos que hacer la
+    siguiente operación.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto4.JPG' %}"
+      width="700"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto5.JPG' %}"
+      width="700"
+    />
+  </center>
+  <h3>El determinante es 0.</h3>
+  <br />
+  <br />
+  <br />
+  <h2>Segunda forma:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto6.JPG' %}"
+      width="290"
+    />
+  </center>
+  <h3>
+    Lo primero sería añadir las dos primeras filas debajo del determinante.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto7.JPG' %}"
+      width="290"
+    />
+  </center>
+  <h3>
+    Multiplicamos los elementos de las diagonales paralelas a la diagonal
+    principal:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto8.JPG' %}"
+      width="620"
+    />
+  </center>
+  <h3>Sumamos los resultados:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto9.JPG' %}"
+    />
+  </center>
+  <h3>
+    Tras esto hacemos lo mismo con las paralelas a la diagonal secundaria:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto10.JPG' %}"
+      width="630"
+    />
+  </center>
+  <h3>Sumamos los resultados:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto11.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>
+    Restamos el resultado de las paralelas a la diagonal principal con los de la
+    secundaria:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto12.JPG' %}"
+      width="850"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2AL/determinacionto13.JPG' %}"
+      width="750"
+    />
+  </center>
+  <h3>El determinante es 0.</h3>
+</div>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/CoQTFajSsw8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

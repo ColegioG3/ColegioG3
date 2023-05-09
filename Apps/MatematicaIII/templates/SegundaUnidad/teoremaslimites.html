@@ -1,0 +1,310 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Teorema uno (Número Natural)" class="btn btn-danger btn-lg">Teorema uno (Número Natural)</a>
+<a href="#Teorema dos (Exponente)" class="btn btn-danger btn-lg">Teorema dos (Exponente)</a>
+<a href="#TeoremaTres" class="btn btn-danger btn-lg"
+  >Teorema tres (Múltiplo escalar)</a
+>
+<a href="#TeoremaCuatro" class="btn btn-danger btn-lg"
+  >Teorema cuatro (El producto)</a
+>
+<a href="#TeoremaCinco" class="btn btn-danger btn-lg"
+  >Teorema cinco (El cociente)</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="Teorema uno (Número Natural)">
+  <h1 id="Teorema uno (Número Natural)">Teorema uno (Número Natural)</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El Teorema del Número Natural es una proposición matemática que establece que todo número natural mayor
+    que 1 es producto de números primos únicos. 
+    <br>
+    También se conoce como el Teorema Fundamental de la Aritmética.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="250"
+      src="{% static 'Ima/numerosNaturales.jpg' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>
+    <h3>Descompone el número 84 en un producto de factores primos únicos</h3>
+    <h3>Solución:</h3>
+    <h3>Comenzamos dividiendo 84 por el número primo más pequeño, que es:</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="450"
+          src="{% static 'Ima/ecuacion11.png' %}"
+        />
+      </center>
+    <h3>Así que tenemos: </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="200"
+          src="{% static 'Ima/ecuacion12.png' %}"
+        />
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+<h1 id="Teorema dos (Exponente)">Teorema dos (Exponente)</h2>
+  <h2>Definición:</h2>
+  <h3>
+    El Teorema del Exponente establece que, al multiplicar potencias con la misma base, se pueden sumar sus exponentes. 
+    Es decir, para cualquier número real a y enteros positivos m y n:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="250"
+      src="{% static 'Ima/ecuacion13.png' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="350"
+          src="{% static 'Ima/ecuacion14.png' %}"
+        />
+      </center>
+</div>
+<div class="col-lg-12" id="TeoremaTres">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Teorema tres (Múltiplo escalar)</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El Múltiplo escalar es una propiedad de los límites que establece: El límite
+    de una constante por una función es la constante por el límite de la
+    función, en otras palabras, el límite de una función multiplicada por una
+    constante es igual al producto de dicha constante por el límite de la
+    función, para comprenderlo mejor tiene la siguiente fórmula:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites1.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>
+    A manera de ejemplo, la fórmula extendida del múltiplo escalar es la
+    siguiente:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites2.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h2>Pasos:</h2>
+  <h3>• Identificar K (en este caso es 2):</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites3.JPG' %}"
+      width="150"
+    />
+  </center>
+  <h3>
+    • Una vez identificada K separarla con paréntesis del resto de la función y
+    encerrar en corchetes y simplificar valores:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites4.JPG' %}"
+      width="170"
+    />
+  </center>
+  <h3>• Colocar K al inicio del límite a manera de multiplicar:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites5.JPG' %}"
+      width="170"
+    />
+  </center>
+  <h3>• Sustituir la variable x (en este caso es 4):</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites6.JPG' %}"
+      width="170"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/limites7.JPG' %}"
+      width="450"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="TeoremaCuatro">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Teorema cuatro (El producto)</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El límite del producto de dos funciones en un punto es el producto del
+    límite de cada función en ese punto, para comprenderlo mejor tiene la
+    siguiente fórmula:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t41.JPG' %}"
+      width="425"
+    />
+  </center>
+  <h2>Pasos:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t42.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>En este ejemplo tenemos las siguientes dos funciones distintas:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t43.JPG' %}"
+      width="180"
+    />
+  </center>
+  <h3>El límite de cada función en x cuando tiende a 2 es:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t44.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>
+    Así pues, para determinar el límite del producto de las dos funciones no es
+    necesario multiplicarlas entre sí, sino que simplemente tenemos que
+    multiplicar el resultado obtenido de cada límite:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t45.JPG' %}"
+      width="170"
+    />
+  </center>
+  <h3>
+    Esto nos permite ahorrar cálculos y tiempo ya que hacer la multiplicación de
+    dos funciones puede resultar difícil.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t46.JPG' %}"
+      width="420"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="TeoremaCinco">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Teorema cinco (El cociente)</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El límite del cociente (o división) de dos funciones es igual al cociente de
+    los límites de las funciones, para comprenderlo mejor tiene la siguiente
+    fórmula:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t51.JPG' %}"
+      width="300"
+    />
+  </center>
+  <h3>
+    Esta condición se cumple siempre y cuando el límite de la función del
+    denominador no sea nulo:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t52.JPG' %}"
+      width="160"
+    />
+  </center>
+  <h2>Pasos:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t53.JPG' %}"
+      width="200"
+    />
+  </center>
+  <h3>En este ejemplo tenemos dos funciones distintas:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t54.JPG' %}"
+      width="210"
+    />
+  </center>
+  <h3>Primero calculamos el límite de cada función en x cuando tiende a 0:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t55.JPG' %}"
+      width="380"
+    />
+  </center>
+  <h3>
+    De modo que el límite de la división de las dos funciones en x=0 se puede
+    hallar fácilmente:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t56.JPG' %}"
+      width="100"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU2MIII/t57.JPG' %}"
+      width="380"
+    />
+  </center>
+</div>
+<div class="col-lg-12"  id="video">
+<h2>Video:</h2>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ggro0sCkG2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+</div>
+{% endblock %}

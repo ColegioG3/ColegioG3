@@ -1,0 +1,128 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Determinantes" class="btn btn-danger btn-lg">Determinantes</a>
+<a href="#Dimension1*1" class="btn btn-danger btn-lg">Dimensión 1*1</a>
+<a href="#Dimension2*2" class="btn btn-danger btn-lg">Dimensión 2*2</a>
+<a href="#Dimension3*3" class="btn btn-danger btn-lg">Dimensión 3*3</a>
+<a href="#Ejemplos" class="btn btn-danger btn-lg">Ejemplos</a>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="#Determinantes">
+  <h1 id="Determinantes">Determinantes</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Son de gran importancia en el álgebra ya que, por ejemplo, nos permite saber
+    si una matriz es regular (si tiene inversa) y, por tanto, si un sistema de
+    ecuaciones lineales tiene solución. Además, en el caso de que el sistema de
+    ecuaciones tenga una única solución, podemos calcularla aplicando
+    determinantes (regla de Cramer).
+    <br />
+    <br />
+    Es importante recordar:<br />
+    <br />
+    • Una matriz tiene inversa si su determinante es distinto de 0.
+    <br />
+    • Las filas de una matriz o sus columnas son linealmente dependientes si, y
+    sólo si, su determinante es 0.
+    <br />
+    • La función determinante se define para matrices cuadradas.
+  </h3>
+  <h2>Reglas para cada dimensión:</h2>
+  <h2 id="Dimension1*1">Dimensión 1*1:</h2>
+  <h3>
+    Si la dimensión de la matriz es 1, sólo tiene un elemento y su determinante
+    es dicho elemento:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante1.JPG' %}"
+      width="125"
+    />
+  </center>
+  <h2 id="Dimension2*2">Dimensión 2*2:</h2>
+  <h3>La matriz cuadrada de dimensión 2 tiene la forma</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante2.JPG' %}"
+      width="225"
+    />
+  </center>
+  <h3>
+    • Regla: calculamos el determinante restando el producto de los elementos de
+    las diagonales:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante3.JPG' %}"
+      width="425"
+    />
+  </center>
+  <h2 id="Dimension3*3">Dimensión 3*3:</h2>
+  <h3>La matriz cuadrada de dimensión 3 tiene la forma</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante4.JPG' %}"
+      width="325"
+    />
+  </center>
+  <h3>
+    • Regla: calculamos el determinante mediante la llamada regla de Sarrus. Una
+    forma de aplicar la regla de Sarrus es escribir las tres columnas de la
+    matriz seguidas de la primer y la segunda columna:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante5.JPG' %}"
+      width="435"
+    />
+  </center>
+  <h3>
+    Los elementos de las diagonales con flecha hacia abajo (azul) se multiplican
+    y se suman; los de las otras diagonales (rojo) se multiplican y se restan:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante6.JPG' %}"
+      width="670"
+    />
+  </center>
+  <h2 id="Ejemplos">Ejemplos:</h2>
+  <h2>Dimensión 2*2:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante7.JPG' %}"
+      width="575"
+    />
+  </center>
+  <h2>Dimensión 3*3:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/determinante8.JPG' %}"
+      width="725"
+    />
+  </center>
+  <div class="col-lg-12" id="video">
+    <h2>Video:</h2>
+    <center>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jZIk90KQo6s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+  </div>
+  {% endblock %}
+</div>

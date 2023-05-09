@@ -1,0 +1,139 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Ecuación del círculo" class="btn btn-danger btn-lg">Ecuación del círculo</a>
+<a href="#EcuacionVertice" class="btn btn-danger btn-lg">Ecuación del círculo con el centro del vértice de la perpendicular</a>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12">
+  <h1 id="Ecuación del círculo">Ecuación del círculo</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La ecuación normal del círculo es una expresión matemática que permite describir la posición de un círculo en el plano cartesiano.
+    <br>
+    Esta ecuación se escribe en la forma:
+    <br>
+    (x - a)² + (y - b)² = r²
+    <br>
+    donde (a,b) es el centro del círculo y r es su radio.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="300"
+      src="{% static 'Ima/ecuacionCirculo.png' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>
+    Encuentra la ecuación normal del círculo con centro en el punto (2, -3) y radio 4
+    <h3>Solución:</h3>
+    <h3>Usando la fórmula general del círculo para encontrar la ecuación estándar: </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="750"
+          src="{% static 'Ima/ecuacion1.png' %}"
+        />
+      </center>
+    <h3>En este caso, h=2, k=-3 y r=4</h3>
+    <h3>Entonces:</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="350"
+          src="{% static 'Ima/ecuacion2.png' %}"
+        />
+      </center>
+    <h3>Luego, para obtener la ecuación normal, despejamos y: </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="350"
+          src="{% static 'Ima/ecuacion3.png' %}"
+        />
+      </center>
+    <h3>La ecuación normal del círculo es x </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="375"
+          src="{% static 'Ima/ecuacion4.png' %}"
+        />
+      </center>
+  </h3>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="EcuacionVertice">Ecuación del círculo con el centro del vértice de la perpendicular</h1>
+  <h2>Definición:</h2>
+  <h3>
+    <p>La ecuación del círculo con el centro del vértice de la perpendicular es una forma de encontrar la
+    ecuación de un círculo si se conoce el centro y el punto donde el círculo es tangente a una recta.
+    El punto de tangencia es el vértice de la perpendicular que se traza desde el centro del círculo a la recta.</p>
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      width="350"
+      src="{% static 'Ima/circuloPerpendicular.png' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3>
+    Dado los puntos A (1, 2) y B (5, 4) y la línea r: y = 3x + 1, encontrar:
+    <br>
+    la ecuación del círculo con centro en el punto medio del segmento AB y que sea perpendicular a la línea r.
+    <h2>Solución:</h2>
+    <h3>Encontramos el punto medio del segmento AB: Punto medio = ((1+5) /2, (2+4) /2) = (3, 3)</h3>
+    <h3>La pendiente de la línea r es 3, por lo tanto, la pendiente de la línea perpendicular será -1/3
+    <br>
+    (ya que el producto de las pendientes de dos líneas perpendiculares es -1)</h3>
+    <h3>La ecuación de la línea perpendicular que pasa por el punto medio (3, 3) es:</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="450"
+          src="{% static 'Ima/ecuacion5.png' %}"
+        />
+      </center>
+    <h3>Utilizar la fórmula para la ecuación del círculo con centro en (h, k) y radio r: </h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="400"
+          src="{% static 'Ima/ecuacion6.png' %}"
+        />
+      </center>
+    <h3>Sustituyendo los valores de (h, k) = (3,3) obtenidos anteriormente y r = distancia entre el centro y uno de los puntos:</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="595"
+          src="{% static 'Ima/ecuacion7.png' %}"
+        />
+      </center>
+    <h3>Sustituyendo de nuevo en la fórmula del círculo encontramos
+    <br>
+    las ecuaciones del círculo con centro en el punto medio de AB y que es perpendicular a la línea r:</h3>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          width="550"
+          src="{% static 'Ima/ecuacion8.png' %}"
+        />
+      </center>
+  </h3>
+<h2 id="video">Video:</h2>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vQg3OSrR_Mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,161 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#EcuacionesLinealesCon1" class="btn btn-danger btn-lg"
+  >Ecuaciones lineales con una incógnita</a
+>
+<a href="#ProblemasEcuaciones1G" class="btn btn-danger btn-lg"
+  >Problemas de ecuaciones de primer grado</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12" id="EcuacionesLinealesCon1">
+  <h1>Ecuaciones lineales con una incógnita</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Estas ecuaciones son un caso especial de igualdad entre expresiones
+    algebraicas y pueden ser de mayor o menor complejidad. Siempre y cuando sea
+    una sola incógnita que no está elevada a ninguna potencia.
+  </h3>
+  <h2>Pasos:</h2>
+  <h3>
+    1. Trabaja paréntesis (si los hay) realizando operaciones para eliminarlos.
+    Factorizar siempre ayuda.
+    <br />
+    2. Trabaja denominadores (si los hay) para eliminarlos.
+    <br />
+    3. Realiza transposición de términos entre los dos miembros de la igualdad,
+    tratando de que los términos en x queden en el primer término y los términos
+    sin x queden en el segundo.
+    <br />
+    4. Opera, asociando términos en x entre ellos y términos sin x entre ellos.
+    <br />
+    5. Despeja x en el primer miembro de modo de llegar a una expresión del tipo
+    X = un número.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <h3>
+    En este caso, está claro, la incógnita es la x y resolver la ecuación es
+    precisamente hallar cuál es el valor de x que satisface la misma.
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eli1.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    Se realiza la transposición de términos: (observa que 3x paso restando y -7
+    paso sumando)
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eli2.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    Se realizan las operaciones y se despeja x, luego simplifica: (observa que
+    el 2 estaba multiplicando a la x y pasa dividiendo al 18)
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/eli3.JPG' %}"
+      width="400"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="ProblemasEcuaciones1G">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>Problemas de ecuaciones de primer grado</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Una ecuación de primer grado es una ecuación cuya solución viene dada por el
+    producto de sus variables (en este caso, x), y el valor medio de sus
+    fórmulas integrales.
+  </h3>
+  <h2>Pasos:</h2>
+  <h3>
+    1. Quitar paréntesis. (si los hay)
+    <br />
+    2. Quitar denominadores. (si los hay)
+    <br />
+    3. Agrupar los términos en x en un miembro y los términos independientes en
+    el otro.
+    <br />
+    4. Reducir los términos semejantes.
+    <br />
+    5. Despejar la incógnita.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epg1.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>1. Quitamos paréntesis.</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epg2.JPG' %}"
+      width="325"
+    />
+  </center>
+  <h3>
+    2. Agrupamos los términos en {x} en un miembro y los términos independientes
+    en el otro.
+  </h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epg3.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>3. Reducimos los términos semejantes.</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epg4.JPG' %}"
+      width="160"
+    />
+  </center>
+  <h3>4. Despejamos la incógnita.</h3>
+  <br />
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1AL/epg5.JPG' %}"
+      width="90"
+    />
+  </center>
+  <h2 id="video">Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/JdapTfctsy8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

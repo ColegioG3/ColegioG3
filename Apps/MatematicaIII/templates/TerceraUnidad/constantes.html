@@ -1,0 +1,118 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#DerivadaConstante" class="btn btn-danger btn-lg"
+  >Derivada de una Constante</a
+>
+<a href="#DerivadaFuncion" class="btn btn-danger btn-lg"
+  >Derivada de una constante por una función</a
+>
+<a href="#DerivadaPartida" class="btn btn-danger btn-lg"
+  >Derivada de una constante partida por una función</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12">
+  <h1>Reglas de Constantes</h1>
+  <br />
+  <h1 id="DerivadaConstante">Derivada de una Constante</h1>
+  <h2>Definición:</h2>
+  <h3>La derivada de una constante es 0:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/constante1.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h2>Gráfica de la derivada de la función constante:</h2>
+  <h3>
+    A la izquierda, una función constante. A la derecha, su derivada, que es
+    cero. Recuerda que la pendiente de cualquier constante es 0 en cualquier
+    punto, de ahí que su derivada, que representa la pendiente de la recta
+    tangente, sea también 0.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/constante2.JPG' %}"
+      width="750"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/constante3.JPG' %}"
+      width="350"
+    />
+  </center>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="DerivadaFuncion">Derivada de una constante por una función</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La derivada del producto de una constante por una función es igual al
+    producto de la constante por la derivada de la función.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/constante4.JPG' %}"
+      width="450"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/constante5.JPG' %}"
+      width="350"
+    />
+  </center>
+  <div class="col-lg-12">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="DerivadaPartida">
+      Derivada de una constante partida por una función
+    </h1>
+    <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU3MIII/constante6.JPG' %}"
+        width="450"
+      />
+    </center>
+    <h2>Ejemplo:</h2>
+    <center>
+      <img
+        class="img-fluid rounded-circle"
+        src="{% static 'images/imgU3MIII/constante7.JPG' %}"
+        width="580"
+      />
+    </center>
+  </div>
+  <div class="col-lg-12" id="video">
+    <h2>Video:</h2>
+    <center>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/T42-57sojsA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+  </div>
+  {% endblock %}
+</div>

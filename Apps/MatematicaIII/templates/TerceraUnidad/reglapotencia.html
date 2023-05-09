@@ -1,0 +1,237 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#ReglasPotencia" class="btn btn-danger btn-lg">Reglas de Potencia</a>
+<a href="#DerivadaBaseX" class="btn btn-danger btn-lg"
+  >Derivada de una potencia de base x</a
+>
+<a href="#DerivadaParentesis" class="btn btn-danger btn-lg"
+  >Derivada de una potencia con paréntesis</a
+>
+<a href="#DerivadaNegativa" class="btn btn-danger btn-lg"
+  >Derivada de una potencia negativa</a
+>
+<a href="#DerivadaRaiz" class="btn btn-danger btn-lg"
+  >Derivada de una potencia con raíz</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12">
+  <h1 id="ReglasPotencia">Reglas de Potencia</h1>
+  <br />
+  <h2>Definición:</h2>
+  <h3>
+    La derivada de una potencia, o función potencial, es el producto del
+    exponente de la potencia por la base elevada al exponente menos 1 por la
+    derivada de la base. Para comprenderlo mejor, tiene la siguiente fórmula:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia1.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>
+    Por lo tanto, si la base es la función identidad, para derivar la potencia
+    solamente tenemos que multiplicar la función por el exponente y restarle una
+    unidad al exponente. Para comprenderlo mejor, tiene la siguiente fórmula:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia2.JPG' %}"
+      width="350"
+    />
+    <h3>
+      Esto es debido a que la derivada de la función identidad es igual a 1.
+      <br />
+      <br />
+      En resumen, para derivar una función potencial existen dos fórmulas: la
+      primera que se puede utilizar siempre y la segunda que solo se puede
+      aplicar cuando la base es una x.
+    </h3>
+  </center>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia3.JPG' %}"
+      width="750"
+    />
+  </center>
+</div>
+<h2>Ejemplos:</h2>
+<div class="col-lg-12">
+  <h1 id="DerivadaBaseX">Derivada de una potencia de base x</h1>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia4.JPG' %}"
+      width="160"
+    />
+  </center>
+  <h3>
+    Tal y como hemos explicado en el apartado anterior, cuando la base de la
+    potencia es solamente una x, la fórmula que debemos usar para derivar la
+    función es la siguiente:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia5.JPG' %}"
+      width="450"
+    />
+  </center>
+  <h3>De modo que la derivada de la potencia x elevada a 4 es:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia6.JPG' %}"
+      width="450"
+    />
+  </center>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="DerivadaParentesis">Derivada de una potencia con paréntesis</h1>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia7.JPG' %}"
+      width="200"
+    />
+  </center>
+  <h3>
+    En este ejemplo la base no es la función identidad, por lo que debemos
+    emplear la fórmula general de la derivada de una potencia:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia8.JPG' %}"
+      width="400"
+    />
+  </center>
+  <h3>
+    La función de dentro del paréntesis es una función lineal, así que su
+    derivada es 2. Por lo tanto, la derivada de toda la función potencial es:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia9.JPG' %}"
+      width="700"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/constante7.JPG' %}"
+      width="580"
+    />
+  </center>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="DerivadaNegativa">Derivada de una potencia negativa</h1>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia10.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    En este caso tenemos una función potencial cuyo exponente es negativo y cuya
+    base es un logaritmo, así que utilizaremos la siguiente fórmula para derivar
+    la función:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia11.JPG' %}"
+      width="450"
+    />
+  </center>
+  <h3>
+    Aunque el exponente de la potencia sea negativo, también debemos restarle
+    uno. Por lo tanto, la derivada de la función es:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia12.JPG' %}"
+      width="700"
+    />
+  </center>
+</div>
+<div class="col-lg-12">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1 id="DerivadaRaiz">Derivada de una potencia con raíz</h1>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia13.JPG' %}"
+      width="220"
+    />
+  </center>
+  <h3>
+    La función de este ejemplo es una potencia dentro de una expresión racional.
+    Sin embargo, los radicales se pueden transformar en expresiones potenciales,
+    por lo tanto, la función se puede simplificar convirtiéndola en una función
+    potencial con exponente fraccionario:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia14.JPG' %}"
+      width="250"
+    />
+  </center>
+  <h3>
+    Ahora aplicamos la fórmula de la derivada de una potencia de una variable:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia15.JPG' %}"
+      width="550"
+    />
+  </center>
+  <h3>Y la derivada es:</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU3MIII/potencia16.JPG' %}"
+      width="550"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/-PjdQi5Foio"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </center>
+</div>
+{% endblock %}

@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Apps.login',
     'Apps.matecomercial',
+    'Apps.AlgebraLineal',
+    'Apps.MatematicaIII',
+    'Apps.matematicaI',
     'Apps.MatematicaII',
     'Apps.matematicaI'
 ]
@@ -82,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'prueba',
         'USER': 'root',
-        'PASSWORD': '1234',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
         'PORT': '',
     }

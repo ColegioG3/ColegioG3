@@ -1,0 +1,47 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block contenido %}
+    <div class="container-fluid">
+        <div class="page-header">
+          <h1 class="text-titles">Algebra Lineal <small>Bachillerato Industrial y Perito con Especialidad en Computación </small> </h1> 
+        </div>
+    </div>
+
+    <div class="full-box text-center" style="padding: 30px 30px;">
+        <div class="list-groupUnidad" >
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD I
+            </a>
+            <a href="{% url 'AlgebraLineal:ecuacioneslapp'%}" class="list-group-item list-group-item-action">Ecuaciones lineales con una incógnita</a>
+            <a class="list-group-item list-group-item-action disabled">Problemas de ecuaciones de primer grado</a>
+            <a href="{% url 'AlgebraLineal:ecuacionespgdapp'%}" class="list-group-item list-group-item-action">Sistema de ecuaciones de primer grado con dos incógnitas</a>
+            <a class="list-group-item list-group-item-action disabled">Método de eliminación por igualación</a>
+            <a class="list-group-item list-group-item-action disabled">Método de eliminación por sustitución</a>
+            <a class="list-group-item list-group-item-action disabled">Método de eliminación por reducción</a>
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD II
+            </a>
+            <a href="{% url 'AlgebraLineal:sistemasdosiapp'%}" class="list-group-item list-group-item-action">Sistemas numéricos con dos incógnitas</a>
+            <a href="{% url 'AlgebraLineal:determinaciondtapp'%}" class="list-group-item list-group-item-action">Determinación de segundo y tercer orden</a>
+            <a href="{% url 'AlgebraLineal:reglacramerapp'%}" class="list-group-item list-group-item-action">Regla de Cramer</a>
+            <a href="{% url 'AlgebraLineal:problemasdtiapp'%}" class="list-group-item list-group-item-action">Problemas de ecuaciones de dos y tres incógnitas</a>
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD III
+            </a>
+            <a href="{% url 'AlgebraLineal:matricesapp'%}" class="list-group-item list-group-item-action">Matrices</a>
+            <a href="{% url 'AlgebraLineal:menorcofactorapp'%}" class="list-group-item list-group-item-action">Menor y Cofactor</a>
+            <a href="{% url 'AlgebraLineal:gaussianaapp'%}" class="list-group-item list-group-item-action">Eliminación Gaussiana</a>
+            <a href="{% url 'AlgebraLineal:gaussjordanapp'%}" class="list-group-item list-group-item-action">Eliminación Gauss-Jordan</a>
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              UNIDAD IV
+            </a>
+            <a href="{% url 'AlgebraLineal:vectoresapp'%}" class="list-group-item list-group-item-action">Vectores</a>
+            <a class="list-group-item list-group-item-action disabled">Vectores en R2</a>
+            <a class="list-group-item list-group-item-action disabled">Vectores en R3</a>
+            <a class="list-group-item list-group-item-action disabled">Vectores en unitario</a>
+            <a href="{% url 'AlgebraLineal:planoapp'%}" class="list-group-item list-group-item-action">Plano cartesiano</a>
+            <a href="{% url 'AlgebraLineal:matricesapp'%}" class="list-group-item list-group-item-action">Matrices</a>
+            <a href="{% url 'AlgebraLineal:determinantesapp'%}" class="list-group-item list-group-item-action">Determinantes</a>
+          </div>
+    </div>
+{% endblock %}

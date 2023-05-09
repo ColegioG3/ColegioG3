@@ -1,0 +1,111 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+
+<a href="#Cartesiano" class="btn btn-danger btn-lg">Plano cartesiano</a>
+<a href="#Caracteristicas" class="btn btn-danger btn-lg"
+  >Características del plano cartesiano</a
+>
+<a href="#Elementos" class="btn btn-danger btn-lg"
+  >Elementos del plano cartesiano</a
+>
+<a href="#Ejemplos" class="btn btn-danger btn-lg"
+  >Ejemplos</a
+>
+<a href="#video" class="btn btn-danger btn-lg">Video</a>
+<div class="col-lg-12">
+  <h1 id="Cartesiano">Plano Cartesiano</h1>
+  <h2>Definición:</h2>
+  <h3>
+    El plano cartesiano consiste en un par de rectas perpendiculares entre sí y
+    que se intersectan en un punto. Una de las rectas es vertical y la otra
+    horizontal, tomando al punto de intersección como el origen del sistema. El
+    objetivo es ubicar fácilmente cualquier punto plano mediante un par de
+    valores: las coordenadas. Para ello, sobre cada una de las rectas se
+    construye una escala con números enteros, los positivos se escriben en una
+    dirección y los negativos en la otra.
+  </h3>
+  <h2 id="Caracteristicas">Características del plano cartesiano:</h2>
+  <h3>
+    • Tanto el eje x como el eje y se extienden infinitamente por ambos
+    extremos, y se intersectan entre sí perpendicularmente (en un ángulo de 90
+    grados). Esta característica se llama ortogonalidad.
+    <br />
+    • El punto donde ambos ejes se interceptan se conoce como origen o punto
+    cero.
+    <br />
+    • El sistema de coordenadas divide al plano en cuatro regiones llamadas
+    cuadrantes.
+    <br />
+    • Las ubicaciones en el plano de coordenadas se describen como pares
+    ordenados.
+    <br />
+    • Cada punto sobre el plano cartesiano está asociado a una coordenada x
+    única y a una coordenada y única.
+  </h3>
+  <h2 id="Elementos">Elementos del plano cartesiano:</h2>
+  <h3>
+    • Primer cuadrante: ejes x e y positivos.
+    <br />
+    • Segundo cuadrante:correspondiente al eje x negativo y al eje y positivo.
+    <br />
+    • Tercer cuadrante:tiene ambos ejes negativos.
+    <br />
+    • Cuarto cuadrante: con el eje x positivo, el eje y negativo.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/cartesiano1.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h2 id="Ejemplos">Ejemplos:</h2>
+  <h3>
+    • Ejemplo 1: Los pares ordenados son las coordenadas de cada punto, en las
+    cuales siempre se coloca la coordenada x en primer lugar, y la y en segundo
+    lugar, como ejemplo en la figura:
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/cartesiano2.JPG' %}"
+      width="350"
+    />
+  </center>
+  <h3>Las coordenadas (3,4) del punto P indican que x = 3 y y = 4.</h3>
+  <h3>
+    • Ejemplo 2: Localizar la Coordenada (10,6)
+    <br />
+    <br />
+    Paso 1: Primero consideramos que como los dos valores de nuestra coordenada
+    son positivos, entonces el punto se encuentra en el primero cuadrante
+    (derecho superior). 
+    <br>
+    Paso 2: Nuestra primera coordenada es 10, que la
+    localizaremos sobre el eje de las abscisas, hacia la derecha, partiendo del
+    origen o punto cero. 
+    <br>
+    Paso 3: Nuestra segunda coordenada es 6,
+    la cual localizaremos sobre el eje de las ordenadas hacia arriba del origen.
+    <br>
+    Paso 4: Ahora extendemos ambos puntos hasta su punto de
+    intersección. Ese punto es la coordenada (10,6).
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU4AL/cartesiano3.JPG' %}"
+      width="350"
+    />
+  </center>
+</div>
+<div class="col-lg-12" id="video">
+  <h2>Video:</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QTrE4x5DPZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    ></iframe>
+  </center>
+</div>
+{% endblock %}
