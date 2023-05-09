@@ -1,0 +1,57 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+
+<div class="col-lg-12" id="RazonNumerica">
+  <h1>Aligación</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La Regla de Aligación, tiene por objeto la resolución de los problemas relacionados con la mezcla,
+    combinación o aleación de dos más sustancias, en lo referente al coste medio por unidad o bien a la 
+    proporción en cuanto a la cantidad o coste de las sustancias que entran en la formación de la mezcla, 
+    combinación o aleación, sin tener en cuenta los problemas físicos o químicos de las mismas. <br>
+    Tiene por objeto determinar el Coste Medio, por unidad, de una mezcla, combinación o aleación, cuando 
+    son conocidos los costes unitarios de las sustancias que entren en la formación de las mismas. <br>
+    Cada una de las cantidades de sustancias que entran a formar parte de la mezcla o combinación, las
+    multiplicaremos por sus respectivos costes unitarios y, la suma de los productos obtenidos lo dividiremos 
+    por la suma de las cantidades que forman la mezcla o combinación.<br>
+    Representemos por A,B,C,…,Z  cada una de las cantidades que forman la mezcla o combinación. Por a, b, c,…,z 
+    sus respectivos costes y por M el coste medio. Tenemos que: <br>
+  </h3> 
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/Aligacion1.JPG' %}"
+    />
+  </center>
+  <h3>
+    Si para realizar la mezcla o combinación se incurriese en gastos, estos deberán incluirse al numerador de 
+    la ecuación anterior. Sea g el correspondiente a los gastos:
+  </h3> 
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/Aligacion2.JPG' %}"
+    />
+  </center>
+  <h2>Ejemplo:</h2>
+  <h3 style="margin: 40px;">Tenemos harina de tres calidades. Las cantidades y costes son las siguientes:
+     A=8.000Kg, B=1.600Kg y C=1.200Kg. Los costes son a= Q 6 por Kg, b= Q 8 por Kg y c= Q 10 por Kg. 
+     Los gastos de la operación ascienden a Q 500. Determinar el coste medio de 1Kg de la mezcla. <br>
+    Aplicamos la formula y obtenemos:
+    </h3><br>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/Aligacion3.JPG' %}"
+        />
+      </center>
+     <br>
+     <br>
+</div>
+
+
+{% endblock %}
