@@ -21,6 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('Apps.login.urls', 'login')),
     path('matecomercial/', include('Apps.matecomercial.urls', 'matecomercial')),
+
+    
     path('algebralineal/', include('Apps.AlgebraLineal.urls', 'AlgebraLineal')),
     path('matematicaIII/', include('Apps.MatematicaIII.urls', 'MatematicaIII')),
 ]
