@@ -1,0 +1,81 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+
+<div class="col-lg-12" id="RazonNumerica">
+  <h1>Aleaciones</h1>
+  <h2>Definición:</h2>
+  <h3>
+    La ley de la aleación es la relación entre el peso del metal fino, es decir, más valioso, 
+    y el peso total. En una aleación siempre intervienen un metal fino o precioso y un metal 
+    ordinario también llamado Liga.<br>
+    Se llama ley a la razón que existe entre el peso del metal fino y el peso total de la aleación. 
+    Matemáticamente la ley es:
+  </h3> 
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/Aleacion1.JPG' %}"
+    />
+  </center>
+  <br>
+  <h2>Ejemplo:</h2>
+  <h3 style="margin: 40px;">¿Cuál es la ley de una aleación conformada por 300 gramos de plata y 70 
+    gramos de níquel?<br>
+    El peso total de la aleación es:
+    </h3><br>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/Aleacion2.JPG' %}"
+        />
+      </center>
+      <h3 style="margin: 40px;">El peso del metal fino es:<br>
+        
+        </h3><br>
+        <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1/Aleacion3.JPG' %}"
+            />
+          </center>
+
+          <h3 style="margin: 40px;">Entonces la Ley de la Aleación sería: <br>
+        
+          </h3><br>
+          <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU1/Aleacion4.JPG' %}"
+              />
+            </center>
+
+            <h3 style="margin: 40px;">Ahora supongamos que queremos hacer una aleación con dos metales, A y B, cada uno con una ley de aleación 
+                distinta. En este caso tendremos la siguiente formula general: <br>
+        
+            </h3><br>
+            <center>
+                <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU1/Aleacion5.JPG' %}"
+                />
+              </center>
+     <br>
+     <br><h3 style="margin: 40px;">Por tanto, tendremos que la ley de aleación del metal resultante entre los dos es: <br>
+
+    </h3><br>
+    <center>
+        <img
+          class="img-fluid rounded-circle"
+          src="{% static 'images/imgU1/Aleacion6.JPG' %}"
+        />
+      </center>
+      <br>
+      <br>
+</div>
+
+
+{% endblock %}
