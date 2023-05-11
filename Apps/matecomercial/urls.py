@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Apps.matecomercial import views
-from .views import PrimeraUnidadView, PUFraccionesView, OpeFraccionesView, ProporcionalidadView, SociedadesView, AligacionesView, AleacionesView, TantoporCientoView
+from .views import PrimeraUnidadView, PUFraccionesView, OpeFraccionesView, ProporcionalidadView, SociedadesView, AligacionesView, AleacionesView, TantoporCientoView, PrimeraUnidadEjView, OpeFraccionesEjView
 
 app_name = 'matecomercial'
 
@@ -30,4 +30,6 @@ urlpatterns = [
     path('Aligaciones/',AligacionesView.as_view(), name='aligacionesapp'),
     path('Aleaciones/',AleacionesView.as_view(), name='aleacionesapp'),
     path('TantoPorCiento/',TantoporCientoView.as_view(), name='porcientoapp'),
+    path('MateComercialEjercicios', PrimeraUnidadEjView.as_view(), name='macomercialEjapp'),
+    path('FraccionesEjercicios/',OpeFraccionesEjView.as_view(), name='fraccionesej'),
 ]
