@@ -1,0 +1,150 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+</head>
+<a href="#Fracciones" class="btn btn-danger btn-lg">Fracciones</a>
+<a href="#FraccionesEquivalentes" class="btn btn-danger btn-lg">Fracciones Equivalentes</a>
+<a href="#FraccionesIrreducibles" class="btn btn-danger btn-lg">Fracciones Irreducibles</a>
+<a href="#FraccionesDecimales" class="btn btn-danger btn-lg">Fracciones Decimales</a>
+
+
+<div class="col-lg-12" id="Fracciones">
+  <h1>Fracciones</h1>
+  <h2>Definición:</h2>
+  <h3>
+    En el mundo de las matemáticas, la fracción es una expresión que marca una
+    división, por lo tanto, se puede decir que una fracción representa un
+    reparto o una porción de una unidad. La fracción se compone especialmente de
+    dos números, el número que está arriba de la línea se llama numerador y el
+    número que está debajo de la línea se llama denominador.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fracciones1.JPG' %}"
+    />
+  </center>
+</div>
+
+
+<div class="col-lg-12" id="FraccionesEquivalentes">
+  <br />
+  <br />
+  <br />
+  <h1>Fracciones Equivalentes</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Las fracciones equivalentes son aquellas que representan lo mismo, pero
+    tienen distintos números en el denominador y el numerador.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesE1.JPG' %}"
+    />
+  </center>
+  <h3>
+    Si nos imaginamos un pastel, todas representan la mitad del pastel. Lo que
+    varía son las porciones en las que lo hemos dividido.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesE2.JPG' %}"
+    />
+  </center>
+  <h3>
+    Para saber si dos fracciones son o no equivalentes lo que debemos hacer es
+    multiplicar en cruz. Es decir, multiplicar el numerador de una con el
+    denominador de la otra y al revés y comprobar que nos da el mismo resultado.
+  </h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesE3.JPG' %}"
+    />
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QZTyePr_Snk" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+</div>
+
+
+<div class="col-lg-12" id="FraccionesIrreducibles">
+  <br />
+  <br />
+  <br />
+  <h1>Fracciones Irreducibles</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Cuando no podemos simplificar más una fracción decimos que es irreducible.
+    En general, una fracción no se puede reducir más cuando sus términos no
+    tienen ningún divisor común excepto el 1.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesI1.JPG' %}"
+    />
+  </center>
+  <h3>La fracción no es irreductible porque el M.C.D. de 15 y de 6 es 3</h3>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesI2.JPG' %}"
+    />
+  </center>
+  <h3>
+    En cambio, el M.C.D. del numerador y denominador de la fracción equivalente
+    es 1, por lo tanto, es una fracción irreducible.
+  </h3>
+</div>
+
+
+<div class="col-lg-12" id="FraccionesDecimales">
+  <br />
+  <br />
+  <br />
+  <h1>Fracciones Decimales</h1>
+  <h2>Definición:</h2>
+  <h3>
+    Las fracciones en cuyo denominador hay un 10 o una potencia de 10 (es decir,
+    un 1 seguido de ceros, como ocurre en 100, 1000, etc.) se denominan
+    fracciones decimales. Como una fracción representa la cantidad de partes que
+    se toman de un todo o entero que ha sido dividido en porciones iguales,
+    Entonces, en la fracción decimal ese entero o todo se divide en partes
+    iguales a potencia de 10.
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesD1.JPG' %}"
+    />
+  </center>
+  <h3>
+    Son fracciones decimales. 
+    <br />
+    <br />
+    <br />
+    <br />
+    Una fracción decimal, se puede convertir en un
+    decimal dividiendo el numerador entre el denominador, ya que en ocasiones
+    puede facilitar la realización de algunos cálculos matemáticos
+  </h3>
+  <h2>Ejemplo:</h2>
+  <center>
+    <img
+      class="img-fluid rounded-circle"
+      src="{% static 'images/imgU1/fraccionesD2.JPG' %}"
+    />
+  </center>
+</div>
+
+
+{% endblock %}

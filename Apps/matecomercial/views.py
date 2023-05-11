@@ -25,3 +25,9 @@ class AleacionesView(TemplateView):
 
 class TantoporCientoView(TemplateView):
     template_name='TerceraUnidad/TantoPorCiento.html'
+
+class PrimeraUnidadEjView(TemplateView):
+    template_name='listado1unidadEj.html'
+
+class OpeFraccionesEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/OperacionesConFraccionesEj.html'
