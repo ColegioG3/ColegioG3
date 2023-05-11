@@ -6,34 +6,34 @@
     <link rel="stylesheet" href="{% static './css/main.css' %}" />
     <script>
         function resultado() {
-            if (document.getElementById('p11').checked==true) {p1=1}
-        else {p1=0}
-        nota=p1;
+            if (document.getElementById('p11').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
 
-        if(p1==1){
-        alert(" CORRECTO");
+            if (p1 == 1) {
+                alert(" CORRECTO");
+            }
+            else {
+                alert(" RESPUESTA INCORRECTA");
+            }
+            location.reload();
         }
-        else{
-            alert(" RESPUESTA INCORRECTA");
-        }
-        location.reload();
-    }
 
-    function sumados() {
-        if (document.getElementById('p13').checked==true) {p1=1}
-        else {p1=0}
-        nota=p1;
+        function sumados() {
+            if (document.getElementById('p3').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
 
-        if(p1==1){
-        alert(" CORRECTO");
+            if (p1 == 1) {
+                alert(" CORRECTO");
+            }
+            else {
+                alert(" RESPUESTA INCORRECTA");
+            }
+            location.reload();
         }
-        else{
-            alert(" RESPUESTA INCORRECTA");
-        }
-        location.reload();
-    }
 
-     </script>
+    </script>
 
 
 </head>
@@ -48,38 +48,45 @@
     <br>
 
     <h2>Ejercicios</h2>
-    <center>
-        <div>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
-        
-        <form style="font:normal 16px sans-serif">
-            <p>Selecciona la Respuesta Correcta</p>
-            <p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
-            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
-            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
-            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
 
-            <p><input type="button" value=" R E S U L T A D O " onclick="resultado()" /></p>
-        </form>
-    </div><br><br>
-
-    <div>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
-        
-        <form style="font:normal 16px sans-serif">
-            <p>Selecciona la Respuesta Correcta</p>
-            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
-            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
-            <p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
-            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
-             
-            <p><input type="button" value=" R E S U L T A D O " onclick="sumados()"/></p>
-        </form>
-    </div>
-    </center><br>
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
 
 
-
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
 
 </div>
 
@@ -87,139 +94,146 @@
 <div class="col-lg-12" id="RestaF">
     <br />
     <br />
-    <br />
-    <br />
     <h1>Sustracción de Fracciones</h1>
-    <h2>Definición:</h2>
-    <h3>
-        La sustracción o resta de fracciones es una de las operaciones básicas que permite obtener la diferencia entre
-        dos
-        fracciones en una fracción equivalente, al cual se le conoce como "diferencia" o "Resta". Para obtener el valor
-        numérico en forma de fracción, primeramente, se debe identificar si la resta de fracciones tiene el
-        mismo denominador o diferente denominador, por lo tanto, se tienen dos procedimientos:
-    </h3><br>
+    <br>
+    <br>
 
-    <h4>a) Sustracción de fracciones con mismo denominador</h4>
-    <h3>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        La resta de fracciones con el mismo denominador o también conocida como resta de fracciones homogéneas
-        es el procedimiento más simplificado y sencillo, ya que el procedimiento de la resta se basa en restar
-        los numeradores y el denominador se mantiene igual.
-    </h3>
-    <h2>Ejemplo:</h2>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF1.JPG' %}" />
-    </center><br>
+    <h2>Ejercicios</h2>
 
-    <h4>b) Sustracción de fracciones con diferente denominador</h4>
-    <h3>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        Método de la multiplicación en cruz: Consiste en buscar el común denominador de las fracciones que se van a
-        restar.
-    </h3><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pasos: </h4>
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
 
-    <h3 style="margin: 40px;"> 1. Se multiplica los denominadores de las fracciones 3 x 5 = 15.</h3>
 
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF2.JPG' %}" />
-    </center><br>
-
-    <h3 style="margin: 40px;"> 2. Se multiplica el numerador de la primera fracción por el denominador de la segunda
-        fracción: 2 x 5 = 10.
-        El resultado se coloca en el numerador con el signo de la primera fracción.</h3>
-
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF3.JPG' %}" />
-    </center>
-
-    <h3 style="margin: 40px;"> 3. Se multiplica el denominador de la primera fracción por el numerador de la
-        segunda fracción: 3 x 3 = 9. El resultado se coloca en el numerador con el signo de la segunda fracción.
-    </h3>
-
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF4.JPG' %}" />
-    </center>
-
-    <h3 style="margin: 40px;"> 5. Se realiza la resta con los numeradores que resultaron.
-    </h3>
-
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/RestaF5.JPG' %}" />
-    </center>
-
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 
 
 <div class="col-lg-12" id="MultiplicacionF">
     <br />
     <br />
-    <br />
-    <br />
     <h1>Multiplicación de Fracciones</h1>
-    <h2>Definición:</h2>
-    <h3>
-        La multiplicación de fracciones es una de las operaciones básicas que permite obtener
-        una tercera fracción que será el producto de las anteriores, al cual se le conoce como
-        “Producto” o “Resultado de la Multiplicación”. Para obtener el valor numérico en forma
-        de fracciones, únicamente se tiene un procedimiento ya sea para multiplicación de fracciones
-        con diferente denominador o mismo denominador.<br>
-        En la multiplicación de fracciones se multiplican los numeradores de las fracciones y
-        aparte los denominadores.
-    </h3>
-    <h2>Ejemplo:</h2>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Multip1.JPG' %}" />
-    </center>
-    <h3 style="margin: 40px;">El resultado de 2/18 se puede simplificar porque, tanto numerador como denominador se
-        pueden
-        recudir a la mitad.</h3>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Multip2.JPG' %}" />
-    </center>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 
 <div class="col-lg-12" id="DivisionF">
     <br />
-    <br />
-    <br />
+
     <br />
     <h1>División de Fracciones</h1>
-    <h2>Definición:</h2>
-    <h3>
-        A diferencia de la operación matemática que conocemos como división,
-        en la división de fracciones no se realiza una repartición sino una multiplicación,
-        la cual, es una multiplicación cruzada entre los numeradores y denominadores de ambas fracciones.
-    </h3>
-    <h2>Ejemplo:</h2>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div1.JPG' %}" />
-    </center>
+    <h2>Ejercicios</h2>
 
-    <h3 style="margin: 40px;"> 1. Se multiplica el numerador de la primera fracción con el denominador de la
-        segunda fracción.<br>
-        2. El resultado de la multiplicación se coloca en la posición del numerador.</h3>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div2.JPG' %}" />
-    </center>
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
 
-    <h3 style="margin: 40px;">3. Ahora el denominador de la primera fracción se multiplica con el numerador de la
-        segunda fracción.<br>
-        4. El resultado de la multiplicación se coloca en la posición del denominador.</h3>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div3.JPG' %}" />
-    </center>
 
-    <h3 style="margin: 40px;">5. El resultado de la división se puede simplificar porque, tanto numerador como 
-        denominador tienen el mismo valor.</h3>
-    <center>
-        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/Div4.JPG' %}" />
-            <br><br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FUbla-rPt3M" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </center> <br><br>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
+                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
-
-
 {% endblock %}
