@@ -45,3 +45,46 @@ class CUPlanoView(TemplateView):
 class CUDeterminantesView(TemplateView):
     template_name='CuartaUnidad/determinantes.html'
 
+#EJERCICIOS
+
+class PrimeraUnidadEjView(TemplateView):
+    template_name='listado1unidadALEJ.html'
+
+class PUEcuacionesLinealesEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/ecuacioneslinealesej.html'
+
+class PUEcuacionesSegundoGradoEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/ecuacionespgdej.html'
+
+class SUSistemasDIEjView(TemplateView):
+    template_name='SegundaUnidadEjercicios/sistemadosiej.html'
+
+class SUDeterminacionDTEjView(TemplateView):
+    template_name='SegundaUnidadEjercicios/determinaciondtej.html'
+
+class SUReglaCramerEjView(TemplateView):
+    template_name='SegundaUnidadEjercicios/reglacramerej.html'
+
+class SUProblemasdtiEjView(TemplateView):
+    template_name='SegundaUnidadEjercicios/problemasdtiej.html'
+
+class TUMatricesEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/matricesej.html'
+
+class TUMenorCofactorEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/menorycofactorej.html'
+
+class TUGaussianaEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/gaussianaej.html'
+
+class TUGaussJordanEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/gaussjordanej.html'
+
+class CUVectoresEjView(TemplateView):
+    template_name='CuartaUnidadEjercicios/vectoresej.html'
+
+class CUPlanoEjView(TemplateView):
+    template_name='CuartaUnidadEjercicios/planocartesianoej.html'
+
+class CUDeterminantesEjView(TemplateView):
+    template_name='CuartaUnidadEjercicios/determinantesej.html'

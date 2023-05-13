@@ -1,0 +1,262 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function resultadovector21() {
+      if (document.getElementById("p1").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+
+    function resultadovector31() {
+      if (document.getElementById("p11").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    
+    function resultadovector11() {
+      if (document.getElementById("p18").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadovector12() {
+      if (document.getElementById("p23").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+  </script>
+</head>
+<a href="#VectorR2" class="btn btn-danger btn-lg">Vector en R2</a>
+<a href="#VectorR3" class="btn btn-danger btn-lg">Vector en R3</a>
+<a href="#VectorUnitario" class="btn btn-danger btn-lg"
+  >Vectores en Unitarios</a
+>
+
+<div class="col-lg-12" id="VectorR2">
+  <h1>Vector en R2</h1>
+  <br />
+  <br />
+
+  <h2>Ejercicio</h2>
+
+  <div class="row">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU4EAL/ejerciciovectordos1.JPG' %}"
+              width="400"
+            />
+            <br />
+            <br />
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta1" id="p1" /> a=(2,2) , b=(0,0)
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p2" /> a=(1,2) , b=(3,0)
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p3" /> a=(4,4) , b=(7,1)
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p4" /> a=(7,3) , b=(1,4)
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadovector21()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+<div class="col-lg-12" id="VectorR3">
+  <br />
+  <br />
+  <h1>Vector en R3</h1>
+  <br />
+  <br />
+
+  <h2>Ejercicio</h2>
+
+  <div class="row">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU4EAL/ejerciciovectortres1.JPG' %}"
+              width="400"
+            />
+            <br />
+            <br />
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta1" id="p9" /> a=(2,2,4) , b=(8,5,2)
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p10" /> a=(-5,3,2) , b=(-3,14,1)
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p11" /> a=(5,6,4) , b=(3,4,-2)
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p12" /> a=(2,8,3) , b=(1,3,6)
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadovector31()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+<div class="col-lg-12" id="VectorUnitario">
+    <br />
+    <br />
+    <h1>Vectores en Unitarios</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU4EAL/ejerciciovectorunitario1.JPG' %}"
+                width="350"
+              />
+              <br />
+              <br />
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p17" /> 3/3,  8/4
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p18" /> 3/5,  4/5
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p19" /> 2/6,  1/5
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p20" /> 10/2,  14/7
+                </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="resultadovector11()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU4EAL/ejerciciovectorunitario2.JPG' %}"
+                width="350"
+              />
+              <br />
+              <br />
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p21" /> 3/6, 2/8
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p22" /> 2/6, 1/4
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p23" /> 4/5, 3/5
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p24" /> 1/8, 3/3
+                </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="resultadovector12()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+{% endblock %}

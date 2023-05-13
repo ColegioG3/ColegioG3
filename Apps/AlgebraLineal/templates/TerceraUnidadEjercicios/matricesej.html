@@ -1,0 +1,157 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function matriz1() {
+      if (document.getElementById("p11").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function matriz2() {
+      if (document.getElementById("p13").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+  </script>
+</head>
+  <div class="col-lg-12" id="Matriz">
+    <br />
+    <br />
+    <h1>Matrices</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EAL/ejerciciomatrices1.JPG' %}"
+                width="400"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p9" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestafalsaejerciciomatrices1.JPG' %}"
+                  width="82"
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p10" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestafalsejerciciomatrices1.JPG' %}"
+                  width="82"
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p11" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestaejerciciomatrices1.JPG' %}"
+                  width="82"
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p12" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestafalejerciciomatrices1.JPG' %}"
+                  width="92"
+                </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="matriz1()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EAL/ejerciciomatrices2.JPG' %}"
+                width="490"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p13" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestaejerciciomatrices2.JPG' %}"
+                  width="100"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p14" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestafalejerciciomatrices2.JPG' %}"
+                  width="100"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p15" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestafalsejerciciomatrices2.JPG' %}"
+                  width="100"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p16" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EAL/respuestafalsaejerciciomatrices2.JPG' %}"
+                  width="100"
+                />
+                </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="matriz2()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+{% endblock %}

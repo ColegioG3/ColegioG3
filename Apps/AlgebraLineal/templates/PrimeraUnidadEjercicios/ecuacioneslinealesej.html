@@ -1,0 +1,250 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function resultadoeli() {
+      if (document.getElementById("p2").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadoelidos() {
+      if (document.getElementById("p8").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+
+    function resultadoepg1() {
+      if (document.getElementById("p11").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadoepg2() {
+      if (document.getElementById("p16").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+  </script>
+</head>
+<a href="#EcuacionesLineales" class="btn btn-danger btn-lg">Ecuaciones lineales con una incógnita</a>
+<a href="#ProblemasPrimerGrado" class="btn btn-danger btn-lg">Problemas de ecuaciones de primer grado</a>
+
+<div class="col-lg-12" id="EcuacionesLineales">
+  <h1>Ecuaciones lineales con una incógnita</h1>
+  <br />
+  <br />
+
+  <h2>Ejercicios</h2>
+
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioeli1.PNG' %}"
+              width="350"
+            />
+            <br>
+            <br>
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta1" id="p1" /> 2
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p2" /> 4
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p3" /> 6
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p4" /> 7
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadoeli()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioeli2.PNG' %}"
+              width="350"
+            />
+            <br>
+            <br>
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p >
+                <input type="radio" name="pregunta2" id="p5" /> 15
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p6" /> 10
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p7" /> 11
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p8" /> 32
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadoelidos()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12" id="ProblemasPrimerGrado">
+  <br />
+  <br />
+  <h1>Problemas de ecuaciones de primer grado</h1>
+  <br />
+  <br />
+
+  <h2>Ejercicios</h2>
+
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioepg1.PNG' %}"
+              width="450"
+            />
+            <br>
+            <br>
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta1" id="p9" /> 4
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p10" /> 7
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p11" /> 9
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p12" /> 3
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadoepg1()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioepg2.PNG' %}"
+              width="450"
+            />
+            <br>
+            <br>
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta2" id="p13" /> -10
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p14" /> -32
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p15" /> -12
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p16" /> -18
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadoepg2()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+{% endblock %}
