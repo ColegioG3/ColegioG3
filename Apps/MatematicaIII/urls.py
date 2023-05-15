@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.AlgebraLineal import views
-from .views import ListadoMIIIView, SUTeoremasLMIIIView, SULimitesInfinitoView, TUConstantesView, TUPotenciaView, TUTeoremasDerivacionView, PUTeoremaDeRectasView, PUecuacionCirculoView, PUcomplementoCuadradosView
+from .views import ListadoMIIIView, SUTeoremasLMIIIView, SULimitesInfinitoView, TUConstantesView, TUPotenciaView, TUTeoremasDerivacionView, PUTeoremaDeRectasView, PUecuacionCirculoView, PUcomplementoCuadradosView, SULimitesInfinitoEjView,SUTeoremasLMIIIEjView, ListadoMIIIEjView, TUConstantesEjView, TUPotenciaEjView, TUTeoremasDerivacionEjView
 
 app_name = 'MatematicaIII'
 
@@ -31,4 +31,11 @@ urlpatterns = [
     path('teoremasderectas', PUTeoremaDeRectasView.as_view(), name='teoremasderectasapp'),
     path('ecuacioncirculo', PUecuacionCirculoView.as_view(), name='circuloapp'),
     path('complementoscuadrados', PUcomplementoCuadradosView.as_view(), name='complementosapp'),
+    #Ejercicios
+    path('matematicaIIIejercicios', ListadoMIIIEjView.as_view(), name='matematicaIIIEjapp'),
+    path('teoremaslimitesejercicios', SUTeoremasLMIIIEjView.as_view(), name='teoremasLEjapp'),
+    path('limitesinfinitosejercicios', SULimitesInfinitoEjView.as_view(), name='limitesIEjapp'),
+    path('reglasconstantesejercicios', TUConstantesEjView.as_view(), name='constantesEjapp'),
+    path('reglaspotenciaejercicios', TUPotenciaEjView.as_view(), name='potenciaEjapp'),
+    path('teoremasderivacionejercicios', TUTeoremasDerivacionEjView.as_view(), name='teoremasderivacionEjapp'),
 ]
