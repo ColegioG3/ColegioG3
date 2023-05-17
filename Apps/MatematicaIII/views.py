@@ -48,3 +48,12 @@ class TUPotenciaEjView(TemplateView):
 
 class TUTeoremasDerivacionEjView(TemplateView):
     template_name='TerceraUnidadEjercicios/teoremasderivacionej.html'
+
+class PUTeoremaDeRectasEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/teoremaRectasEjer.html'
+
+class PUecuacionCirculoEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/ecuacionCirculoEjer.html'
+
+class PUcomplementoCuadradosEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/complementoCuadradosEjer.html'

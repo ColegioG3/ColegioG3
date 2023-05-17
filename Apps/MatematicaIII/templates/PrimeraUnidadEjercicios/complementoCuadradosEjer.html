@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoFactorizacion1() {
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formComC1 = document.getElementById("formComC1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formComC1.childElementCount - 1; index++) {
+                    if (formComC1.children[index].firstElementChild) {
+                      formComC1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+
+    function resultadoFactorizacion2() {
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formComC2 = document.getElementById("formComC2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formComC2.childElementCount - 1; index++) {
+                    if (formComC2.children[index].firstElementChild) {
+                      formComC2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+  <h1>Complemento de cuadrados</h1>
+  <br>
+  <br>
+  <h2>Ejercicios</h2>
+
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/compleCEje1.png' %}" />
+            <form id = "formComC1" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/ejercicios/facto1.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/ejercicios/facto2.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/ejercicios/facto3.png' %}" width="165" />
+              </p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoFactorizacion1()' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <center>
+                <img class="img-fluid rounded-circle" width="470"   src="{% static 'images/ejercicios/compleCEje2.png' %}" />
+                <form id= "formComC2" style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p>
+                    <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/ejercicios/facto5.png' %}" width="165" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/ejercicios/facto4.png' %}" width="180" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/ejercicios/facto6.png' %}" width="165" />
+                  </p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoFactorizacion2()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+    {% endblock %}
