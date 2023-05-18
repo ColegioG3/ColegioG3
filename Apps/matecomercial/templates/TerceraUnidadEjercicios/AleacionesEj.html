@@ -1,0 +1,86 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function aleacion1() {
+            if (document.getElementById('p4').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+      
+        function aleacion2() {
+            if (document.getElementById('p5').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+  </script>
+</head>
+
+<div class="col-lg-12" id="">
+  <h1>Aleaciónes</h1>
+  <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1)	Un lingote de plata de 300 g de ley del 0.91 (91 % de pureza) se funde con otro de 200 g de 
+                0.82 de ley. ¿Cuál es la ley del nuevo lingote?    </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta19" id="p1"> 0.782 </p>
+                  <p ><input type="radio" name="pregunta19" id="p2"> 0.847</p>
+                  <p ><input type="radio" name="pregunta19" id="p3"> 0.944</p>
+                  <p ><input type="radio" name="pregunta19" id="p4"> 0.874</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='aleacion1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)¿Cuál es la ley de una aleación conformada por 200 gramos de plata y 40 gramos de níquel? </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta20" id="p5">0.833</p>
+                  <p ><input type="radio" name="pregunta20" id="p6">0.634</p>
+                  <p ><input type="radio" name="pregunta20" id="p7">0.936</p>
+                  <p ><input type="radio" name="pregunta20" id="p8">0.822</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='aleacion2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>      <br><br><br><br>      <br><br><br><br>
+    </div>
+    
+
+
+
+{% endblock %}

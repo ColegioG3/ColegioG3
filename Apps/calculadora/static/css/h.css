@@ -1,0 +1,26 @@
+h9{
+    color: rgb(126, 6, 6);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Helvetica', Helvetica, monospace;
+	line-height: 130%;
+	text-align: center;
+}
+
+.btncard{
+    background-color: #01579B; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+.btncard:hover{
+    background-color: #3e95d8; /* Color de fondo al pasar el cursor por encima */
+}
+.btncard:active{
+    background-color: #0576cc; /* Color de fondo al hacer clic */
+}

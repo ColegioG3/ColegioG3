@@ -4,33 +4,114 @@
 
 <head>
     <link rel="stylesheet" href="{% static './css/main.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+
     <script>
-        function resultado() {
+
+        function suma1() {
             if (document.getElementById('p11').checked == true) { p1 = 1 }
             else { p1 = 0 }
             nota = p1;
 
             if (p1 == 1) {
-                alert(" CORRECTO");
+                swal(" CORRECTO");
             }
             else {
-                alert(" RESPUESTA INCORRECTA");
-            }
-            location.reload();
+                swal(" RESPUESTA INCORRECTA");
+            }          
         }
 
-        function sumados() {
+        function suma2() {
             if (document.getElementById('p3').checked == true) { p1 = 1 }
             else { p1 = 0 }
             nota = p1;
 
             if (p1 == 1) {
-                alert(" CORRECTO");
+              swal(" CORRECTO");
             }
             else {
-                alert(" RESPUESTA INCORRECTA");
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+
+        function resta1() {
+            if (document.getElementById('p23').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
             }
-            location.reload();
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function resta2() {
+            if (document.getElementById('p25').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+
+        function multiplicacion1() {
+            if (document.getElementById('p29').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function multiplicacion2() {
+            if (document.getElementById('p32').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function division1() {
+            if (document.getElementById('p39').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function division2() {
+            if (document.getElementById('p42').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
         }
 
     </script>
@@ -57,11 +138,11 @@
                 <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
                 <form style="font:normal 16px sans-serif">
                     <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                    <p ><input type="radio" name="pregunta1" id="p11"> 8/3</p>
+                    <p ><input type="radio" name="pregunta1" id="p12"> 3/8</p>
+                    <p ><input type="radio" name="pregunta1" id="p13"> 4/3</p>
+                    <p ><input type="radio" name="pregunta1" id="p14"> 6/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='suma1()' /></p>
                 </form>
                 </center>
             </div>
@@ -76,11 +157,11 @@
                 <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
                 <form style="font:normal 16px sans-serif">
                     <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                    <p ></p><input type="radio" name="pregunta2" id="p1"> 12/11</p>
+                    <p ><input type="radio" name="pregunta2" id="p2"> 9/8</p>
+                    <p ><input type="radio" name="pregunta2" id="p3"> 11/1</p>
+                    <p ><input type="radio" name="pregunta2" id="p4"> 3/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='suma2()' /></p>
                 </form>
               </center>
             </div>
@@ -101,43 +182,43 @@
     <h2>Ejercicios</h2>
 
     <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body">
-                <center>
-                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
-                <form style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
-                </form>
-                </center>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <center>
-                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
-                <form style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
-                </form>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E3.JPG' %}" />
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta3" id="p20"> 5/3</p>
+                  <p ><input type="radio" name="pregunta3" id="p21"> 10/20</p>
+                  <p ><input type="radio" name="pregunta3" id="p22"> 1/10</p>
+                  <p ><input type="radio" name="pregunta3" id="p23"> 2/5</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resta1()' /></p>
+              </form>
               </center>
-            </div>
           </div>
         </div>
       </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E4.JPG' %}" />
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta4" id="p24"> 32/11</p>
+                  <p ><input type="radio" name="pregunta4" id="p25"> 11/6</p>
+                  <p ><input type="radio" name="pregunta4" id="p26"> 6/3</p>
+                  <p ><input type="radio" name="pregunta4" id="p27"> 1/2</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='resta2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 
@@ -151,43 +232,43 @@
     <h2>Ejercicios</h2>
 
     <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body">
-                <center>
-                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
-                <form style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
-                </form>
-                </center>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <center>
-                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
-                <form style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
-                </form>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E5.JPG' %}" />
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta5" id="p28"> 13/6</p>
+                  <p ><input type="radio" name="pregunta5" id="p29"> 14/15</p>
+                  <p ><input type="radio" name="pregunta5" id="p30"> 5/4</p>
+                  <p ><input type="radio" name="pregunta5" id="p31"> 15/14</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='multiplicacion1()' /></p>
+              </form>
               </center>
-            </div>
           </div>
         </div>
       </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E6.JPG' %}" />
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta6" id="p32"> 84/216</p>
+                  <p ><input type="radio" name="pregunta6" id="p33"> 48/90</p>
+                  <p ><input type="radio" name="pregunta6" id="p34"> 3/8</p>
+                  <p ><input type="radio" name="pregunta6" id="p35"> 54/146</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='multiplicacion2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 <div class="col-lg-12" id="DivisionF">
@@ -198,42 +279,43 @@
     <h2>Ejercicios</h2>
 
     <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body">
-                <center>
-                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E1.JPG' %}" />
-                <form style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 8/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> 3/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 4/3</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 6/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
-                </form>
-                </center>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <center>
-                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E2.JPG' %}" />
-                <form style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p1"> 12/11</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p2"> 9/8</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p3"> 11/1</p>
-                    <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p4"> 3/2</p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
-                </form>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E7.JPG' %}" />
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta7" id="p36"> 4/12</p>
+                  <p ><input type="radio" name="pregunta7" id="p37"> 1/4</p>
+                  <p ><input type="radio" name="pregunta7" id="p38"> 6/2</p>
+                  <p ><input type="radio" name="pregunta7" id="p39"> 3/4</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='division1()' /></p>
+              </form>
               </center>
-            </div>
           </div>
         </div>
       </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E8.JPG' %}" />
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta8" id="p40"> 8/20</p>
+                  <p ><input type="radio" name="pregunta8" id="p41"> 6/2</p>
+                  <p ><input type="radio" name="pregunta8" id="p42"> 15/24</p>
+                  <p ><input type="radio" name="pregunta8" id="p43"> 3/2</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='division2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
 </div>
 {% endblock %}

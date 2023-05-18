@@ -1,0 +1,234 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+
+    <script>
+
+        function porcentaje1() {
+            if (document.getElementById('p12').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function porcentaje2() {
+            if (document.getElementById('p4').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function decimal1() {
+            if (document.getElementById('p21').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function decimal2() {
+            if (document.getElementById('p17').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function fraccion1() {
+            if (document.getElementById('p32').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function fraccion2() {
+            if (document.getElementById('p34').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+        </script>
+</head>
+<a href="#PorcentajeAFraccion" class="btn btn-danger btn-lg">Porcentaje a Fracción</a>
+<a href="#DecimalAEntero" class="btn btn-danger btn-lg">Decimal a un Número entero por ciento</a>
+<a href="#ComunPorcentaje" class="btn btn-danger btn-lg">Fraccion común a un porcentaje</a>
+
+
+<div class="col-lg-12" id="PorcentajeAFraccion">
+    <br />
+    <br />
+    <h1>Conversión del Porcentaje a Fracción Común</h1>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E9.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p ><input type="radio" name="pregunta1" id="p11"> 5/3</p>
+                    <p ><input type="radio" name="pregunta1" id="p12"> 3/5</p>
+                    <p ><input type="radio" name="pregunta1" id="p13"> 6/15</p>
+                    <p ><input type="radio" name="pregunta1" id="p14"> 6/2</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='porcentaje1()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/E10.JPG' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p ><input type="radio" name="pregunta2" id="p1"> 2/6</p>
+                    <p ><input type="radio" name="pregunta2" id="p2"> 9/8</p>
+                    <p ><input type="radio" name="pregunta2" id="p3"> 4/2</p>
+                    <p ><input type="radio" name="pregunta2" id="p4"> 3/4</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='porcentaje2()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-lg-12" id="DecimalAEntero">
+    <br />
+    <br />
+    <h1>Conversión de un Decimal a un Número Entero por Ciento</h1>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <h4>1) Convertir 0.35 a porcentaje</h4>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p ><input type="radio" name="pregunta3" id="p20"> 53%</p>
+                    <p ><input type="radio" name="pregunta3" id="p21"> 35%</p>
+                    <p ><input type="radio" name="pregunta3" id="p22"> 0.35%</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='decimal1()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                  <h4>1) Convertir 0.985 a porcentaje</h4>
+                  <form style="font:normal 16px sans-serif">
+                      <p>Selecciona la Respuesta Correcta</p>
+                      <p ><input type="radio" name="pregunta4" id="p15"> 95%</p>
+                      <p ><input type="radio" name="pregunta4" id="p16"> 98%</p>
+                      <p ><input type="radio" name="pregunta4" id="p17"> 98.5%</p>
+                      <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='decimal2()' /></p>
+                  </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-lg-12" id="ComunPorcentaje">
+    <br />
+    <br />
+    <h1>Conversión de Fracción Común a un Porcentaje</h1>
+    <br>
+   
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <h4>1) Convertir 3/10 a porcentaje</h4>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p ><input type="radio" name="pregunta6" id="p30"> 15%</p>
+                    <p ><input type="radio" name="pregunta6" id="p31"> 3%</p>
+                    <p ><input type="radio" name="pregunta6" id="p32"> 30%</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='fraccion1()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                  <h4>1) Convertir 8/16 a porcentaje</h4>
+                  <form style="font:normal 16px sans-serif">
+                      <p>Selecciona la Respuesta Correcta</p>
+                      <p ><input type="radio" name="pregunta7" id="p33"> 81%</p>
+                      <p ><input type="radio" name="pregunta7" id="p34"> 50%</p>
+                      <p ><input type="radio" name="pregunta7" id="p35"> 80%</p>
+                      <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='fraccion2()' /></p>
+                  </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+  </div>
+
+
+{% endblock %}
