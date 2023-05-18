@@ -1,0 +1,360 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+    <script>
+        function resultado() {
+            if (document.getElementById('p11').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function uno() {
+            if (document.getElementById('p100').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+        function sumados() {
+            if (document.getElementById('p3').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function sumados2() {
+            if (document.getElementById('p105').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function sumados22() {
+            if (document.getElementById('p31').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+        function tres() {
+            if (document.getElementById('p25').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+            
+         
+        }        
+
+        function trestres() {
+            if (document.getElementById('p41').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+            
+         
+        } 
+        function dos() {
+            if (document.getElementById('p6').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function cuatro() {
+            if (document.getElementById('p18').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function cuatro2() {
+            if (document.getElementById('p22').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+    </script>
+
+
+</head>
+<a href="#SumaMon" class="btn btn-danger btn-lg">Suma de Monomios</a>
+<a href="#SumaPol" class="btn btn-danger btn-lg">Suma de Polinomios</a>
+<a href="#RestaPol" class="btn btn-danger btn-lg">Resta de Polinomios</a>
+<a href="#SumyRes" class="btn btn-danger btn-lg">Suma y Resta Combinada</a>
+
+
+<div class="col-lg-12" id="SumaMon">
+    <h1>Suma de Monomios</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/e.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                     <input type="radio" name="pregunta1" id="p11"> 4a</p>
+                    <input type="radio" name="pregunta1" id="p12"> 4</p>
+                    <input type="radio" name="pregunta1" id="p13"> a</p>
+                    <input type="radio" name="pregunta1" id="p14"> a4</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle"width=“30”  src="{% static 'images/ejercicios/f.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta2" id="p1"> 9ab</p>
+                  <input type="radio" name="pregunta2" id="p2"> 9ab2</p>
+                    <input type="radio" name="pregunta2" id="p3"> 5ab+4b</p>
+                    <input type="radio" name="pregunta2" id="p4"> 4b+5ab</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="col-lg-12" id="SumaPol">
+    <br />
+    <br />
+    <h1>Suma de Polinomios</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/g.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                     <input type="radio" name="pregunta1" id="p5">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/g1.png' %}" /></p>
+                     <input type="radio" name="pregunta1" id="p6"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/g3.png' %}" /></p>
+                     <input type="radio" name="pregunta1" id="p7">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/g2.png' %}" /></p>
+                     <input type="radio" name="pregunta1" id="p8">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/g4.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='dos()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/h.png' %}" width="500" height="50" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta2" id="p15"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/h4.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p16"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/h2.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p17"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/h3.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p18"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/h1.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='cuatro()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="col-lg-12" id="RestaPol">
+    <br />
+    <br />
+    <h1>Resta de Polinomios</h1>
+    
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/i.png' %}" width="500" height="50"/>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                     <input type="radio" name="pregunta1" id="p100">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/i4.png' %}" /></p>
+                     <input type="radio" name="pregunta1" id="101"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/i2.png' %}" /></p>
+                     <input type="radio" name="pregunta1" id="102">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/i3.png' %}" /></p>
+                     <input type="radio" name="pregunta1" id="103">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/i1.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='uno()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/j.png' %}" width="500" height="50" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta2" id="p104"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/j1.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p105"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/j3.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p106"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/j2.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p107"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/j4.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados2()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="col-lg-12" id="SumyRes">
+    <br />
+    <br />
+    <h1>Suma y Resta Combinada</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/l.png' %}" width="400" height="100"/>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p19"><img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/l4.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p20"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/l2.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p21"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/l3.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p22"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/l1.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='cuatro2()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/k.png' %}"  width="400" height="100"/>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p23"><img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/k3.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p24"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/k2.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p25"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/k1.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p26"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/k4.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='tres()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+ <br />
+ <br />
+ <br />
+ <br />
+</div>
+
+{% endblock %}

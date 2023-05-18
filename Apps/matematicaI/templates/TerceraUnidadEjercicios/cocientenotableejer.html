@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+    <script>
+        function resultado() {
+            if (document.getElementById('p11').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function uno() {
+            if (document.getElementById('p27').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+        function sumados() {
+            if (document.getElementById('p36').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function sumados2() {
+            if (document.getElementById('p31').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function sumados22() {
+            if (document.getElementById('p31').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+        function tres() {
+            if (document.getElementById('p25').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+            
+         
+        }        
+
+        function trestres() {
+            if (document.getElementById('p41').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+            
+         
+        } 
+        function dos() {
+            if (document.getElementById('p6').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function cuatro() {
+            if (document.getElementById('p18').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function cuatro2() {
+            if (document.getElementById('p22').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+    </script>
+
+
+</head>
+<a href="#difcuadrado" class="btn btn-danger btn-lg">Cociente de la diferencia de los cuadrados de dos cantidades</a>
+<a href="#difcubos" class="btn btn-danger btn-lg">Cociente de la suma diferencia de los cubos de dos cantidades</a>
+<a href="#teorema" class="btn btn-danger btn-lg">Teorema del residuo</a>
+
+
+<div class="col-lg-12" id="difcuadrado">
+    <br />
+    <br />
+    <h1>Cociente de la diferencia de los cuadrados de dos cantidades</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/55.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p19"><img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/56.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p20"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/57.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p21"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/58.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p22"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/59.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='cuatro2()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/65.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p23"><img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/66.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p24"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/67.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p25"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/68.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p26"> <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/69.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='tres()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="col-lg-12" id="difcubos">
+    <br />
+
+    <br />
+    <h1>Cociente de la suma diferencia de los cubos de dos cantidades</h1>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/85.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                   <input type="radio" name="pregunta1" id="p27">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/86.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p28">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/87.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p29">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/88.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p30">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/89.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='uno()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/95.png' %}" width="400"  />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p31">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/97.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p32">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/96.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p33">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/98.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p34">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/99.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados22()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br />
+  </br />
+  </br />
+  </br />
+</div>
+
+<div class="col-lg-12" id="teorema">
+  <h1>Teorema del residuo</h1>
+  <br>
+  <br>
+
+  <h2>Ejercicios</h2>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+          <center>
+          <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/105.png' %}" width="550" height="100"/>
+          <form style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <input type="radio" name="pregunta1" id="p35">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/106.png' %}" /></p>
+              <input type="radio" name="pregunta1" id="p36">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/107.png' %}" /></p>
+              <input type="radio" name="pregunta1" id="p37">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/108.png' %}" /></p>
+              <input type="radio" name="pregunta1" id="p38">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/109.png' %}" /></p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+          </form>
+        </center>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+                <width=“15”> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/115.png' %}"  width="550" height="100" /> 
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <input type="radio" name="pregunta2" id="p39"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/116.png' %}" /></p>
+                <input type="radio" name="pregunta2" id="p40"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/117.png' %}" /></p>
+                  <input type="radio" name="pregunta2" id="p41"> <img class="img-fluid rounded-circle"   src="{% static 'images/ejercicios/119.png' %}" /></p>
+                  <input type="radio" name="pregunta2" id="p42"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/118.png' %}" /></p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='trestres()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+{% endblock %}
