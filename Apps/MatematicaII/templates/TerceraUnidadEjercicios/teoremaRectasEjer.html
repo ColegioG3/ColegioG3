@@ -83,6 +83,42 @@
         }
       }
 
+      function resultadoCombRec1() {
+        var respuestaCorrecta = 'R2';
+        var seleccionado = document.querySelector('input[name="R2"]:checked');
+        let formCombR1 = document.getElementById("formCombR1");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formCombR1.childElementCount - 1; index++) {
+            if (formCombR1.children[index].firstElementChild) {
+              formCombR1.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+      function resultadoCombRec2() {
+        var respuestaCorrecta = 'R1';
+        var seleccionado = document.querySelector('input[name="R1"]:checked');
+        let formCombR2 = document.getElementById("formCombR2");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formCombR2.childElementCount - 1; index++) {
+            if (formCombR2.children[index].firstElementChild) {
+              formCombR2.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
   </script>
 
 </head>
@@ -213,7 +249,7 @@
             <div class="card-body">
               <center>
                 <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/combinacionR1.png' %}" width="560" />
-                <form id="formTRPer1" style="font:normal 16px sans-serif" >
+                <form id="formCombR1" style="font:normal 16px sans-serif" >
                   <p>Selecciona la Respuesta Correcta</p>
                   <p>
                     <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
@@ -228,7 +264,7 @@
                       src="{% static 'images/imgU1/combinacionRes3.png' %}" width="100" />
                   </p>
                   <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
-                      onclick='resultadoRectasPerE1()' /></p>
+                      onclick='resultadoCombRec1()' /></p>
                 </form>
               </center>
             </div>
@@ -241,11 +277,11 @@
               <div class="card-body">
                 <center>
                   <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/combinacionR2.png' %}" width="560"/>
-                  <form id = "formTRPer2" style="font:normal 16px sans-serif">
+                  <form id = "formCombR2" style="font:normal 16px sans-serif">
                     <p>Selecciona la Respuesta Correcta</p>
                     <p>
                       <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
-                        src="{% static 'images/imgU1/combinacionRes4.png' %}" width="125" />
+                        src="{% static 'images/imgU1/combinacionRes4.png' %}" width="100" />
                     </p>
                     <p>
                       <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
@@ -256,7 +292,7 @@
                         src="{% static 'images/imgU1/combinacionRes6.png' %}"width="125" />
                     </p>
                     <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
-                        onclick='resultadoRectasPerE2()' /></p>
+                        onclick='resultadoCombRec2()' /></p>
                   </form>
                 </center>
               </div>
