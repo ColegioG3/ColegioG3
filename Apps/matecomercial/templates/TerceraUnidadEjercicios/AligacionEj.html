@@ -1,0 +1,53 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function aligacion1() {
+            if (document.getElementById('p1').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+  </script>
+</head>
+
+<div class="col-lg-12" id="RazonNumerica">
+  <h1>Aligación</h1>
+  <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1) Tenemos vino de tres calidades. Las cantidades y costes son las siguientes: A= 500 lts, B= 800 lts, C= 1,200 lts. 
+                Los costes son: a= Q 7 por lt, b= Q 9 por lt y c= Q 6 por lt. Los gastos de operación ascienden a Q 200, 
+                determinar el coste de 1 lt vino resultante.     </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta19" id="p1"> 7.24 por litro </p>
+                  <p ><input type="radio" name="pregunta19" id="p2"> 5.24 por litro</p>
+                  <p ><input type="radio" name="pregunta19" id="p3"> 6.24 por litro</p>
+                  <p ><input type="radio" name="pregunta19" id="p4"> 7.34 por litro</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='aligacion1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+</div>
+
+
+{% endblock %}

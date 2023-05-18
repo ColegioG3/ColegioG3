@@ -31,3 +31,18 @@ class PrimeraUnidadEjView(TemplateView):
 
 class OpeFraccionesEjView(TemplateView):
     template_name='PrimeraUnidadEjercicios/OperacionesConFraccionesEj.html'
+
+class ProporcionalidadEjView(TemplateView):
+    template_name='SegundaUnidadEjercicio/proporcionalidadEj.html'
+
+class SociedadesEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/ReglaSociedadesEj.html'
+
+class AligacionEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/AligacionEj.html'
+
+class AleacionEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/AleacionesEj.html'
+
+class TantoPorCientoEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/TantoPorCientoEj.html'

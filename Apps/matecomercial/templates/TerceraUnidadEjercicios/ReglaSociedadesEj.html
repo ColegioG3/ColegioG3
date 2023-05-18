@@ -1,0 +1,84 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function capitales1() {
+            if (document.getElementById('p2').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function capitales2() {
+            if (document.getElementById('p8').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+  </script>
+</head>
+
+<div class="col-lg-12" id="">
+  <h1>Regla de Sociedades </h1>
+  <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1) 1)	Ana y Joel inician un negocio. Ana aporta Q 5000 durante 3 años y Joel aporta Q 2000 durante 7 
+                años. Si al finalizar el negocio se obtiene una ganancia de Q 5800, ¿Cuánto gana cada uno?    </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta19" id="p1"> Ana: 3100 - Joel: 2700 </p>
+                  <p ><input type="radio" name="pregunta19" id="p2"> Ana: 3000 - Joel: 2800</p>
+                  <p ><input type="radio" name="pregunta19" id="p3"> Ana: 3500 - Joel: 2300</p>
+                  <p ><input type="radio" name="pregunta19" id="p4"> Ana: 2800 - Joel: 3000</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='capitales1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)Tres amigos se asociaron y formaron una empresa. El primero aportó Q 60, 000 durante 
+                6 meses; el segundo, Q 30,000 durante 8 meses y el tercero, Q 90,000 durante 12 meses. Si 
+                obtuvieron una ganancia total de Q 70000, ¿Cuánto le correspondió al tercero? </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta20" id="p5">Q 46,000</p>
+                  <p ><input type="radio" name="pregunta20" id="p6">Q 42,000</p>
+                  <p ><input type="radio" name="pregunta20" id="p7">Q 35,000</p>
+                  <p ><input type="radio" name="pregunta20" id="p8">Q 45,000</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='capitales2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+</div>
+
+
+{% endblock %}
