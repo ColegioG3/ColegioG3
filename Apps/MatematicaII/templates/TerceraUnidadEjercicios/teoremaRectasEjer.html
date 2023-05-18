@@ -119,6 +119,42 @@
         }
       }
 
+      function resultadoCombRec3() {
+        var respuestaCorrecta = 'R1';
+        var seleccionado = document.querySelector('input[name="R1"]:checked');
+        let formCombR3 = document.getElementById("formCombR3");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formCombR3.childElementCount - 1; index++) {
+            if (formCombR3.children[index].firstElementChild) {
+              formCombR3.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+      function resultadoCombRec4() {
+        var respuestaCorrecta = 'R1';
+        var seleccionado = document.querySelector('input[name="R1"]:checked');
+        let formCombR4 = document.getElementById("formCombR4");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formCombR4.childElementCount - 1; index++) {
+            if (formCombR4.children[index].firstElementChild) {
+              formCombR4.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
   </script>
 
 </head>
@@ -193,15 +229,15 @@
               </p>
               <p>
                 <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
-                  src="{% static 'images/imgU1/R2.png' %}" width="165" />
+                src="{% static 'images/imgU1/R2.png' %}" width="165" />
               </p>
               <p>
                 <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
-                  src="{% static 'images/imgU1/R1.png' %}" width="165" />
+                src="{% static 'images/imgU1/R1.png' %}" width="165" />
               </p>
               <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
-                  onclick='resultadoRectasPerE1()' /></p>
-            </form>
+                onclick='resultadoRectasPerE1()' /></p>
+              </form>
           </center>
         </div>
       </div>
@@ -217,19 +253,19 @@
                 <p>Selecciona la Respuesta Correcta</p>
                 <p>
                   <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
-                    src="{% static 'images/imgU1/RecE6.png' %}" width="175" />
+                  src="{% static 'images/imgU1/RecE6.png' %}" width="175" />
                 </p>
                 <p>
                   <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
-                    src="{% static 'images/imgU1/RecE4.png' %}" width="175" />
+                  src="{% static 'images/imgU1/RecE4.png' %}" width="175" />
                 </p>
                 <p>
                   <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
-                    src="{% static 'images/imgU1/RecE5.png' %}" width="175" />
+                  src="{% static 'images/imgU1/RecE5.png' %}" width="175" />
                 </p>
                 <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
-                    onclick='resultadoRectasPerE2()' /></p>
-              </form>
+                  onclick='resultadoRectasPerE2()' /></p>
+                </form>
             </center>
           </div>
         </div>
@@ -253,55 +289,124 @@
                   <p>Selecciona la Respuesta Correcta</p>
                   <p>
                     <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
-                      src="{% static 'images/imgU1/combinacionRes2.png' %}" width="100" />
+                    src="{% static 'images/imgU1/combinacionRes2.png' %}" width="100" />
                   </p>
                   <p>
                     <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
-                      src="{% static 'images/imgU1/combinacionRes1.png' %}" width="100" />
+                    src="{% static 'images/imgU1/combinacionRes1.png' %}" width="100" />
                   </p>
                   <p>
                     <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
-                      src="{% static 'images/imgU1/combinacionRes3.png' %}" width="100" />
+                    src="{% static 'images/imgU1/combinacionRes3.png' %}" width="100" />
                   </p>
                   <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
-                      onclick='resultadoCombRec1()' /></p>
-                </form>
-              </center>
+                    onclick='resultadoCombRec1()' /></p>
+                  </form>
+                </center>
             </div>
           </div>
         </div>
-    
+          
+        
         <div class="row">
           <div class="col-sm-6 mb-3 mb-sm-0">
             <div class="card">
               <div class="card-body">
                 <center>
-                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/combinacionR2.png' %}" width="560"/>
-                  <form id = "formCombR2" style="font:normal 16px sans-serif">
-                    <p>Selecciona la Respuesta Correcta</p>
-                    <p>
-                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
-                        src="{% static 'images/imgU1/combinacionRes4.png' %}" width="100" />
-                    </p>
-                    <p>
-                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
-                        src="{% static 'images/imgU1/combinacionRes5.png' %}" width="125" />
-                    </p>
-                    <p>
-                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
-                        src="{% static 'images/imgU1/combinacionRes6.png' %}"width="125" />
-                    </p>
-                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
-                        onclick='resultadoCombRec2()' /></p>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/combinacionR2.png' %}" width="560"/>
+                <form id = "formCombR2" style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p>
+                    <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/combinacionRes4.png' %}" width="100" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/combinacionRes5.png' %}" width="125" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/combinacionRes6.png' %}"width="125" />
+                  </p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                    onclick='resultadoCombRec2()' /></p>
                   </form>
                 </center>
               </div>
             </div>
           </div>
         </div>
-<br />
-<br />
-<br />
-<br />
+      </div>
+    </div>
+  </div>
+</div>
 
-    {% endblock %}
+<div>
+  <h1>Combinación de rectas perpendiculares con distancia y punto medio</h1>
+  <br>
+  <br>
+  <h2>Ejercicios</h2>
+
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/rpEj1.png' %}" width="560"/>
+                  <form id = "formCombR3" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/rpEj1R.png' %}" width="100" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/rpEj1Rnn.png' %}" width="125" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/rpEj1Rn.png' %}"width="125" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                        onclick='resultadoCombRec3()' /></p>
+                  </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/rpEj2.png' %}" width="560"/>
+                  <form id = "formCombR4" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/rpEj2R.png' %}" width="100" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/rpEj2Rn.png' %}" width="125" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/rpEj2Rnn.png' %}"width="125" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                        onclick='resultadoCombRec4()' /></p>
+                  </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+{% endblock %}
