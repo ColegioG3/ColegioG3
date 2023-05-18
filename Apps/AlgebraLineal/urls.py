@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.AlgebraLineal import views
-from .views import PrimeraUnidadView, PUEcuacionesLinealesView, PUEcuacionesSegundoGradoView, SUSistemasDIView, SUDeterminacionDTView, SUReglaCramerView, SUProblemasdtiView, TUMatricesView, TUMenorCofactorView, TUGaussianaView, TUGaussJordanView, CUVectoresView, CUPlanoView, CUDeterminantesView
+from .views import PrimeraUnidadView, PUEcuacionesLinealesView, PUEcuacionesSegundoGradoView, SUSistemasDIView, SUDeterminacionDTView, SUReglaCramerView, SUProblemasdtiView, TUMatricesView, TUMenorCofactorView, TUGaussianaView, TUGaussJordanView, CUVectoresView, CUPlanoView, CUDeterminantesView, PrimeraUnidadEjView, PUEcuacionesLinealesEjView, PUEcuacionesSegundoGradoEjView, SUDeterminacionDTEjView, SUProblemasdtiEjView, SUReglaCramerEjView, SUSistemasDIEjView, TUGaussianaEjView, TUGaussJordanEjView, TUMatricesEjView, TUMenorCofactorEjView, CUDeterminantesEjView, CUPlanoEjView, CUVectoresEjView
 
 app_name = 'AlgebraComercial'
 
@@ -36,4 +36,19 @@ urlpatterns = [
     path('vectores/', CUVectoresView.as_view(), name='vectoresapp'),
     path('planocartesiano/', CUPlanoView.as_view(), name='planoapp'),
     path('determinantes/', CUDeterminantesView.as_view(), name='determinantesapp'),
+    # EJERCICIOS
+    path('algebralinealejercicios', PrimeraUnidadEjView.as_view(), name='algebralinealEjapp'),
+    path('ecuacioneslinealesejercicios/', PUEcuacionesLinealesEjView.as_view(), name='ecuacioneslejapp'),
+    path('ecuacionesprimergradoejercicios/', PUEcuacionesSegundoGradoEjView.as_view(), name='ecuacionespgdejapp'),
+    path('sistemasdosiejercicios/', SUSistemasDIEjView.as_view(), name='sistemasdosiejapp'),
+    path('determinaciondtejercicios/', SUDeterminacionDTEjView.as_view(), name='determinaciondtejapp'),
+    path('regladecramerejercicios/', SUReglaCramerEjView.as_view(), name='reglacramerejapp'),
+    path('problemasdosytresincgonitasejercicios/', SUProblemasdtiEjView.as_view(), name='problemasdtiejapp'),
+    path('matricesejercicios/', TUMatricesEjView.as_view(), name='matricesejapp'),
+    path('menorycofactorejercicios/', TUMenorCofactorEjView.as_view(), name='menorcofactorejapp'),
+    path('eliminaciongaussianaejercicios/', TUGaussianaEjView.as_view(), name='gaussianaejapp'),
+    path('eliminaciongaussjordanejercicios/', TUGaussJordanEjView.as_view(), name='gaussjordanejapp'),
+    path('vectoresejercicios/', CUVectoresEjView.as_view(), name='vectoresejapp'),
+    path('planocartesianoejercicios/', CUPlanoEjView.as_view(), name='planoejapp'),
+    path('determinantesejercicios/', CUDeterminantesEjView.as_view(), name='determinantesejapp'),
 ]

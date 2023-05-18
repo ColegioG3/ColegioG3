@@ -1,0 +1,459 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function resultadodosi1() {
+      if (document.getElementById("p12").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function determinante2() {
+      if (document.getElementById("p18").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function producto11() {
+      if (document.getElementById("p20").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function producto22() {
+      if (document.getElementById("p31").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function cociente11() {
+      if (document.getElementById("p41").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function cociente22() {
+      if (document.getElementById("p50").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+  </script>
+</head>
+<a href="#SumaDiferencia" class="btn btn-danger btn-lg"
+  >Teorema de la suma o la diferencia</a
+>
+<a href="#Producto" class="btn btn-danger btn-lg">Teorema del producto</a>
+<a href="#Cociente" class="btn btn-danger btn-lg">Teorema del cociente</a>
+
+<div class="col-lg-12" id="SumaDiferencia">
+    <br />
+    <br />
+    <h1>Teorema de la suma o la diferencia</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EMIII/sumadiferenciaej1.JPG' %}"
+                width="360"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p9" />  x+8
+                
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p10" /> 3x-6
+                </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p11" /> 2x-9
+                  </p>
+                  <p>
+                    <input type="radio" name="pregunta1" id="p12" /> 4x+1
+                  </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="resultadodosi1()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EMIII/sumadiferenciaej2.JPG' %}"
+                width="300"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p15" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalssumadiferencia2.JPG' %}"
+                  width="55"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p16" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalsasumadiferencia2.JPG' %}"
+                  width="55"
+                />
+                </p>
+                <p>
+                    <input type="radio" name="pregunta2" id="p17" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalsumadiferencia2.JPG' %}"
+                    width="55"
+                  />
+                  </p>
+                  <p>
+                    <input type="radio" name="pregunta2" id="p18" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestasumadiferencia2.JPG' %}"
+                    width="55"
+                  />
+                  </p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="determinante2()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+
+<div class="col-lg-12" id="Producto">
+    <br />
+    <br />
+    <h1>Teorema del producto</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EMIII/productoej1.JPG' %}"
+                width="300"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p20" />  <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestaproducto1.JPG' %}"
+                  width="230"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p21" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalproducto1.JPG' %}"
+                  width="230"
+                />
+                </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p22" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalsproducto1.JPG' %}"
+                    width="230"
+                  />
+                  </p>
+                  <p>
+                    <input type="radio" name="pregunta1" id="p23" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalsaproducto1.JPG' %}"
+                    width="230"
+                  />
+                  </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="producto11()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <center>
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/productoej1.JPG' %}"
+                    width="300"
+                  />
+                  <br>
+                  <br>
+                  <form style="font: normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="pregunta1" id="p30" />  <img
+                      class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU3EMIII/respuestafalproducto2.JPG' %}"
+                      width="225"
+                    />
+                    </p>
+                    <p>
+                      <input type="radio" name="pregunta1" id="p31" /> <img
+                      class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU3EMIII/respuestaproducto2.JPG' %}"
+                      width="225"
+                    />
+                    </p>
+                    <p>
+                        <input type="radio" name="pregunta1" id="p32" /> <img
+                        class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU3EMIII/respuestafalproducto1.JPG' %}"
+                        width="225"
+                      />
+                      </p>
+                      <p>
+                        <input type="radio" name="pregunta1" id="p33" /> <img
+                        class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU3EMIII/respuestafalsproducto1.JPG' %}"
+                        width="225"
+                      />
+                      </p>
+                    <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="producto22()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+
+  <div class="col-lg-12" id="Cociente">
+    <br />
+    <br />
+    <h1>Teorema del cociente</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EMIII/cocienteej1.JPG' %}"
+                width="300"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p40" />  <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalsacociente1.JPG' %}"
+                  width="55"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p41" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestacocienteej1.JPG' %}"
+                  width="65"
+                />
+                </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p42" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalscociente1.JPG' %}"
+                    width="65"
+                  />
+                  </p>
+                  <p>
+                    <input type="radio" name="pregunta1" id="p43" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalcociente1.JPG' %}"
+                    width="65"
+                  />
+                  </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="cociente11()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <center>
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/cocienteej2.JPG' %}"
+                    width="295"
+                  />
+                  <br>
+                  <br>
+                  <form style="font: normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="pregunta1" id="p50" />  <img
+                      class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU3EMIII/respuestacociente2.JPG' %}"
+                      width="65"
+                    />
+                    </p>
+                    <p>
+                      <input type="radio" name="pregunta1" id="p51" /> <img
+                      class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU3EMIII/respuestafalsacociente1.JPG' %}"
+                      width="55"
+                    />
+                    </p>
+                    <p>
+                        <input type="radio" name="pregunta1" id="p52" /> <img
+                        class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU3EMIII/respuestafalscociente1.JPG' %}"
+                        width="65"
+                      />
+                      </p>
+                      <p>
+                        <input type="radio" name="pregunta1" id="p53" /> <img
+                        class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU3EMIII/respuestafalcociente2.JPG' %}"
+                        width="65"
+                      />
+                      </p>
+                    <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="cociente22()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+{% endblock %}

@@ -29,3 +29,31 @@ class PUecuacionCirculoView(TemplateView):
 
 class PUcomplementoCuadradosView(TemplateView):
     template_name='PrimeraUnidad/complementoCuadrados.html'
+
+#Ejercicios
+class ListadoMIIIEjView(TemplateView):
+    template_name='listado1unidadMIIIEj.html'
+
+class SUTeoremasLMIIIEjView(TemplateView):
+    template_name='SegundaUnidadEjercicios/teoremaslimitesej.html'
+
+class SULimitesInfinitoEjView(TemplateView):
+    template_name='SegundaUnidadEjercicios/limitesinfinitoej.html'
+
+class TUConstantesEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/constantesej.html'
+
+class TUPotenciaEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/reglapotenciaej.html'
+
+class TUTeoremasDerivacionEjView(TemplateView):
+    template_name='TerceraUnidadEjercicios/teoremasderivacionej.html'
+
+class PUTeoremaDeRectasEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/teoremaRectasEjer.html'
+
+class PUecuacionCirculoEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/ecuacionCirculoEjer.html'
+
+class PUcomplementoCuadradosEjView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/complementoCuadradosEjer.html'

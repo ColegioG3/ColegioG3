@@ -1,0 +1,160 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function resultadodosi1() {
+      if (document.getElementById("p9").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function determinante2() {
+      if (document.getElementById("p17").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+  </script>
+</head>
+  <div class="col-lg-12" id="infinito">
+    <br />
+    <br />
+    <h1>Reglas de potencia</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EMIII/potenciaej1.JPG' %}"
+                width="300"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p9" />  <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestapotenciaej1.JPG' %}"
+                  width="45"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p10" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalpotenciaej1.JPG' %}"
+                  width="45"
+                />
+                </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p9" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalspotenciaej1.JPG' %}"
+                    width="45"
+                  />
+                  </p>
+                  <p>
+                    <input type="radio" name="pregunta1" id="p10" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalsapotenciaej1.JPG' %}"
+                    width="45"
+                  />
+                  </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="resultadodosi1()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU3EMIII/potenciaej2.JPG' %}"
+                width="440"
+              />
+              <br>
+              <br>
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p15" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalspotenciaej2.JPG' %}"
+                  width="185"
+                />
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p16" /> <img
+                  class="img-fluid rounded-circle"
+                  src="{% static 'images/imgU3EMIII/respuestafalpotenciaej2.JPG' %}"
+                  width="185"
+                />
+                </p>
+                <p>
+                    <input type="radio" name="pregunta2" id="p17" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestapotenciaej2.JPG' %}"
+                    width="225"
+                  />
+                  </p>
+                  <p>
+                    <input type="radio" name="pregunta2" id="p18" /> <img
+                    class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU3EMIII/respuestafalsapotenciaej2.JPG' %}"
+                    width="185"
+                  />
+                  </p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="determinante2()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+{% endblock %}

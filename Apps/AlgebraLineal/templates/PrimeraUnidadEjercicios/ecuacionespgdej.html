@@ -1,0 +1,375 @@
+{% extends 'base.html' %} {% load static %} {% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+    function resultadoepgd() {
+      if (document.getElementById("p1").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadoepgddos() {
+      if (document.getElementById("p7").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+
+    function resultadosustitucion1() {
+      if (document.getElementById("p11").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadosustitucion2() {
+      if (document.getElementById("p16").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadoreduccion1() {
+      if (document.getElementById("p18").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+    function resultadoreduccion2() {
+      if (document.getElementById("p23").checked == true) {
+        p1 = 1;
+      } else {
+        p1 = 0;
+      }
+      nota = p1;
+
+      if (p1 == 1) {
+        swal(" CORRECTO");
+      } else {
+        swal(" RESPUESTA INCORRECTA");
+      }
+    }
+  </script>
+</head>
+<a href="#EliminacionIgualacion" class="btn btn-danger btn-lg"
+  >Método de eliminación por igualación</a
+>
+<a href="#EliminacionSustitucion" class="btn btn-danger btn-lg"
+  >Método de eliminación por sustitución</a
+>
+<a href="#EliminacionReduccion" class="btn btn-danger btn-lg"
+  >Método de eliminación por reducción</a
+>
+
+<div class="col-lg-12" id="EliminacionIgualacion">
+  <h1>Método de eliminación por igualación</h1>
+  <br />
+  <br />
+
+  <h2>Ejercicios</h2>
+
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioepgd1.PNG' %}"
+              width="350"
+            />
+            <br />
+            <br />
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta1" id="p1" /> x=1 , y=-1
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p2" /> x=3 , y=-1
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p3" /> x=5 , y=10
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p4" /> x=2 , y=-5
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadoepgd()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioepgd2.PNG' %}"
+              width="350"
+            />
+            <br />
+            <br />
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta2" id="p5" /> x=6 y=3
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p6" /> x=4 , y=1
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p7" /> x=5 , y=2
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p8" /> x=8 , y=7
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadoepgddos()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12" id="EliminacionSustitucion">
+  <br />
+  <br />
+  <h1>Método de eliminación por sustitución</h1>
+  <br />
+  <br />
+
+  <h2>Ejercicios</h2>
+
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioeliminacions1.JPG' %}"
+              width="350"
+            />
+            <br />
+            <br />
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta1" id="p9" /> x=14/10 , y=-1/7
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p10" /> x=1/17 , y=2/17
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p11" /> x=13/17 , y=-11/17
+              </p>
+              <p>
+                <input type="radio" name="pregunta1" id="p12" /> x=32/15 , y=4/20
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadosustitucion1()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img
+              class="img-fluid rounded-circle"
+              src="{% static 'images/imgU1EAL/ejercicioeliminacions2.JPG' %}"
+              width="350"
+            />
+            <br />
+            <br />
+            <form style="font: normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="pregunta2" id="p13" /> x=41/10 , y=15/2
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p14" /> x=1/2 , y=15/2
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p15" /> x=11/5 , y=8/2
+              </p>
+              <p>
+                <input type="radio" name="pregunta2" id="p16" /> x=11/2 , y=5/2
+              </p>
+              <p>
+                <input
+                  style="color: #e0e4e9; background-color: #0e0681"
+                  type="button"
+                  value=" R E S U L T A D O "
+                  onclick="resultadosustitucion2()"
+                />
+              </p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12" id="EliminacionReduccion">
+    <br />
+    <br />
+    <h1>Método de eliminación por reducción</h1>
+    <br />
+    <br />
+  
+    <h2>Ejercicios</h2>
+  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU1EAL/ejercicioeliminacionr1.JPG' %}"
+                width="350"
+              />
+              <br />
+              <br />
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p17" /> x=8 , y=1
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p18" /> x=4 , y=0
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p19" /> x=0 , y=2
+                </p>
+                <p>
+                  <input type="radio" name="pregunta1" id="p20" /> x=6 , y=3
+                </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="resultadoreduccion1()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img
+                class="img-fluid rounded-circle"
+                src="{% static 'images/imgU1EAL/ejercicioeliminacionr2.JPG' %}"
+                width="350"
+              />
+              <br />
+              <br />
+              <form style="font: normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p21" /> x=0 , y=1
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p22" /> x=1 , y=2
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p23" /> x=3 , y=-1
+                </p>
+                <p>
+                  <input type="radio" name="pregunta2" id="p24" /> x=2 , y=-5
+                </p>
+                <p>
+                  <input
+                    style="color: #e0e4e9; background-color: #0e0681"
+                    type="button"
+                    value=" R E S U L T A D O "
+                    onclick="resultadoreduccion2()"
+                  />
+                </p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+{% endblock %}
