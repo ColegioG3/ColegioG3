@@ -52,3 +52,18 @@ class PlanoCartesianoEjerciciosView(TemplateView):
 
 class DistanciaEjerciciosView(TemplateView):
     template_name='SegundaUnidadEjercicios/distanciaEje.html'
+
+class PuntoMedioEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/puntoMedioEje.html'
+
+class PendienteEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/pendienteEje.html'
+
+class GraficosEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/graficasFunciones.html'
+
+class FormaPuntoEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/formaPunto.html'
+
+class FuncionesLinealesCEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/funcionesLC.html'

@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoPendiente1() {
+            var respuestaCorrecta = 'R3';
+            var seleccionado = document.querySelector('input[name="R3"]:checked');
+            let formPendiente1 = document.getElementById("formPendiente1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formPendiente1.childElementCount - 1; index++) {
+                    if (formPendiente1.children[index].firstElementChild) {
+                      formPendiente1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+
+    function resultadoPendiente2(){
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formPendiente2  = document.getElementById("formPendiente2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formPendiente2.childElementCount - 1; index++) {
+                    if (formPendiente2.children[index].firstElementChild) {
+                        formPendiente2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+
+<a href="#Pendiente" class="btn btn-danger btn-lg">Pendiente</a>
+<div>
+    <h1>Pendiente</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/pendienteEje1.png' %}" width="575" />
+              <form id = "formPendiente1" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/pE3.png' %}" width="160" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/pE2.png' %}" width="160" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/pE1.png' %}" width="185" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoPendiente1()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/pendienteEje2.png' %}" width="575"/>
+                  <form id= "formPendiente2" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/pE6.png' %}" width="160" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/pE4.png' %}" width="180" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/pE5.png' %}" width="170" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoPendiente2() ' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+    {% endblock %}

@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.MatematicaII import views
-from .views import ( DistanciaEjerciciosView, EcuacionesEjerciciosView, EcuacionesSimultaneasEjerciciosView, PlanoCartesianoEjerciciosView, PrimeraUnidadEjerciciosView, PrimeraUnidadView, PUEcuacionesView, 
-            PUEcuacionesSimultaneasView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, 
+from .views import ( DistanciaEjerciciosView, EcuacionesEjerciciosView, EcuacionesSimultaneasEjerciciosView, FormaPuntoEjerciciosView, FuncionesLinealesCEjerciciosView, GraficosEjerciciosView, PendienteEjerciciosView, PlanoCartesianoEjerciciosView, 
+            PrimeraUnidadEjerciciosView, PrimeraUnidadView, PUEcuacionesView, 
+            PUEcuacionesSimultaneasView, PuntoMedioEjerciciosView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, 
             SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView)
 
 
@@ -42,4 +43,9 @@ urlpatterns = [
    path('ecuacionesSimultaneasEjercicios/', EcuacionesSimultaneasEjerciciosView.as_view(), name='ecuacionesSimultaneasEjercicios'),
    path('planoCartesianoEjercicios/', PlanoCartesianoEjerciciosView.as_view(), name='planoCartesianoEjercicios'),
    path('distanciaEjercicios/', DistanciaEjerciciosView.as_view(), name='distanciaEjercicios'),
+   path('puntoMedioEjercicios/', PuntoMedioEjerciciosView.as_view(), name='puntoMedioEjercicios'),
+   path('pendienteEjercicios/', PendienteEjerciciosView.as_view(), name='pendienteEjercicios'),
+   path('graficasFuncionesEjercicios/', GraficosEjerciciosView.as_view(), name='graficasFuncionesEjercicios'),
+   path('formaPuntoEjercicios/', FormaPuntoEjerciciosView.as_view(), name='formaPuntoEjercicios'),
+   path('FuncionesEjercicios/', FuncionesLinealesCEjerciciosView.as_view(), name='FuncionesEjercicios'),
 ]
