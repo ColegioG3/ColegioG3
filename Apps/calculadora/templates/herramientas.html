@@ -1,0 +1,45 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block contenido %}
+<head>
+    <link rel="stylesheet" href="{% static './css/h.css' %}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="page-header">
+          <h1 class="text-titles">Herramientas Alternativas</h1> 
+        </div>
+    </div>
+<center>
+    <div class="card-group">
+        <div class="card " style="width: 18rem;">
+            <br>
+            <center><img width="200" src="{% static './img/symbolab.png' %}" class="card-img-top" alt="..."></center>
+            <div class="card-body">
+              <h9 class="card-title">Symbolab</h9>
+              <p class="card-text">Es un motor de respuestas que proporciona soluciones 
+                paso a paso a problemas matemáticos en una variedad de temas.</p>
+                <a href="https://es.symbolab.com/" class="btncard">Ir al Sitio</a>
+                <a href="https://youtu.be/0I0vmBZ8CIY" class="btncard">Ver Video</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <br>
+            <center><img width="200" src="{% static './img/Mathway.png' %}" class="card-img-top" alt="..."></center>
+            <div class="card-body">
+              <h9 class="card-title">Mathway</h9>
+              <p class="card-text">Solucionador de problemas matemáticos que responde a preguntas
+                 con explicaciones paso a paso, como un tutor 
+                de matemáticas.</p>
+                <a href="https://www.mathway.com/" class="btncard">Ir al Sitio</a>
+                <a href="https://youtu.be/lJ-1EM1Saac" class="btncard">Ver Video</a>
+            </div>
+          </div>
+    </div>
+
+</center>
+    <br><br><br>
+</body>
+
+
+{% endblock %}

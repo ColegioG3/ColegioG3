@@ -15,15 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include 
+from django.urls import path
+from Apps.calculadora import views
+from .views import CalculadoraView,HerramientasView
+
+app_name = 'calculadora'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login/', include('Apps.login.urls', 'login')),
-    path('matematicaii/', include('Apps.MatematicaII.urls', 'MatematicaII')),
-    path('matecomercial/', include('Apps.matecomercial.urls', 'matecomercial')),
-    path('matematicaI/', include('Apps.matematicaI.urls', 'matematicaI')),  
-    path('algebralineal/', include('Apps.AlgebraLineal.urls', 'AlgebraLineal')),
-    path('matematicaIII/', include('Apps.MatematicaIII.urls', 'MatematicaIII')),
-    path('calculadora/', include('Apps.calculadora.urls', 'calculadora'))
+    path('Calculadora', CalculadoraView.as_view(), name='calculadoraapp'),
+    path('OtrasHerramientas', HerramientasView.as_view(), name='herramientasaapp')
+    
 ]

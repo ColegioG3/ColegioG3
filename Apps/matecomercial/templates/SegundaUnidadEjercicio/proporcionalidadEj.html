@@ -1,0 +1,472 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block contenido %}
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script>
+    function directa1() {
+            if (document.getElementById('p4').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function directa2() {
+            if (document.getElementById('p7').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function inversa1() {
+            if (document.getElementById('p10').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function inversa2() {
+            if (document.getElementById('p13').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function compuesta1() {
+            if (document.getElementById('p20').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function compuesta2() {
+            if (document.getElementById('p23').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function conjunta1() {
+            if (document.getElementById('p27').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }          
+        }
+
+        function conjunta2() {
+            if (document.getElementById('p29').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function repdirecto1() {
+            if (document.getElementById('p36').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function repdirecto2() {
+            if (document.getElementById('p40').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function repinverso1() {
+            if (document.getElementById('p47').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+
+        function repinverso2() {
+            if (document.getElementById('p52').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+              swal(" CORRECTO");
+            }
+            else {
+              swal(" RESPUESTA INCORRECTA");
+            }        
+        }
+  </script>
+</head>
+
+
+<div class="col-lg-12" id="Reglade3Directa">
+    <br />
+    <br />
+    <h1>Regla de 3 Directa</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <h4> 1) Si 2 kg de peras cuesta Q15.00 ¿Cuánto me cuestan 5 kg de peras? </h4>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p ><input type="radio" name="pregunta9" id="p1"> 25.50</p>
+                    <p ><input type="radio" name="pregunta9" id="p2"> 73.50</p>
+                    <p ><input type="radio" name="pregunta9" id="p3"> 32.40</p>
+                    <p ><input type="radio" name="pregunta9" id="p4"> 37.50</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='directa1()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <h4>2)	Una máquina fabrica 400 tornillos en 5 horas. ¿Cuánto tardará en fabricar 1,000 tornillos?</h4>
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p ><input type="radio" name="pregunta10" id="p5"> 10.75</p>
+                    <p ><input type="radio" name="pregunta10" id="p6"> 15</p>
+                    <p ><input type="radio" name="pregunta10" id="p7"> 12.50</p>
+                    <p ><input type="radio" name="pregunta10" id="p8"> 11.50</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='directa2()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="col-lg-12" id="Reglade3Inversa">
+    <br />
+    <h1>Regla de 3 Inversa</h1>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1)	Un granjero tiene concentrado para alimentar a sus 12 vacas durante 45 días. 
+                Si compra 3 vacas más, ¿Cuánto le durará el concentrado? </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta11" id="p9"> 47</p>
+                  <p ><input type="radio" name="pregunta11" id="p10"> 36</p>
+                  <p ><input type="radio" name="pregunta11" id="p11"> 56</p>
+                  <p ><input type="radio" name="pregunta11" id="p12"> 30</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='inversa1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)	Una máquina fabrica 400 tornillos en 5 horas. ¿Cuánto tardará en fabricar 1,000 tornillos?</h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta12" id="p13"> 10</p>
+                  <p ><input type="radio" name="pregunta12" id="p14"> 8</p>
+                  <p ><input type="radio" name="pregunta12" id="p15"> 16</p>
+                  <p ><input type="radio" name="pregunta12" id="p16"> 5</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='inversa2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-lg-12" id="Reglade3Compuesta">
+    <br />
+    <br />
+    <br />
+    <h1>Regla de 3 Compuesta</h1>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1)	Cuatro agricultores recolectan 10,000 Kg de cerezas en 9 días. ¿Cuántos Kilos recolectarán 
+                seis agricultores en 15 días?   </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta13" id="p17"> 27,000 kg</p>
+                  <p ><input type="radio" name="pregunta13" id="p18"> 35,000 kg</p>
+                  <p ><input type="radio" name="pregunta13" id="p19"> 24,500 kg</p>
+                  <p ><input type="radio" name="pregunta13" id="p20"> 25,000 kg</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='compuesta1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)	Cinco trabajadores tardan 16 días en construir una pequeña caseta de aperos trabajando
+                 6 horas diarias. ¿Cuántos trabajadores serán necesarios 
+                para construir dicha casita en 10 días si trabajan 8 horas diarias?</h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta14" id="p21"> 10</p>
+                  <p ><input type="radio" name="pregunta14" id="p22"> 12</p>
+                  <p ><input type="radio" name="pregunta14" id="p23"> 6</p>
+                  <p ><input type="radio" name="pregunta14" id="p24"> 4</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='compuesta2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-lg-12" id="ReglaConjunta">
+    <br />
+    <br />
+    <br />
+    <h1>Regla Conjunta</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1)	Comprar 3 libros equivale a comprar 7 lapiceros; si por cada 4 
+                cuadernos obtengo 6 lapiceros. ¿Cuántos cuadernos obtengo por 9 libros?   </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta15" id="p25"> 8</p>
+                  <p ><input type="radio" name="pregunta15" id="p26"> 24</p>
+                  <p ><input type="radio" name="pregunta15" id="p27"> 14</p>
+                  <p ><input type="radio" name="pregunta15" id="p28"> 12</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='conjunta1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)	Con 9 reglas se obtiene 5 lapiceros, con 4 lápices se obtiene 3 lapiceros. 
+                ¿Cuántas reglas se obtiene con 20 lápices? </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta14" id="p29"> 27</p>
+                  <p ><input type="radio" name="pregunta14" id="p30"> 32</p>
+                  <p ><input type="radio" name="pregunta14" id="p31"> 23</p>
+                  <p ><input type="radio" name="pregunta14" id="p32"> 30</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='conjunta2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-lg-12" id="RepartoDirecto">
+    <br />
+    <br />
+    <br />
+    <h1>Reparto Proporcional Directo</h1>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1) En una sesión para una revista fotográfica, tres fotógrafos cobraron Q6,720.00. En la revista, 
+                14 fotos eran del fotógrafo 1 , 18 del fotógrafo 2 y 24 del fotógrafo 3. 
+                ¿Qué cantidad de quetzales le corresponde a cada uno?   </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta17" id="p35"> Fotógrafo 1: 1,490 - Fotógrafo 2: 2,120 - Fotógrafo 3: 2,640</p>
+                  <p ><input type="radio" name="pregunta17" id="p36"> Fotógrafo 1: 1,680 - Fotógrafo 2: 2,169 - Fotógrafo 3: 2,880</p>
+                  <p ><input type="radio" name="pregunta17" id="p37"> Fotógrafo 1: 1,720 - Fotógrafo 2: 2,245 - Fotógrafo 3: 2,95</p>
+                  <p ><input type="radio" name="pregunta17" id="p38"> Fotógrafo 1: 1,495 - Fotógrafo 2: 2,115 - Fotógrafo 3: 2,190</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='repdirecto1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)	Se quiere repartir un premio de Q1,000  en cheques para libros a los tres mejores goleadores
+                 del equipo de fútbol del instituto de manera proporcional a los goles marcados en la última 
+                 temporada. Sabiendo que Pedro marcó 53 goles, Marta 39 goles y Adolfo 33, 
+                 ¿de cuánto dinero es el cheque que le corresponde a cada uno? </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta18" id="p40"> Pedro: 424 - Marta: 312 - Adolfo 264</p>
+                  <p ><input type="radio" name="pregunta18" id="p41"> Pedro: 312 - Marta: 246 - Adolfo 424</p>
+                  <p ><input type="radio" name="pregunta18" id="p42"> Pedro: 434 - Marta: 321 - Adolfo 246</p>
+                  <p ><input type="radio" name="pregunta18" id="p43"> Pedro: 422 - Marta: 314 - Adolfo 266</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='repdirecto2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+
+
+<div class="col-lg-12" id="RepartoInverso">
+  <br />
+  <br />
+  <br />
+  <h1>Reparto Proporcional Inverso</h1>
+  <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>1) Se quiere repartir un premio de Q 1,860  a los tres mejores corredores de una carrera, 
+                de manera inversamente proporcional a los tiempos que han invertido en completar el recorrido. 
+                El Juan tardó 24 segundos, Maria 28 y Luis 30   </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta19" id="p45"> Juan: 560 - Maria: 700 - Luis: 600</p>
+                  <p ><input type="radio" name="pregunta19" id="p46"> Juan: 450 - Maria: 800 - Luis: 600</p>
+                  <p ><input type="radio" name="pregunta19" id="p47"> Juan: 700 - Maria: 600 - Luis: 560</p>
+                  <p ><input type="radio" name="pregunta19" id="p48"> Juan: 660 - Maria: 400 - Luis: 700</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='repinverso1()' /></p>
+              </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+              <h4>2)	Se reparten Q 3,800  entre tres trabajadores por concepto de pago de manera inversamente proporcional 
+                al número de dias no laborados. Si el primer trabajador no laboró 5 dias, el segundo 3 y el tercero 10. 
+                ¿Cuál es el pago de cada trabajador? </h4>
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p ><input type="radio" name="pregunta20" id="p49"> Primero: 1200 - Segundo: 2000 - Tercero: 800</p>
+                  <p ><input type="radio" name="pregunta20" id="p50"> Primero: 600 - Segundo: 2000 - Tercero: 1200</p>
+                  <p ><input type="radio" name="pregunta20" id="p51"> Primero: 1000 - Segundo: 2200 - Tercero: 600</p>
+                  <p ><input type="radio" name="pregunta20" id="p52"> Primero: 1200 - Segundo: 2000 - Tercero: 600</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='repinverso2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+</div>
+
+{% endblock %}
