@@ -20,7 +20,7 @@ from Apps.MatematicaII import views
 from .views import ( DistanciaEjerciciosView, EcuacionesEjerciciosView, EcuacionesSimultaneasEjerciciosView, FormaPuntoEjerciciosView, FuncionesLinealesCEjerciciosView, GraficosEjerciciosView, PendienteEjerciciosView, PlanoCartesianoEjerciciosView, 
             PrimeraUnidadEjerciciosView, PrimeraUnidadView, PUEcuacionesView, 
             PUEcuacionesSimultaneasView, PuntoMedioEjerciciosView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, 
-            SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView, EcuacionesCirculosEjerciciosView)
+            SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView, EcuacionesCirculosEjerciciosView, TeoremaDeRectasView)
 
 
 app_name = 'MatematicaII'
@@ -49,4 +49,5 @@ urlpatterns = [
    path('formaPuntoEjercicios/', FormaPuntoEjerciciosView.as_view(), name='formaPuntoEjercicios'),
    path('FuncionesEjercicios/', FuncionesLinealesCEjerciciosView.as_view(), name='FuncionesEjercicios'),
    path('ecuacionesCirculosEjercicios/', EcuacionesCirculosEjerciciosView.as_view(), name='ecuacionesCirculosEjercicios'),
+   path('teoremasRectasEjercicios/', TeoremaDeRectasView.as_view(), name='teoremasRectasEjercicios'),
 ]

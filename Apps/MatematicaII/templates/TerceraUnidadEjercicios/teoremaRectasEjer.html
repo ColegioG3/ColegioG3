@@ -27,7 +27,6 @@
         }
       }
 
-
     function resultadoRectasParalelasE2() {
       var respuestaCorrecta = 'p12';
       var seleccionado = document.querySelector('input[name="pregunta2"]:checked');
@@ -89,6 +88,8 @@
 </head>
 <a href="#TeoremaRectasP" class="btn btn-danger btn-lg">Teorema rectas paralelas</a>
 <a href="#TeoremaRectasPer" class="btn btn-danger btn-lg">Teorema rectas perpendiculares</a>
+<a href="#Combinación de rectas paralelas con distancia y punto medio" class="btn btn-danger btn-lg">Combinación de rectas paralelas con distancia y punto medio</a>
+<a href="#Combinación de rectas perpendiculares con distancia y punto medio" class="btn btn-danger btn-lg">Combinación de rectas perpendiculares con distancia y punto medio</a>
 <div class="col-lg-12" id="SumaF">
   <h1>Teorema rectas paralelas</h1>
   <br>
@@ -101,7 +102,7 @@
       <div class="card">
         <div class="card-body">
           <center>
-            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectasPaE1.png' %}" />
+            <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/rectasPaE1.png' %}" />
             <form id = "formTRP1" style="font:normal 16px sans-serif">
               <p>Selecciona la Respuesta Correcta</p>
               <p><input type="radio" name="pregunta1" id="p11">Son paralelas</p>
@@ -118,7 +119,7 @@
       <div class="card">
         <div class="card-body">
           <center>
-            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectasPaE2.png' %}" />
+            <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/rectasPaE2.png' %}" />
             <form id="formTRP2" style="font:normal 16px sans-serif">
               <p>Selecciona la Respuesta Correcta</p>
               <p><input type="radio" name="pregunta1" id="p11">Son paralelas</p>
@@ -147,20 +148,20 @@
       <div class="card">
         <div class="card-body">
           <center>
-            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectaPerE1.png' %}" />
+            <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/rectaPerE1.png' %}" />
             <form id="formTRPer1" style="font:normal 16px sans-serif">
               <p>Selecciona la Respuesta Correcta</p>
               <p>
                 <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
-                  src="{% static 'images/ejercicios/Rec3.png' %}" width="180" />
+                  src="{% static 'images/imgU1/Rec3.png' %}" width="180" />
               </p>
               <p>
                 <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
-                  src="{% static 'images/ejercicios/R2.png' %}" width="165" />
+                  src="{% static 'images/imgU1/R2.png' %}" width="165" />
               </p>
               <p>
                 <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
-                  src="{% static 'images/ejercicios/R1.png' %}" width="165" />
+                  src="{% static 'images/imgU1/R1.png' %}" width="165" />
               </p>
               <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
                   onclick='resultadoRectasPerE1()' /></p>
@@ -175,20 +176,20 @@
         <div class="card">
           <div class="card-body">
             <center>
-              <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectaPerE2.png' %}" />
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/rectaPerE2.png' %}" />
               <form id = "formTRPer2" style="font:normal 16px sans-serif">
                 <p>Selecciona la Respuesta Correcta</p>
                 <p>
                   <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
-                    src="{% static 'images/ejercicios/RecE6.png' %}" width="175" />
+                    src="{% static 'images/imgU1/RecE6.png' %}" width="175" />
                 </p>
                 <p>
                   <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
-                    src="{% static 'images/ejercicios/RecE4.png' %}" width="175" />
+                    src="{% static 'images/imgU1/RecE4.png' %}" width="175" />
                 </p>
                 <p>
                   <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
-                    src="{% static 'images/ejercicios/RecE5.png' %}" width="175" />
+                    src="{% static 'images/imgU1/RecE5.png' %}" width="175" />
                 </p>
                 <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
                     onclick='resultadoRectasPerE2()' /></p>
@@ -198,6 +199,70 @@
         </div>
       </div>
     </div>
+
+    <div class="col-lg-12" id="CombinacionR";>
+      <br />
+      <br />
+      <h1>Combinación de rectas paralelas con distancia y punto medio</h1>
+      <br>
+      <br>
+      <h2>Ejercicios</h2>
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/combinacionR1.png' %}" width="560" />
+                <form id="formTRPer1" style="font:normal 16px sans-serif" >
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p>
+                    <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/combinacionRes2.png' %}" width="100" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/combinacionRes1.png' %}" width="100" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/combinacionRes3.png' %}" width="100" />
+                  </p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                      onclick='resultadoRectasPerE1()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/combinacionR2.png' %}" width="560"/>
+                  <form id = "formTRPer2" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/combinacionRes4.png' %}" width="125" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/combinacionRes5.png' %}" width="125" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/combinacionRes6.png' %}"width="125" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                        onclick='resultadoRectasPerE2()' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
 <br />
 <br />
 <br />

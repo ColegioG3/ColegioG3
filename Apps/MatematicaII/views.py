@@ -67,5 +67,9 @@ class FormaPuntoEjerciciosView(TemplateView):
 
 class FuncionesLinealesCEjerciciosView(TemplateView):
     template_name='SegundaUnidadEjercicios/funcionesLC.html'
+
 class EcuacionesCirculosEjerciciosView(TemplateView):
     template_name='CuartaUnidadEjercicios/ecuacionesCirculosEj.html'
+
+class TeoremaDeRectasView(TemplateView):
+    template_name='TerceraUnidadEjercicios/teoremaRectasEjer.html'
