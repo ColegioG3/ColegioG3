@@ -1,0 +1,406 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/main.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+    <script>
+        function resultado() {
+            if (document.getElementById('p11').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function uno() {
+            if (document.getElementById('p27').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+        function sumados() {
+            if (document.getElementById('p3').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function sumados2() {
+            if (document.getElementById('p31').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function sumados22() {
+            if (document.getElementById('p31').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+        function tres() {
+            if (document.getElementById('p25').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+            
+         
+        }        
+
+        function trestres() {
+            if (document.getElementById('p41').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+            
+         
+        } 
+        function dos() {
+            if (document.getElementById('p6').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function cuatro() {
+            if (document.getElementById('p18').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        function cuatro2() {
+            if (document.getElementById('p22').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+    </script>
+
+
+</head>
+<a href="#ExpresionesAlgebraicas" class="btn btn-danger btn-lg">Expresiones Algebraicas</a>
+<a href="#TerminosAlgebraicos" class="btn btn-danger btn-lg">Términos Algebraicos</a>
+<a href="#Clasificacion" class="btn btn-danger btn-lg">Clasificación de las expresiones Algebraicas</a>
+<a href="#Terminos" class="btn btn-danger btn-lg">Terminos Semejantes</a>
+<a href="#Reduccion" class="btn btn-danger btn-lg">Reducción de términos Semejantes</a>
+
+
+<div class="col-lg-12" id="ExpresionesAlgebraicas">
+    <h1>Expresiones Algebraicas</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/ex1.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                     <input type="radio" name="pregunta1" id="p11"> 31</p>
+                    <input type="radio" name="pregunta1" id="p12"> 64</p>
+                    <input type="radio" name="pregunta1" id="p13"> 1</p>
+                    <input type="radio" name="pregunta1" id="p14"> 41</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultado()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle"width=“30”  src="{% static 'images/ejercicios/ex2.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta2" id="p1"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/r1.png' %}" /></p>
+                  <input type="radio" name="pregunta2" id="p2"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/r2.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p3"> <img class="img-fluid rounded-circle"   src="{% static 'images/ejercicios/r3.png' %}" /></p>
+                    <input type="radio" name="pregunta2" id="p4"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/r4.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="col-lg-12" id="TerminosAlgebraicos">
+    <br />
+    <br />
+    <h1>Términos Algebraicos</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/eje3.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                     <input type="radio" name="pregunta1" id="p5">  (3)(2)</p>
+                     <input type="radio" name="pregunta1" id="p6"> (-)(a)</p>
+                     <input type="radio" name="pregunta1" id="p7">  (-)(3)</p>
+                     <input type="radio" name="pregunta1" id="p8">  (a)(2)</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='dos()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/eje4.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta2" id="p15"> (38)(z)</p>
+                    <input type="radio" name="pregunta2" id="p16"> (2)(-)</p>
+                    <input type="radio" name="pregunta2" id="p17"> (z)(2)</p>
+                    <input type="radio" name="pregunta2" id="p18"> (2)(38)</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='cuatro()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="col-lg-12" id="Clasificacion">
+    <br />
+    <br />
+    <h1>Clasificación de las expresiones Algebraicas</h1>
+    <br>
+    <br>
+
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/ej5.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p19">Trinomio</p>
+                    <input type="radio" name="pregunta1" id="p20"> Polinomio</p>
+                    <input type="radio" name="pregunta1" id="p21"> Monomio</p>
+                    <input type="radio" name="pregunta1" id="p22"> Binomio</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='cuatro2()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/eje5.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p23">Trinomio</p>
+                    <input type="radio" name="pregunta1" id="p24"> Monomio</p>
+                    <input type="radio" name="pregunta1" id="p25"> Polinomio</p>
+                    <input type="radio" name="pregunta1" id="p26"> Binomio</p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='tres()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="col-lg-12" id="Terminos">
+    <br />
+
+    <br />
+    <h1>Terminos Semejantes</h1>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/a1.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                   <input type="radio" name="pregunta1" id="p27">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/a4.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p28">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/a5.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p29">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/a3.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p30">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/a2.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='uno()' /></p>
+                </form>
+                </center>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/d.png' %}" />
+                <form style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <input type="radio" name="pregunta1" id="p31">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/d1.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p32">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/d2.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p33">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/d3.png' %}" /></p>
+                    <input type="radio" name="pregunta1" id="p34">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/d4.png' %}" /></p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados22()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br />
+  </br />
+  </br />
+  </br />
+</div>
+
+<div class="col-lg-12" id="Reduccion">
+  <h1>Reducción de términos Semejantes</h1>
+  <br>
+  <br>
+
+  <h2>Ejercicios</h2>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+          <center>
+          <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/b.png' %}" />
+          <form style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <input type="radio" name="pregunta1" id="p35">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/b4.png' %}" /></p>
+              <input type="radio" name="pregunta1" id="p36">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/b1.png' %}" /></p>
+              <input type="radio" name="pregunta1" id="p37">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/b3.png' %}" /></p>
+              <input type="radio" name="pregunta1" id="p38">  <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/b2.png' %}" /></p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='sumados2()' /></p>
+          </form>
+        </center>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+              <center>
+                <width=“15”> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/c.png' %}"  width="400" height="100" /> 
+              <form style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <input type="radio" name="pregunta2" id="p39"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/c1.png' %}" /></p>
+                <input type="radio" name="pregunta2" id="p40"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/c2.png' %}" /></p>
+                  <input type="radio" name="pregunta2" id="p41"> <img class="img-fluid rounded-circle"   src="{% static 'images/ejercicios/c3.png' %}" /></p>
+                  <input type="radio" name="pregunta2" id="p42"> <img class="img-fluid rounded-circle"  src="{% static 'images/ejercicios/c4.png' %}" /></p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"   value=" R E S U L T A D O " onclick='trestres()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+
+
+{% endblock %}

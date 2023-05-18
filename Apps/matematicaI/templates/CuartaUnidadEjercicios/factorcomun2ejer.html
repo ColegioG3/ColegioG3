@@ -1,0 +1,423 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoTrinomio1() {
+        var respuestaCorrecta = 'R1';
+        var seleccionado = document.querySelector('input[name="R1"]:checked');
+
+        let formTRP1 = document.getElementById("formTRP1");
+        
+        //Condicion para limpiar las opciones seleccionadas
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formTRP1.childElementCount - 1; index++) {
+            if (formTRP1.children[index].firstElementChild) {
+              formTRP1.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+
+    function resultadoTrinomio2() {
+      var respuestaCorrecta = 'R2';
+      var seleccionado = document.querySelector('input[name="R2"]:checked');
+
+      let formTRP2 = document.getElementById("formTRP2");
+
+      if (seleccionado && seleccionado.id === respuestaCorrecta) {
+        swal("CORRECTO");
+        seleccionado.checked = false; // Desseleccionar la opción seleccionada
+      } else {
+        for (let index = 0; index < formTRP2.childElementCount - 1; index++) {
+          if (formTRP2.children[index].firstElementChild) {
+            formTRP2.children[index].firstElementChild.checked = false;
+          }
+        }
+        swal("RESPUESTA INCORRECTA");
+      }
+    }
+
+        function resultadoCubo1() {
+          var respuestaCorrecta = 'R1';
+          var seleccionado = document.querySelector('input[name="R1"]:checked');
+
+          let formCP1 = document.getElementById("formCP1");
+
+          if (seleccionado && seleccionado.id === respuestaCorrecta) {
+            swal("CORRECTO");
+            seleccionado.checked = false; // Desseleccionar la opción seleccionada
+          } else {
+            for (let index = 0; index < formCP1.childElementCount - 1; index++) {
+              if (formCP1.children[index].firstElementChild) {
+                formCP1.children[index].firstElementChild.checked = false;
+              }
+            }
+            swal("RESPUESTA INCORRECTA");
+          }
+        }
+
+    function resultadoCubo2() {
+        var respuestaCorrecta = 'R2';
+        var seleccionado = document.querySelector('input[name="R2"]:checked');
+        let formCP2 = document.getElementById("formCP2");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formCP2.childElementCount - 1; index++) {
+            if (formCP2.children[index].firstElementChild) {
+              formCP2.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+      function resultadoSuma1() {
+        var respuestaCorrecta = 'R1';
+        var seleccionado = document.querySelector('input[name="R1"]:checked');
+        let formS1 = document.getElementById("formS1");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formS1.childElementCount - 1; index++) {
+            if (formS1.children[index].firstElementChild) {
+              formS1.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+
+      function resultadoSuma2() {
+        var respuestaCorrecta = 'R2';
+        var seleccionado = document.querySelector('input[name="R2"]:checked');
+        let formS2 = document.getElementById("formS2");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formS2.childElementCount - 1; index++) {
+            if (formS2.children[index].firstElementChild) {
+              formS2.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+        function dos3() {
+            if (document.getElementById('p44').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+        
+        function cuatro3() {
+            if (document.getElementById('p42').checked == true) { p1 = 1 }
+            else { p1 = 0 }
+            nota = p1;
+
+            if (p1 == 1) {
+                swal(" CORRECTO");
+            }
+            else {
+                swal(" RESPUESTA INCORRECTA");
+            }
+         
+        }
+
+      }
+
+  </script>
+
+</head>
+
+<a href="#6" class="btn btn-danger btn-lg">Caso VI: Trinomio de la forma x2+bx+c</a>
+<a href="#7" class="btn btn-danger btn-lg">Caso VII: Trinomio de la forma ax2+bx+c</a>
+<a href="#8" class="btn btn-danger btn-lg">Caso VIII: Cubo perfecto de binomios</a>
+<a href="#9" class="btn btn-danger btn-lg">Caso IX: Suma o diferencia de cubos perfectos</a>
+  
+
+<div class="col-lg-12" id="7">
+    <h1>Caso VI: Trinomio de la forma x2+bx+c</h1>
+    <br>
+    <br>
+  <h2>Ejercicios</h2>
+<div class="row" style="margin: 25px 20px 25px 20px" ;>
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+                <center>
+                    <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/1.png' %}" />
+                    <form id="formTRP1" style="font:normal 16px sans-serif">
+                        <p>Selecciona la Respuesta Correcta</p>
+                        <p>
+                            <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                                src="{% static 'images/EjerciciosR/2.png' %}" width="165" />
+                        </p>
+                        <p>
+                            <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                                src="{% static 'images/EjerciciosR/3.png' %}" width="165" />
+                        </p>
+                        <p>
+                            <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                                src="{% static 'images/EjerciciosR/4.png' %}" width="165" />
+                        </p>
+                        <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"
+                                value=" R E S U L T A D O " onclick='resultadoTrinomio1()' /></p>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/11.png' %}" width="450" height="70" />
+            <form id="formTRP2" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/12.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/13.png' %}" width="160" />
+              </p>
+              <p>
+                <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/14.png' %}" width="165" />
+              </p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                  onclick='resultadoTrinomio2() ' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="col-lg-12" id="7">
+    <h1>Caso VII: Trinomio de la forma ax2+bx+c</h1>
+    <br>
+    <br>
+  <h2>Ejercicios</h2>
+<div class="row" style="margin: 25px 20px 25px 20px" ;>
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+                <center>
+                    <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/trinomio1.png' %}" />
+                    <form id="formTRP1" style="font:normal 16px sans-serif">
+                        <p>Selecciona la Respuesta Correcta</p>
+                        <p>
+                            <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                                src="{% static 'images/EjerciciosR/triEje1.png' %}" width="165" />
+                        </p>
+                        <p>
+                            <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                                src="{% static 'images/EjerciciosR/triEje2.png' %}" width="165" />
+                        </p>
+                        <p>
+                            <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                                src="{% static 'images/EjerciciosR/triEje3.png' %}" width="165" />
+                        </p>
+                        <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"
+                                value=" R E S U L T A D O " onclick='resultadoTrinomio1()' /></p>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/trinomio2.png' %}" />
+            <form id="formTRP2" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/triEje5.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/triEje4.png' %}" width="160" />
+              </p>
+              <p>
+                <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/triEje6.png' %}" width="165" />
+              </p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                  onclick='resultadoTrinomio2() ' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="col-lg-12" id="8" style="margin: 25px 20px 25px 20px";>
+  <br />
+  <br />
+  <h1>Caso VIII: Cubo perfecto de binomios</h1>
+  <br>
+  <br>
+  <h2>Ejercicios</h2>
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/cuboP1.png' %}" />
+            <form id="formCP1" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/cuboR2.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/cuboR1.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                src="{% static 'images/EjerciciosR/cuboR3.png' %}" width="165" />
+              </p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                  onclick='resultadoCubo1()' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/cuboP2.png' %}" />
+              <form id = "formCP2" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/EjerciciosR/cuboR5.png' %}" width="200" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/EjerciciosR/cuboR4.png' %}" width="200" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/EjerciciosR/cuboR6.png' %}" width="200" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                    onclick='resultadoCubo2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-lg-12" id="9" style="margin: 25px 20px 25px 20px";>
+      <br />
+      <br />
+      <h1>Caso IX: Suma o diferencia de cubos perfectos</h1>
+      <br>
+      <br>
+      <h2>Ejercicios</h2>
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/suma1.png' %}" />
+                <form id="formS1" style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p>
+                    <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/EjerciciosR/dif1.png' %}" width="165" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/EjerciciosR/dif2.png' %}" width="165" />
+                  </p>
+                  <p>
+                    <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/EjerciciosR/dif3.png' %}" width="165" />
+                  </p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                      onclick='resultadoSuma1()' /></p>
+                </form>
+              </center>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/EjerciciosR/suma2.png' %}" />
+                  <form id = "formS2" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/EjerciciosR/dif5.png' %}" width="200" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/EjerciciosR/dif4.png' %}" width="200" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/EjerciciosR/dif6.png' %}" width="200" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                        onclick='resultadoSuma2()' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    {% endblock %}
