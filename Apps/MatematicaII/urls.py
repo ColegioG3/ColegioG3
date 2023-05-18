@@ -19,7 +19,8 @@ from django.urls import path, include
 from Apps.MatematicaII import views
 from .views import ( DistanciaEjerciciosView, EcuacionesEjerciciosView, EcuacionesSimultaneasEjerciciosView, PlanoCartesianoEjerciciosView, PrimeraUnidadEjerciciosView, PrimeraUnidadView, PUEcuacionesView, 
             PUEcuacionesSimultaneasView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, 
-            SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView)
+            SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView, 
+            EcuacionesCirculosEjerciciosView)
 
 
 app_name = 'MatematicaII'
@@ -42,4 +43,5 @@ urlpatterns = [
    path('ecuacionesSimultaneasEjercicios/', EcuacionesSimultaneasEjerciciosView.as_view(), name='ecuacionesSimultaneasEjercicios'),
    path('planoCartesianoEjercicios/', PlanoCartesianoEjerciciosView.as_view(), name='planoCartesianoEjercicios'),
    path('distanciaEjercicios/', DistanciaEjerciciosView.as_view(), name='distanciaEjercicios'),
+   path('ecuacionesCirculosEjercicios/', EcuacionesCirculosEjerciciosView.as_view(), name='ecuacionesCirculosEjercicios'),
 ]

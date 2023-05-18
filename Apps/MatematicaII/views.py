@@ -52,3 +52,6 @@ class PlanoCartesianoEjerciciosView(TemplateView):
 
 class DistanciaEjerciciosView(TemplateView):
     template_name='SegundaUnidadEjercicios/distanciaEje.html'
+
+class EcuacionesCirculosEjerciciosView(TemplateView):
+    template_name='CuartaUnidadEjercicios/ecuacionesCirculosEj.html'
