@@ -1,0 +1,429 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resEcCir1() {
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formCir1 = document.getElementById("formCir1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir1.childElementCount - 1; index++) {
+                    if (formCir1.children[index].firstElementChild) {
+                      formCir1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir2(){
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formCir2 = document.getElementById("formCir2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir2.childElementCount - 1; index++) {
+                    if (formCir2.children[index].firstElementChild) {
+                      formCir2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir3(){
+            var respuestaCorrecta = 'R3';
+            var seleccionado = document.querySelector('input[name="R3"]:checked');
+            let formCir3 = document.getElementById("formCir3");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir3.childElementCount - 1; index++) {
+                    if (formCir3.children[index].firstElementChild) {
+                      formCir3.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir4(){
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formCir4 = document.getElementById("formCir4");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir4.childElementCount - 1; index++) {
+                    if (formCir4.children[index].firstElementChild) {
+                      formCir4.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir5(){
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formCir5 = document.getElementById("formCir5");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir5.childElementCount - 1; index++) {
+                    if (formCir5.children[index].firstElementChild) {
+                      formCir5.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir6(){
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formCir6 = document.getElementById("formCir6");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir6.childElementCount - 1; index++) {
+                    if (formCir6.children[index].firstElementChild) {
+                      formCir6.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir7(){
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formCir7 = document.getElementById("formCir7");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir7.childElementCount - 1; index++) {
+                    if (formCir7.children[index].firstElementChild) {
+                      formCir7.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+    function resEcCir8(){
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formCir8 = document.getElementById("formCir8");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formCir8.childElementCount - 1; index++) {
+                    if (formCir8.children[index].firstElementChild) {
+                      formCir8.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+
+<a href="#Ecuación normal del círculo" class="btn btn-danger btn-lg">Ecuación normal del círculo</a>
+<a href="#Centro y radio del círculo" class="btn btn-danger btn-lg">Centro y radio del círculo</a>
+<a href="#(b/2)2 complementos cuadrados" class="btn btn-danger btn-lg">(b/2)2 complementos cuadrados</a>
+<a href="#Ecuación del círculo con el centro del vértice de la perpendicular" class="btn btn-danger btn-lg">Ecuación del
+    círculo con el centro del vértice de la perpendicular</a>
+
+<div>
+    <h1>Ecuación normal del círculo</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/ecEj1.png' %}" width="100%" />
+              <form id = "formCir1" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/ecEj1R.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/ecEj1Rnn.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/ecEj1Rn.png' %}" width="33%" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir1()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/ecEj2.png' %}" width="100%"/>
+                  <form id= "formCir2" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/ecEj2Rnn.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/ecEj2R.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/ecEj2Rn.png' %}" width="33%" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir2() ' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+{% comment %} Centro y radio del círculo {% endcomment %}
+<div>
+    <h1>Centro y radio del círculo</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/crEj1.png' %}" width="75%" />
+              <form id = "formCir3" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/crEj1Rnn.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/crEj1Rn.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/crEj1R.png' %}" width="33%" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir3() ' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/crEj2.png' %}" width="75%"/>
+                  <form id= "formCir4" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/crEj2R.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/crEj2Rn.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/crEj2Rnn.png' %}" width="33%" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir4() ' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+{% comment %} (b/2)2 complementos cuadrados {% endcomment %}
+<div>
+    <h1>(b/2)2 complementos cuadrados</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/cc_Ej1.png' %}" width="100%" />
+              <form id = "formCir5" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/ccEjRnn.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/ccEjR.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/ccEjRnn.png' %}" width="33%" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir5() ' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/cc_Ej2.png' %}" width="100%"/>
+                  <form id= "formCir6" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/ccEj2R.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/ccEj2Rnn.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/ccEj2Rn.png' %}" width="33%" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir6() ' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+{% comment %} Ecuación del círculo con el centro del vértice de la perpendicular {% endcomment %}
+<div>
+    <h1>Ecuación del
+      círculo con el centro del vértice de la perpendicular</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/cvEj1.png' %}" width="100%" />
+              <form id = "formCir7" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/cvEj1R.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/cvEj1Rnn.png' %}" width="33%" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/cvEj1Rn.png' %}" width="33%" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir7() ' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/cvEj2.png' %}" width="100%"/>
+                  <form id= "formCir8" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/cvEj2R.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/cvEj2Rnn.png' %}" width="33%" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/cvEj2Rn.png' %}" width="33%" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resEcCir8() ' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+{% endblock %}

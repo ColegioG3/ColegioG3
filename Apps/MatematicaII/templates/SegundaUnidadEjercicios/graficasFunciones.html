@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoGrafica1() {
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formGrafica1 = document.getElementById("formGrafica1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formGrafica1.childElementCount - 1; index++) {
+                    if (formGrafica1.children[index].firstElementChild) {
+                      formGrafica1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+
+    function resultadoGrafica2() {
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formGrafica2  = document.getElementById("formGrafica2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formGrafica2.childElementCount - 1; index++) {
+                    if (formGrafica2.children[index].firstElementChild) {
+                        formGrafica2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+
+<a href="#Gráfica de funciones" class="btn btn-danger btn-lg">Gráfica de funciones</a>
+<div>
+    <h1>Gráfica de funciones</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>  
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/grafica1.png' %}" width="575" />
+              <form id = "formGrafica1" style="font:normal 16px sans-serif">
+                <p>A qué función pertenece esta Gráfica</p>
+                <p><input type="radio" name="R1" id="R1">f(x) = 2x + 1</p>
+                <p><input type="radio" name="R2" id="R2">f(x) = 3x + 5</p>
+                <p><input type="radio" name="R3" id="R3">f(x) = 8x + 2</p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoGrafica1()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                    <center>
+                        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/grafica2.png' %}" width="575" />
+                        <form id="formGrafica2" style="font:normal 16px sans-serif">
+                            <p>A qué función pertenece esta Gráfica</p>
+                            <p><input type="radio" name="R1" id="R1">f(x) = x + 1</p>
+                            <p><input type="radio" name="R2" id="R2">f(x) = sin(x) </p>
+                            <p><input type="radio" name="R3" id="R3">f(x) = 5x + 2</p>
+                            <p><input style="color: #e0e4e9; background-color: #0e0681" type="button"
+                                    value=" R E S U L T A D O " onclick='resultadoGrafica2()' /></p>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+    {% endblock %}
