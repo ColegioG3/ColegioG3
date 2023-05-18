@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoRectasParalelasE1() {
+        var respuestaCorrecta = 'p11';
+        var seleccionado = document.querySelector('input[name="pregunta1"]:checked');
+
+        let formTRP1 = document.getElementById("formTRP1");
+        
+        //Condicion para limpiar las opciones seleccionadas
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formTRP1.childElementCount - 1; index++) {
+            if (formTRP1.children[index].firstElementChild) {
+              formTRP1.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+
+    function resultadoRectasParalelasE2() {
+      var respuestaCorrecta = 'p12';
+      var seleccionado = document.querySelector('input[name="pregunta2"]:checked');
+
+      let formTRP2 = document.getElementById("formTRP2");
+
+      if (seleccionado && seleccionado.id === respuestaCorrecta) {
+        swal("CORRECTO");
+        seleccionado.checked = false; // Desseleccionar la opción seleccionada
+      } else {
+        for (let index = 0; index < formTRP2.childElementCount - 1; index++) {
+          if (formTRP2.children[index].firstElementChild) {
+            formTRP2.children[index].firstElementChild.checked = false;
+          }
+        }
+        swal("RESPUESTA INCORRECTA");
+      }
+    }
+
+        function resultadoRectasPerE1() {
+          var respuestaCorrecta = 'R3';
+          var seleccionado = document.querySelector('input[name="R3"]:checked');
+
+          let formTRPer1 = document.getElementById("formTRPer1");
+
+          if (seleccionado && seleccionado.id === respuestaCorrecta) {
+            swal("CORRECTO");
+            seleccionado.checked = false; // Desseleccionar la opción seleccionada
+          } else {
+            for (let index = 0; index < formTRPer1.childElementCount - 1; index++) {
+              if (formTRPer1.children[index].firstElementChild) {
+                formTRPer1.children[index].firstElementChild.checked = false;
+              }
+            }
+            swal("RESPUESTA INCORRECTA");
+          }
+        }
+
+    function resultadoRectasPerE2() {
+        var respuestaCorrecta = 'R2';
+        var seleccionado = document.querySelector('input[name="R2"]:checked');
+        let formTRPer2 = document.getElementById("formTRPer2");
+
+        if (seleccionado && seleccionado.id === respuestaCorrecta) {
+          swal("CORRECTO");
+          seleccionado.checked = false; // Desseleccionar la opción seleccionada
+        } else {
+          for (let index = 0; index < formTRPer2.childElementCount - 1; index++) {
+            if (formTRPer2.children[index].firstElementChild) {
+              formTRPer2.children[index].firstElementChild.checked = false;
+            }
+          }
+          swal("RESPUESTA INCORRECTA");
+        }
+      }
+
+  </script>
+
+</head>
+<a href="#TeoremaRectasP" class="btn btn-danger btn-lg">Teorema rectas paralelas</a>
+<a href="#TeoremaRectasPer" class="btn btn-danger btn-lg">Teorema rectas perpendiculares</a>
+<div class="col-lg-12" id="SumaF">
+  <h1>Teorema rectas paralelas</h1>
+  <br>
+  <br>
+
+  <h2>Ejercicios</h2>
+
+  <div class="row" style="margin: 25px 20px 25px 20px";>
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectasPaE1.png' %}" />
+            <form id = "formTRP1" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p><input type="radio" name="pregunta1" id="p11">Son paralelas</p>
+              <p><input type="radio" name="pregunta2" id="p12">No son paralelas</p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                  onclick='resultadoRectasParalelasE1()' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectasPaE2.png' %}" />
+            <form id="formTRP2" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p><input type="radio" name="pregunta1" id="p11">Son paralelas</p>
+              <p><input type="radio" name="pregunta2" id="p12">No son paralelas</p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                  onclick='resultadoRectasParalelasE2()' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="col-lg-12" id="RestaF" style="margin: 25px 20px 25px 20px";>
+  <br />
+  <br />
+  <h1>Teorema de rectas perpendiculares </h1>
+  <br>
+  <br>
+  <h2>Ejercicios</h2>
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <center>
+            <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectaPerE1.png' %}" />
+            <form id="formTRPer1" style="font:normal 16px sans-serif">
+              <p>Selecciona la Respuesta Correcta</p>
+              <p>
+                <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/ejercicios/Rec3.png' %}" width="180" />
+              </p>
+              <p>
+                <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/ejercicios/R2.png' %}" width="165" />
+              </p>
+              <p>
+                <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                  src="{% static 'images/ejercicios/R1.png' %}" width="165" />
+              </p>
+              <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                  onclick='resultadoRectasPerE1()' /></p>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/ejercicios/rectaPerE2.png' %}" />
+              <form id = "formTRPer2" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/ejercicios/RecE6.png' %}" width="175" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/ejercicios/RecE4.png' %}" width="175" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/ejercicios/RecE5.png' %}" width="175" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O "
+                    onclick='resultadoRectasPerE2()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+<br />
+<br />
+<br />
+<br />
+
+    {% endblock %}

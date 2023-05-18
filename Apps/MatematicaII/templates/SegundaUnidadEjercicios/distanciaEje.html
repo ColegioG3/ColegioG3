@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoDistancia1() {
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formDistanci1 = document.getElementById("formDistanci1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formDistanci1.childElementCount - 1; index++) {
+                    if (formDistanci1.children[index].firstElementChild) {
+                      formDistanci1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+
+    function resultadoDistancia2(){
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formDistanci2 = document.getElementById("formDistanci2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formDistanci2.childElementCount - 1; index++) {
+                    if (formDistanci2.children[index].firstElementChild) {
+                      formDistanci2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+
+<a href="#Distancia" class="btn btn-danger btn-lg">Distancia</a>
+<div>
+    <h1>Distancia</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/distanciaEj1.png' %}" width="525" />
+              <form id = "formDistanci1" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/dR2.png' %}" width="90" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/dR1.png' %}" width="85" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/dR3.png' %}" width="110" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoDistancia1() ' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/distanciaEj2.png' %}" width="575"/>
+                  <form id= "formDistanci2" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/dR5.png' %}" width="100" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/dR4.png' %}" width="65" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/dR6.png' %}" width="95" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoDistancia2() ' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+    {% endblock %}

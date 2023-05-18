@@ -38,3 +38,17 @@ class TUTeoremaDeRectasView(TemplateView):
 class CUEcuacionesCirculosView(TemplateView):
     template_name='CuartaUnidad/ecuacionesCirculos.html'
 
+class PrimeraUnidadEjerciciosView(TemplateView):
+    template_name='listadoEjercicios.html'
+
+class EcuacionesEjerciciosView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/ecuacionesEjer.html'
+
+class EcuacionesSimultaneasEjerciciosView(TemplateView):
+    template_name='PrimeraUnidadEjercicios/ecuacionesSimultaneasEjer.html'
+
+class PlanoCartesianoEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/planoCartesianoEje.html'
+
+class DistanciaEjerciciosView(TemplateView):
+    template_name='SegundaUnidadEjercicios/distanciaEje.html'

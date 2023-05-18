@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoPlano1() {
+            var respuestaCorrecta = 'R3';
+            var seleccionado = document.querySelector('input[name="R3"]:checked');
+            let formPlano1 = document.getElementById("formPlano1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formPlano1.childElementCount - 1; index++) {
+                    if (formPlano1.children[index].firstElementChild) {
+                      formPlano1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+
+    function resultadoPlano2() {
+            var respuestaCorrecta = 'R3';
+            var seleccionado = document.querySelector('input[name="R3"]:checked');
+            let formPlano2 = document.getElementById("formPlano2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formPlano2.childElementCount - 1; index++) {
+                    if (formPlano2.children[index].firstElementChild) {
+                      formPlano2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+
+<a href="#Plano Cartesiano" class="btn btn-danger btn-lg">Plano Cartesiano</a>
+<div>
+    <h1>Plano Cartesiano</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+              <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/planoCEj1.png' %}" width="525" />
+              <form id = "formPlano1" style="font:normal 16px sans-serif">
+                <p>Selecciona la Respuesta Correcta</p>
+                <p>
+                  <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/planoR1.png' %}" width="100" />
+                </p>
+                <p>
+                  <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/planoR2.png' %}" width="100" />
+                </p>
+                <p>
+                  <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                    src="{% static 'images/imgU1/planoR3.png' %}" width="100" />
+                </p>
+                <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoPlano1()' /></p>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/planoCEj2.png' %}" width="525"/>
+                  <form id= "formPlano2" style="font:normal 16px sans-serif">
+                    <p>Selecciona la Respuesta Correcta</p>
+                    <p>
+                      <input type="radio" name="R1" id="R1" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/planoR4.png' %}" width="150" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R2" id="R2" /> <img class="img-fluid rounded-circle"
+                      src="{% static 'images/imgU1/planoR5.png' %}" width="150" />
+                    </p>
+                    <p>
+                      <input type="radio" name="R3" id="R3" /> <img class="img-fluid rounded-circle"
+                        src="{% static 'images/imgU1/planoR6.png' %}" width="150" />
+                    </p>
+                    <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoPlano2()' /></p>
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+    {% endblock %}
