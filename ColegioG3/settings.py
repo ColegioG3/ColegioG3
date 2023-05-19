@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'ColegioG3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'colegiog',
-        'USER': 'colegio',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd82umdgkmnpqdv',
+        'USER': 'uovewwgdsybtsi',
+        'PASSWORD': '5e8a1b928b46af1285dee89e525be1994dd4f0aa828df348c667aa39b2baeec3',
+        'HOST': 'ec2-54-208-11-146.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
