@@ -20,16 +20,13 @@
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
 					<img src="{% static './assets/icons/logo.png' %}" alt="UserIcon">
-					<figcaption class="text-center text-titles">User Name</figcaption>
+					<figcaption class="text-center text-titles">
+						<br>
+						{{user.username}}</figcaption>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
 					<li>
-						<a href="#!">
-							<i class="zmdi zmdi-settings"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#!" class="btn-exit-system">
+						<a href="{%url 'login:logoutapp'%}">
 							<i class="zmdi zmdi-power"></i>
 						</a>
 					</li>
