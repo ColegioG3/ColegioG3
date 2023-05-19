@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<head>
+  <link rel="stylesheet" href="{% static './css/main.css' %}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetswal2@10"></script>
+  <script>
+
+    function resultadoFuncionL1() {
+            var respuestaCorrecta = 'R2';
+            var seleccionado = document.querySelector('input[name="R2"]:checked');
+            let formFuncionL1 = document.getElementById("formFuncionL1");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formFuncionL1.childElementCount - 1; index++) {
+                    if (formFuncionL1.children[index].firstElementChild) {
+                      formFuncionL1.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+
+    function resultadoFuncionL2() {
+            var respuestaCorrecta = 'R1';
+            var seleccionado = document.querySelector('input[name="R1"]:checked');
+            let formFuncionL2  = document.getElementById("formFuncionL2");
+
+            if (seleccionado && seleccionado.id === respuestaCorrecta) {
+                swal("CORRECTO");
+                seleccionado.checked = false; // Desseleccionar la opción seleccionada
+            } else {
+                for (let index = 0; index < formFuncionL2.childElementCount - 1; index++) {
+                    if (formFuncionL2.children[index].firstElementChild) {
+                        formFuncionL2.children[index].firstElementChild.checked = false;
+                    }
+                }
+                swal("RESPUESTA INCORRECTA");
+            }
+        }
+
+  </script>
+
+</head>
+
+<a href="#Funciones lineales y cuadráticas" class="btn btn-danger btn-lg">Funciones lineales y cuadráticas</a>
+<div>
+    <h1>Funciones lineales y cuadráticas</h1>
+    <br>
+    <br>
+    <h2>Ejercicios</h2>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <center>
+                <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/funcionL1.png' %}" width="500" />
+                <form id = "formFuncionL1" style="font:normal 16px sans-serif">
+                  <p>Selecciona la Respuesta Correcta</p>
+                  <p><input type="radio" name="R1" id="R1">Función Cuadrática</p>
+                  <p><input type="radio" name="R2" id="R2">Función Lineal</p>
+                  <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoFuncionL1()' /></p>
+                </form>
+              </center>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                    <center>
+                        <img class="img-fluid rounded-circle" src="{% static 'images/imgU1/funcionL2.png' %}" width="500" />
+                        <form id = "formFuncionL2" style="font:normal 16px sans-serif">
+                          <p>Selecciona la Respuesta Correcta</p>
+                          <p><input type="radio" name="R1" id="R1">Función Cuadrática</p>
+                          <p><input type="radio" name="R2" id="R2">Función Lineal</p>
+                          <p><input style="color: #e0e4e9; background-color: #0e0681" type="button" value=" R E S U L T A D O " onclick='resultadoFuncionL2()' /></p>
+                        </form>
+                      </center>
+                </div>
+            </div>
+        </div>
+
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+    {% endblock %}
