@@ -17,15 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Apps.login import views
-from .views import LoginView,HomeView, Login, Logout,  RegistroView
-from django.contrib.auth.views import LoginView
+from .views import LoginView,HomeView
 
 app_name='login'
-from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
-    path('home/', login_required(HomeView.as_view()), name='homeapp'),
-    path('', Login, name='loginapp'),
-    path('logout/', Logout, name='logoutapp'),
-    path('registrar/',RegistroView.as_view(), name='registro'),
+    path('', LoginView.as_view(), name='loginapp'),
+    path('home/', HomeView.as_view(), name='homeapp')
 ]
