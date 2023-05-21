@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+import dj_database_url 
+from decouple import config 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,14 +85,7 @@ WSGI_APPLICATION = 'ColegioG3.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'de7t7e9d23pinv',
-        'USER': 'tadlwkfcmnexal',
-        'PASSWORD': '753e71a09c1145e52a79e49c2fd978e7d73ea6e1489e973e89f0428816818a24',
-        'HOST': 'ec2-3-214-103-146.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(default=config('DATABASE_URL'))
 }
 
 
