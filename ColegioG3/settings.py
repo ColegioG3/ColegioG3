@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'ColegioG3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd82umdgkmnpqdv',
-        'USER': 'uovewwgdsybtsi',
-        'PASSWORD': '5e8a1b928b46af1285dee89e525be1994dd4f0aa828df348c667aa39b2baeec3',
-        'HOST': 'ec2-54-208-11-146.compute-1.amazonaws.com',
+        'NAME': 'de7t7e9d23pinv',
+        'USER': 'tadlwkfcmnexal',
+        'PASSWORD': '753e71a09c1145e52a79e49c2fd978e7d73ea6e1489e973e89f0428816818a24',
+        'HOST': 'ec2-3-214-103-146.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
