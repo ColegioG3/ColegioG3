@@ -17,10 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.MatematicaII import views
-from .views import ( DistanciaEjerciciosView, EcuacionesEjerciciosView, EcuacionesSimultaneasEjerciciosView, FormaPuntoEjerciciosView, FuncionesLinealesCEjerciciosView, GraficosEjerciciosView, PendienteEjerciciosView, PlanoCartesianoEjerciciosView, 
-            PrimeraUnidadEjerciciosView, PrimeraUnidadView, PUEcuacionesView, 
-            PUEcuacionesSimultaneasView, PuntoMedioEjerciciosView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, 
-            SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView, EcuacionesCirculosEjerciciosView, TeoremaDeRectasView)
+from .views import PrimeraUnidadView, PUEcuacionesView, PUEcuacionesSimultaneasView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView
 
 
 app_name = 'MatematicaII'
@@ -38,16 +35,5 @@ urlpatterns = [
    path('funcionesLinealesyC/', SUFuncionesLinealesYCuadraticasView.as_view(), name='funcionesLinealesyCapp'),
    path('teoremaRectas/', TUTeoremaDeRectasView.as_view(), name='teoremaRectasapp'),
    path('ecuacionesCirculos/', CUEcuacionesCirculosView.as_view(), name='ecuacionesCirculosapp'),
-   path('matematicaIIEjercicios/', PrimeraUnidadEjerciciosView.as_view(), name='matematicaIIEjerciciosapp'),
-   path('ecuacionesEjercicios/', EcuacionesEjerciciosView.as_view(), name='ecuacionesEjercicios'),
-   path('ecuacionesSimultaneasEjercicios/', EcuacionesSimultaneasEjerciciosView.as_view(), name='ecuacionesSimultaneasEjercicios'),
-   path('planoCartesianoEjercicios/', PlanoCartesianoEjerciciosView.as_view(), name='planoCartesianoEjercicios'),
-   path('distanciaEjercicios/', DistanciaEjerciciosView.as_view(), name='distanciaEjercicios'),
-   path('puntoMedioEjercicios/', PuntoMedioEjerciciosView.as_view(), name='puntoMedioEjercicios'),
-   path('pendienteEjercicios/', PendienteEjerciciosView.as_view(), name='pendienteEjercicios'),
-   path('graficasFuncionesEjercicios/', GraficosEjerciciosView.as_view(), name='graficasFuncionesEjercicios'),
-   path('formaPuntoEjercicios/', FormaPuntoEjerciciosView.as_view(), name='formaPuntoEjercicios'),
-   path('FuncionesEjercicios/', FuncionesLinealesCEjerciciosView.as_view(), name='FuncionesEjercicios'),
-   path('ecuacionesCirculosEjercicios/', EcuacionesCirculosEjerciciosView.as_view(), name='ecuacionesCirculosEjercicios'),
-   path('teoremasRectasEjercicios/', TeoremaDeRectasView.as_view(), name='teoremasRectasEjercicios'),
+
 ]

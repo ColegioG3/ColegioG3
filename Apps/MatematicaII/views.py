@@ -38,38 +38,3 @@ class TUTeoremaDeRectasView(TemplateView):
 class CUEcuacionesCirculosView(TemplateView):
     template_name='CuartaUnidad/ecuacionesCirculos.html'
 
-class PrimeraUnidadEjerciciosView(TemplateView):
-    template_name='listadoEjercicios.html'
-
-class EcuacionesEjerciciosView(TemplateView):
-    template_name='PrimeraUnidadEjercicios/ecuacionesEjer.html'
-
-class EcuacionesSimultaneasEjerciciosView(TemplateView):
-    template_name='PrimeraUnidadEjercicios/ecuacionesSimultaneasEjer.html'
-
-class PlanoCartesianoEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/planoCartesianoEje.html'
-
-class DistanciaEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/distanciaEje.html'
-
-class PuntoMedioEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/puntoMedioEje.html'
-
-class PendienteEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/pendienteEje.html'
-
-class GraficosEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/graficasFunciones.html'
-
-class FormaPuntoEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/formaPunto.html'
-
-class FuncionesLinealesCEjerciciosView(TemplateView):
-    template_name='SegundaUnidadEjercicios/funcionesLC.html'
-
-class EcuacionesCirculosEjerciciosView(TemplateView):
-    template_name='CuartaUnidadEjercicios/ecuacionesCirculosEj.html'
-
-class TeoremaDeRectasView(TemplateView):
-    template_name='TerceraUnidadEjercicios/teoremaRectasEjer.html'
