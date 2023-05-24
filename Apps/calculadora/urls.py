@@ -20,9 +20,10 @@ from Apps.calculadora import views
 from .views import CalculadoraView,HerramientasView
 
 app_name = 'calculadora'
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
-    path('Calculadora', CalculadoraView.as_view(), name='calculadoraapp'),
-    path('OtrasHerramientas', HerramientasView.as_view(), name='herramientasaapp')
+    path('Calculadora', login_required(CalculadoraView.as_view()), name='calculadoraapp'),
+    path('OtrasHerramientas', login_required(HerramientasView.as_view()), name='herramientasaapp')
     
 ]
