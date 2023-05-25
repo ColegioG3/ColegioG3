@@ -20,25 +20,25 @@ from Apps.AlgebraLineal import views
 from .views import ListadoMIIIView, SUTeoremasLMIIIView, SULimitesInfinitoView, TUConstantesView, TUPotenciaView, TUTeoremasDerivacionView, PUTeoremaDeRectasView, PUecuacionCirculoView, PUcomplementoCuadradosView, SULimitesInfinitoEjView,SUTeoremasLMIIIEjView, ListadoMIIIEjView, TUConstantesEjView, TUPotenciaEjView, TUTeoremasDerivacionEjView, PUcomplementoCuadradosEjView, PUecuacionCirculoEjView, PUTeoremaDeRectasEjView
 
 app_name = 'MatematicaIII'
-
+from django.contrib.auth.decorators import login_required
 urlpatterns = [
-    path('matematicaIII', ListadoMIIIView.as_view(), name='matematicaIIIapp'),
-    path('teoremaslimites', SUTeoremasLMIIIView.as_view(), name='teoremasLapp'),
-    path('limitesinfinitos', SULimitesInfinitoView.as_view(), name='limitesIapp'),
-    path('reglasconstantes', TUConstantesView.as_view(), name='constantesapp'),
-    path('reglaspotencia', TUPotenciaView.as_view(), name='potenciaapp'),
-    path('teoremasderivacion', TUTeoremasDerivacionView.as_view(), name='teoremasderivacionapp'),
-    path('teoremasderectas', PUTeoremaDeRectasView.as_view(), name='teoremasderectasapp'),
-    path('ecuacioncirculo', PUecuacionCirculoView.as_view(), name='circuloapp'),
-    path('complementoscuadrados', PUcomplementoCuadradosView.as_view(), name='complementosapp'),
+    path('matematicaIII', login_required(ListadoMIIIView.as_view()), name='matematicaIIIapp'),
+    path('teoremaslimites', login_required(SUTeoremasLMIIIView.as_view()), name='teoremasLapp'),
+    path('limitesinfinitos', login_required(SULimitesInfinitoView.as_view()), name='limitesIapp'),
+    path('reglasconstantes', login_required(TUConstantesView.as_view()), name='constantesapp'),
+    path('reglaspotencia', login_required(TUPotenciaView.as_view()), name='potenciaapp'),
+    path('teoremasderivacion', login_required(TUTeoremasDerivacionView.as_view()), name='teoremasderivacionapp'),
+    path('teoremasderectas', login_required(PUTeoremaDeRectasView.as_view()), name='teoremasderectasapp'),
+    path('ecuacioncirculo', login_required(PUecuacionCirculoView.as_view()), name='circuloapp'),
+    path('complementoscuadrados', login_required(PUcomplementoCuadradosView.as_view()), name='complementosapp'),
     #Ejercicios
-    path('matematicaIIIejercicios', ListadoMIIIEjView.as_view(), name='matematicaIIIEjapp'),
-    path('teoremaslimitesejercicios', SUTeoremasLMIIIEjView.as_view(), name='teoremasLEjapp'),
-    path('limitesinfinitosejercicios', SULimitesInfinitoEjView.as_view(), name='limitesIEjapp'),
-    path('reglasconstantesejercicios', TUConstantesEjView.as_view(), name='constantesEjapp'),
-    path('reglaspotenciaejercicios', TUPotenciaEjView.as_view(), name='potenciaEjapp'),
-    path('teoremasderivacionejercicios', TUTeoremasDerivacionEjView.as_view(), name='teoremasderivacionEjapp'),
-     path('teoremasderectasejercicios', PUTeoremaDeRectasEjView.as_view(), name='teoremasderectasEjapp'),
-    path('ecuacioncirculoejercicios', PUecuacionCirculoEjView.as_view(), name='circuloEjapp'),
-    path('complementoscuadradosejercicios', PUcomplementoCuadradosEjView.as_view(), name='complementosEjapp'),
+    path('matematicaIIIejercicios', login_required(ListadoMIIIEjView.as_view()), name='matematicaIIIEjapp'),
+    path('teoremaslimitesejercicios', login_required(SUTeoremasLMIIIEjView.as_view()), name='teoremasLEjapp'),
+    path('limitesinfinitosejercicios', login_required(SULimitesInfinitoEjView.as_view()), name='limitesIEjapp'),
+    path('reglasconstantesejercicios', login_required(TUConstantesEjView.as_view()), name='constantesEjapp'),
+    path('reglaspotenciaejercicios', login_required(TUPotenciaEjView.as_view()), name='potenciaEjapp'),
+    path('teoremasderivacionejercicios', login_required(TUTeoremasDerivacionEjView.as_view()), name='teoremasderivacionEjapp'),
+    path('teoremasderectasejercicios', login_required(PUTeoremaDeRectasEjView.as_view()), name='teoremasderectasEjapp'),
+    path('ecuacioncirculoejercicios', login_required(PUecuacionCirculoEjView.as_view()), name='circuloEjapp'),
+    path('complementoscuadradosejercicios', login_required(PUcomplementoCuadradosEjView.as_view()), name='complementosEjapp'),
 ]

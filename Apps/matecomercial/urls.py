@@ -22,22 +22,23 @@ from .views import SociedadesView, AligacionesView, AleacionesView, TantoporCien
 from .views import OpeFraccionesEjView, ProporcionalidadEjView, SociedadesEjView, AligacionEjView, AleacionEjView,TantoPorCientoEjView
 
 app_name = 'matecomercial'
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
-    path('MateComercial', PrimeraUnidadView.as_view(), name='macomercialapp'),
-    path('fracciones/', PUFraccionesView.as_view(), name='fraccionesapp'),
-    path('OperacionesConFracciones/', OpeFraccionesView.as_view(), name='operacioesfraccionesapp'),
-    path('Proporcionalidad/', ProporcionalidadView.as_view(), name='proporcionalidadapp'),
-    path('Sociedades/', SociedadesView.as_view(), name='sociedadesapp'),
-    path('Aligaciones/',AligacionesView.as_view(), name='aligacionesapp'),
-    path('Aleaciones/',AleacionesView.as_view(), name='aleacionesapp'),
-    path('TantoPorCiento/',TantoporCientoView.as_view(), name='porcientoapp'),
-    path('MateComercialEjercicios', PrimeraUnidadEjView.as_view(), name='macomercialEjapp'),
-    path('FraccionesEjercicios/',OpeFraccionesEjView.as_view(), name='fraccionesej'),
-    path('ProporcionalidadEjercicios/',ProporcionalidadEjView.as_view(), name='proporcionalidadej'),
-    path('SociedadesEjercicios/',SociedadesEjView.as_view(), name='sociedadesej'),
-    path('AligacionesEjercicios/',AligacionEjView.as_view(), name='aligacionesej'),
-    path('AleacionesEjercicios/',AleacionEjView.as_view(), name='aleacionesej'),
-    path('TantoPorCientoEjercicios/',TantoPorCientoEjView.as_view(), name='porcientoej'),
+    path('MateComercial', login_required(PrimeraUnidadView.as_view()), name='macomercialapp'),
+    path('fracciones/', login_required(PUFraccionesView.as_view()), name='fraccionesapp'),
+    path('OperacionesConFracciones/', login_required(OpeFraccionesView.as_view()), name='operacioesfraccionesapp'),
+    path('Proporcionalidad/', login_required(ProporcionalidadView.as_view()), name='proporcionalidadapp'),
+    path('Sociedades/', login_required(SociedadesView.as_view()), name='sociedadesapp'),
+    path('Aligaciones/',login_required(AligacionesView.as_view()), name='aligacionesapp'),
+    path('Aleaciones/',login_required(AleacionesView.as_view()), name='aleacionesapp'),
+    path('TantoPorCiento/',login_required(TantoporCientoView.as_view()), name='porcientoapp'),
+    path('MateComercialEjercicios', login_required(PrimeraUnidadEjView.as_view()), name='macomercialEjapp'),
+    path('FraccionesEjercicios/',login_required(OpeFraccionesEjView.as_view()), name='fraccionesej'),
+    path('ProporcionalidadEjercicios/',login_required(ProporcionalidadEjView.as_view()), name='proporcionalidadej'),
+    path('SociedadesEjercicios/',login_required(SociedadesEjView.as_view()), name='sociedadesej'),
+    path('AligacionesEjercicios/',login_required(AligacionEjView.as_view()), name='aligacionesej'),
+    path('AleacionesEjercicios/',login_required(AleacionEjView.as_view()), name='aleacionesej'),
+    path('TantoPorCientoEjercicios/',login_required(TantoPorCientoEjView.as_view()), name='porcientoej'),
     
 ]

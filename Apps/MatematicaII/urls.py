@@ -17,23 +17,37 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Apps.MatematicaII import views
-from .views import PrimeraUnidadView, PUEcuacionesView, PUEcuacionesSimultaneasView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView
+from .views import ( DistanciaEjerciciosView, EcuacionesEjerciciosView, EcuacionesSimultaneasEjerciciosView, FormaPuntoEjerciciosView, FuncionesLinealesCEjerciciosView, GraficosEjerciciosView, PendienteEjerciciosView, PlanoCartesianoEjerciciosView, 
+            PrimeraUnidadEjerciciosView, PrimeraUnidadView, PUEcuacionesView, 
+            PUEcuacionesSimultaneasView, PuntoMedioEjerciciosView, SUPlanoCartesianoView, SUDistanciaView, SUPuntoMedioView, SUPendienteView, SUGraficasFuncionesView, 
+            SUPuntoYPendienteView, SUFuncionesLinealesYCuadraticasView, TUTeoremaDeRectasView, CUEcuacionesCirculosView, EcuacionesCirculosEjerciciosView, TeoremaDeRectasView)
 
 
 app_name = 'MatematicaII'
-
+from django.contrib.auth.decorators import login_required
 urlpatterns = [
-   path('MatematicaII', PrimeraUnidadView.as_view(), name='matematicaiiapp'),
-   path('ecuaciones/', PUEcuacionesView.as_view(), name='ecuacionesapp'),
-   path('ecuacionesSimultaneas/', PUEcuacionesSimultaneasView.as_view(), name='ecuacionesSimultaneasapp'),
-   path('planoCartesiano/', SUPlanoCartesianoView.as_view(), name='planoCartesianoapp'),
-   path('distancia/', SUDistanciaView.as_view(), name='distanciaapp'),
-   path('puntoMedio/', SUPuntoMedioView.as_view(), name='puntoMedioapp'),
-   path('pendiente/', SUPendienteView.as_view(), name='pendienteapp'),
-   path('graficas/', SUGraficasFuncionesView.as_view(), name='graficaFuncionesapp'),
-   path('puntoPendiente/', SUPuntoYPendienteView.as_view(), name='puntoPendienteapp'),
-   path('funcionesLinealesyC/', SUFuncionesLinealesYCuadraticasView.as_view(), name='funcionesLinealesyCapp'),
-   path('teoremaRectas/', TUTeoremaDeRectasView.as_view(), name='teoremaRectasapp'),
-   path('ecuacionesCirculos/', CUEcuacionesCirculosView.as_view(), name='ecuacionesCirculosapp'),
-
+   path('MatematicaII', login_required(PrimeraUnidadView.as_view()), name='matematicaiiapp'),
+   path('ecuaciones/', login_required(PUEcuacionesView.as_view()), name='ecuacionesapp'),
+   path('ecuacionesSimultaneas/', login_required(PUEcuacionesSimultaneasView.as_view()), name='ecuacionesSimultaneasapp'),
+   path('planoCartesiano/', login_required(SUPlanoCartesianoView.as_view()), name='planoCartesianoapp'),
+   path('distancia/', login_required(SUDistanciaView.as_view()), name='distanciaapp'),
+   path('puntoMedio/', login_required(SUPuntoMedioView.as_view()), name='puntoMedioapp'),
+   path('pendiente/', login_required(SUPendienteView.as_view()), name='pendienteapp'),
+   path('graficas/', login_required(SUGraficasFuncionesView.as_view()), name='graficaFuncionesapp'),
+   path('puntoPendiente/', login_required(SUPuntoYPendienteView.as_view()), name='puntoPendienteapp'),
+   path('funcionesLinealesyC/', login_required(SUFuncionesLinealesYCuadraticasView.as_view()), name='funcionesLinealesyCapp'),
+   path('teoremaRectas/', login_required(TUTeoremaDeRectasView.as_view()), name='teoremaRectasapp'),
+   path('ecuacionesCirculos/', login_required(CUEcuacionesCirculosView.as_view()), name='ecuacionesCirculosapp'),
+   path('matematicaIIEjercicios/', login_required(PrimeraUnidadEjerciciosView.as_view()), name='matematicaIIEjerciciosapp'),
+   path('ecuacionesEjercicios/', login_required(EcuacionesEjerciciosView.as_view()), name='ecuacionesEjercicios'),
+   path('ecuacionesSimultaneasEjercicios/', login_required(EcuacionesSimultaneasEjerciciosView.as_view()), name='ecuacionesSimultaneasEjercicios'),
+   path('planoCartesianoEjercicios/', login_required(PlanoCartesianoEjerciciosView.as_view()), name='planoCartesianoEjercicios'),
+   path('distanciaEjercicios/', login_required(DistanciaEjerciciosView.as_view()), name='distanciaEjercicios'),
+   path('puntoMedioEjercicios/', login_required(PuntoMedioEjerciciosView.as_view()), name='puntoMedioEjercicios'),
+   path('pendienteEjercicios/', login_required(PendienteEjerciciosView.as_view()), name='pendienteEjercicios'),
+   path('graficasFuncionesEjercicios/', login_required(GraficosEjerciciosView.as_view()), name='graficasFuncionesEjercicios'),
+   path('formaPuntoEjercicios/', login_required(FormaPuntoEjerciciosView.as_view()), name='formaPuntoEjercicios'),
+   path('FuncionesEjercicios/', login_required(FuncionesLinealesCEjerciciosView.as_view()), name='FuncionesEjercicios'),
+   path('ecuacionesCirculosEjercicios/', login_required(EcuacionesCirculosEjerciciosView.as_view()), name='ecuacionesCirculosEjercicios'),
+   path('teoremasRectasEjercicios/', login_required(TeoremaDeRectasView.as_view()), name='teoremasRectasEjercicios'),
 ]
