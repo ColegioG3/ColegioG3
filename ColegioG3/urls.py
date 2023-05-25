@@ -29,4 +29,4 @@ urlpatterns = [
     path('algebralineal/', include('Apps.AlgebraLineal.urls', 'AlgebraLineal')),
     path('matematicaIII/', include('Apps.MatematicaIII.urls', 'MatematicaIII')),
     path('calculadora/', include('Apps.calculadora.urls', 'calculadora'))
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
